@@ -31,6 +31,18 @@
                 background: color.adjust(variables.$primary, $lightness: 20%);
             }
         }
+
+        .icone-youtube {
+            position: relative;
+            width: 20px;
+            height: 20px;
+            margin: 0px 15px;
+
+            &:hover {
+                filter:invert(20);
+
+            }
+        }
     }
 }
 a {

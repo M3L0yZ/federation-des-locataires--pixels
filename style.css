@@ -24,6 +24,15 @@
 .nav__item .icone-facebook:hover {
   background: #de9677;
 }
+.nav__item .icone-youtube {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 0px 15px;
+}
+.nav__item .icone-youtube:hover {
+  filter: invert(20);
+}
 
 a {
   color: #FFFBE2;
