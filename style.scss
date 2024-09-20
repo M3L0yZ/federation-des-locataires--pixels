@@ -1,5 +1,5 @@
-@use './partials-scss/navbar';
-@use './partials-scss/variables';
+@use 'partials-scss/navbar';
+@use 'partials-scss/variables';
 
 html {
     background-color: variables.$light;

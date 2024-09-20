@@ -1,7 +1,26 @@
+.nav {
+  background-color: #C15A2E;
+  padding: 15px;
+}
 .nav__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.nav__item {
+  display: inline;
+}
+
+a {
+  color: #FFFBE2;
+  text-decoration: none;
+  padding: 15px;
+}
+a:hover {
+  background: #a8522e;
+  border-radius: 10px;
 }
 
 html {
