@@ -5,19 +5,19 @@
 .nav {
     background-color: variables.$primary;
     padding: 15px;
-    
+
 
     &__list {
         list-style-type: none;
         margin: 0;
         padding: 0;
         display: flex;
-    justify-content: center;
-    align-items: center;
-      }
+        justify-content: center;
+        align-items: center;
+    }
 
     &__item {
-        display: inline; 
+        display: inline;
 
         .icone-facebook {
             position: relative;
@@ -39,7 +39,7 @@
             margin: 0px 15px;
 
             &:hover {
-                filter:invert(20);
+                filter: invert(20);
 
             }
         }
@@ -51,38 +51,38 @@
             background-color: variables.$light;
             padding-left: 10px;
             color: variables.$primary;
-            
-            &:focus::placeholder {
-                    padding-left: 0px;
-                }
 
-            &::placeholder{
+            &:focus::placeholder {
+                padding-left: 0px;
+            }
+
+            &::placeholder {
                 color: variables.$primary;
                 padding-left: 12%;
-              }
+            }
 
             &#search {
                 background-image: url(../sources/symbole-de-linterface-de-recherche.png);
                 background-repeat: no-repeat;
-                background-position: 5% 5px; 
+                background-position: 5% 5px;
                 background-size: 15px 15px;
             }
 
-            &#search:focus{
-                background-image:none;
-               }
-            
+            &#search:focus {
+                background-image: none;
+            }
+
         }
     }
 }
+
 a {
     color: variables.$light;
     text-decoration: none;
     padding: 15px;
 
     &:hover {
-        background: color.adjust(variables.$primary, $blackness: 10%); 
+        background: color.adjust(variables.$primary, $blackness: 10%);
         border-radius: 10px;
     }
 }
-
