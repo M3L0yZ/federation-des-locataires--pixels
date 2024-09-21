@@ -28,7 +28,7 @@
             margin: 0px 15px;
 
             &:hover {
-                background: color.adjust(variables.$primary, $lightness: 20%);
+                opacity: 50%;
             }
         }
 
@@ -39,7 +39,7 @@
             margin: 0px 15px;
 
             &:hover {
-                filter: invert(20);
+                opacity: 50%;
 
             }
         }

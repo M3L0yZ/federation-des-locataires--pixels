@@ -22,7 +22,7 @@
   margin: 0px 15px;
 }
 .nav__item .icone-facebook:hover {
-  background: #de9677;
+  opacity: 50%;
 }
 .nav__item .icone-youtube {
   position: relative;
@@ -31,7 +31,7 @@
   margin: 0px 15px;
 }
 .nav__item .icone-youtube:hover {
-  filter: invert(20);
+  opacity: 50%;
 }
 .nav__item input {
   border-style: none;
