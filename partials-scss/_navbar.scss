@@ -5,85 +5,162 @@
 .nav {
     background-color: variables.$primary;
     padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
 
 
     &__list {
         list-style-type: none;
         margin: 0;
         padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: none;
+    }
+
+    a {
+        display: block;
     }
 
     &__item {
-        display: inline;
+        display: flex;
 
         .icone-facebook {
-            position: relative;
-            width: 20px;
-            height: 20px;
-            background-color: variables.$light;
-            border-radius: 50%;
-            margin: 0px 15px;
-
-            &:hover {
-                opacity: 50%;
-            }
+            display: none;
         }
 
         .icone-youtube {
-            position: relative;
-            width: 20px;
-            height: 20px;
-            margin: 0px 15px;
-
-            &:hover {
-                opacity: 50%;
-
-            }
+            display: none;
         }
 
         input {
-            border-style: none;
-            border-radius: 10px;
-            height: 25px;
-            background-color: variables.$light;
-            padding-left: 10px;
-            margin: 0px 15px;
-            color: variables.$primary;
-
-            &:focus::placeholder {
-                padding-left: 0px;
-            }
-
-            &::placeholder {
-                color: variables.$primary;
-                padding-left: 12%;
-            }
-
-            &#search {
-                background-image: url(../sources/symbole-de-linterface-de-recherche.png);
-                background-repeat: no-repeat;
-                background-position: 5% 5px;
-                background-size: 15px 15px;
-            }
-
-            &#search:focus {
-                background-image: none;
-            }
-
+            display: none;
         }
     }
+
 }
 
-a {
+.logo-search {
+    width: 30px;
+    height: 30px;
+
+}
+
+.logo-langue {
+    width: 30px;
+    height: 30px;
+
+}
+
+.menu-hamburger {
+    font-size: 35px;
     color: variables.$light;
-    text-decoration: none;
-    padding: 15px;
+    font-weight: bold;
+    display: block;
+
 
     &:hover {
-        background: color.adjust(variables.$primary, $blackness: 10%);
-        border-radius: 10px;
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (min-width: 1400px) {
+
+    .nav {
+
+        justify-content: center;
+
+        &__list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__item {
+            display: inline;
+
+            .icone-facebook {
+                position: relative;
+                width: 20px;
+                height: 20px;
+                background-color: variables.$light;
+                border-radius: 50%;
+                margin: 0px 15px;
+                display: block;
+
+                &:hover {
+                    opacity: 50%;
+                }
+            }
+
+            .icone-youtube {
+                position: relative;
+                width: 20px;
+                height: 20px;
+                margin: 0px 15px;
+                display: block;
+
+                &:hover {
+                    opacity: 50%;
+
+                }
+            }
+
+            input {
+                border-style: none;
+                border-radius: 10px;
+                height: 25px;
+                background-color: variables.$light;
+                padding-left: 10px;
+                margin: 0px 15px;
+                color: variables.$primary;
+                display: block;
+
+                &:focus::placeholder {
+                    padding-left: 0px;
+                }
+
+                &::placeholder {
+                    color: variables.$primary;
+                    padding-left: 12%;
+                }
+
+                &#search {
+                    background-image: url(../sources/symbole-de-linterface-de-recherche.png);
+                    background-repeat: no-repeat;
+                    background-position: 5% 5px;
+                    background-size: 15px 15px;
+                }
+
+                &#search:focus {
+                    background-image: none;
+                }
+
+            }
+        }
+
+        .menu-hamburger {
+            display: none;
+        }
+
+        .logo-search {
+            display: none;
+        }
+
+        .logo-langue {
+            display: none;
+        }
+    }
+
+    a {
+        color: variables.$light;
+        text-decoration: none;
+        padding: 15px;
+
+        &:hover {
+            background: color.adjust(variables.$primary, $blackness: 10%);
+            border-radius: 10px;
+        }
     }
 }
