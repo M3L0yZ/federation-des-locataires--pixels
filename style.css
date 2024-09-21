@@ -39,6 +39,7 @@
   height: 25px;
   background-color: #FFFBE2;
   padding-left: 10px;
+  margin: 0px 15px;
   color: #C15A2E;
 }
 .nav__item input:focus::-moz-placeholder {
