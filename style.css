@@ -33,6 +33,37 @@
 .nav__item .icone-youtube:hover {
   filter: invert(20);
 }
+.nav__item input {
+  border-style: none;
+  border-radius: 10px;
+  height: 25px;
+  background-color: #FFFBE2;
+  padding-left: 10px;
+  color: #C15A2E;
+}
+.nav__item input:focus::-moz-placeholder {
+  padding-left: 0px;
+}
+.nav__item input:focus::placeholder {
+  padding-left: 0px;
+}
+.nav__item input::-moz-placeholder {
+  color: #C15A2E;
+  padding-left: 12%;
+}
+.nav__item input::placeholder {
+  color: #C15A2E;
+  padding-left: 12%;
+}
+.nav__item input#search {
+  background-image: url(../sources/symbole-de-linterface-de-recherche.png);
+  background-repeat: no-repeat;
+  background-position: 5% 5px;
+  background-size: 15px 15px;
+}
+.nav__item input#search:focus {
+  background-image: none;
+}
 
 a {
   color: #FFFBE2;
