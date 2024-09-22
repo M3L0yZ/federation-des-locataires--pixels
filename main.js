@@ -1,3 +1,5 @@
+//Navbar fonctions
+
 function myFunction() {
     var list = document.getElementsByClassName("nav__list")[0];
     if (window.matchMedia("(max-width:1400px)").matches) {
