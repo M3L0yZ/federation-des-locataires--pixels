@@ -12,6 +12,10 @@
   padding: 0;
   display: none;
 }
+.nav__list.list-active {
+  display: flex;
+  flex-direction: column;
+}
 .nav a {
   display: block;
 }
@@ -56,6 +60,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
   }
   .nav__item {
     display: inline;

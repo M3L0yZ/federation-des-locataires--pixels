@@ -16,6 +16,11 @@
         margin: 0;
         padding: 0;
         display: none;
+
+        &.list-active {
+            display: flex; 
+            flex-direction: column;
+        }
     }
 
     a {
@@ -75,6 +80,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: row;
         }
 
         &__item {
