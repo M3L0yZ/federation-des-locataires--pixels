@@ -3,14 +3,19 @@
   padding: 15px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  overflow: hidden;
+  justify-content: space-between;
+  position: relative;
 }
 .nav__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #c15a2e;
+  border-radius: 0 0 15px 15px;
 }
 .nav__list.list-active {
   display: flex;
@@ -23,7 +28,8 @@
 }
 .nav__list a:hover {
   background: #a8522e;
-  border-radius: 10px;
+  border-radius: 15px;
+  width: 100%;
 }
 .nav a {
   display: block;
@@ -63,13 +69,21 @@
 
 @media screen and (min-width: 1400px) {
   .nav {
+    overflow: hidden;
     justify-content: center;
   }
   .nav__list {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    top: 0%;
+    left: 0%;
+    background-color: #C15A2E;
+  }
+  .nav__list a:hover {
+    width: 68%;
   }
   .nav__item {
     display: inline;
