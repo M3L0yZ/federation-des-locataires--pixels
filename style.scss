@@ -1,5 +1,6 @@
 @use 'partials-scss/navbar';
 @use 'partials-scss/variables';
+@use 'partials-scss/footer';
 
 html {
     background-color: variables.$light;
