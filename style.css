@@ -153,6 +153,40 @@
     display: none;
   }
 }
+footer {
+  background-color: #2C856D;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+
+.link-group {
+  display: block;
+  text-align: center;
+  list-style: none;
+  color: #FFFBE2;
+}
+
+.foot__link {
+  color: #FFFBE2;
+  text-decoration: none;
+}
+
+.social {
+  display: block;
+  text-align: center;
+}
+
+.icon {
+  width: 50px;
+  margin: 10px;
+}
+
 html {
   background-color: #FFFBE2;
 }/*# sourceMappingURL=style.css.map */
