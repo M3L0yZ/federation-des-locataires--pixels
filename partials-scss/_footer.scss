@@ -1,0 +1,29 @@
+@use 'variables';
+@use "sass:color";
+
+footer {
+    background-color: variables.$secondary;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+
+.link-group {
+    //border: solid 1px red; //debug
+    display: block;
+    text-align: center;
+    list-style: none;
+    color: variables.$light;
+}
+
+.foot {
+    &__link {
+        color: variables.$light;
+        text-decoration: none;
+    }
+}
