@@ -1,39 +1,43 @@
 @use 'variables';
 @use "sass:color";
 
-footer {
-    background-color: variables.$secondary;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-}
-
-.link-group {
-    //border: solid 1px red; //debug
-    display: block;
-    text-align: center;
-    list-style: none;
-    color: variables.$light;
-}
-
 .foot {
+    background-color: variables.$secondary;
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+    }
+
+    &__block {
+        border: solid 1px red; //debug
+        display: block;
+        text-align: center;
+        list-style: none;
+        color: variables.$light;
+    }
+
     &__link {
         color: variables.$light;
         text-decoration: none;
     }
-}
 
-.social {
-    display: block;
-    text-align: center;
-}
+    &__social {
+        display: block;
+        text-align: center;
+    }
 
-.icon {
-    width: 50px;
-    margin: 10px;
+    &__icon {
+        width: 50px;
+        margin: 10px;
+    }
+
+    &__contact {
+        color: variables.$light;
+        display: block;
+        text-align: center;
+    }
 }
