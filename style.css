@@ -17,12 +17,14 @@ header{
 
 .projet-etudiant{
   display: flex;
-  margin-left: 5% ;
+  width: 100%;
+  margin-left: 2% ;
 }
 
 .voir-site-origine{
   display: flex;
-  margin-left: 5% ;
+  width: 100%;
+  margin-left: 2% ;
   
 }
 
