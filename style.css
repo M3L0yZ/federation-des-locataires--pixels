@@ -65,6 +65,7 @@ header{
   width: auto;
   height:60px;
   margin-left: 10%;
+  margin-right: 10%;
 }
 
 .bouton-don-wrap{
@@ -86,27 +87,28 @@ header{
 }
 
 @media screen and (min-width: 1400px) {
-  header{
-    background-color: #FFFBE2;
-  
-  }
-  
+   
   .head__etudiant{
     display: flex;
     flex-direction: row;
     align-items: center;
     background-color: #262127;
     color: #FFFBE2;
+    height: auto;
+    width: auto;
     font-size: 10px;
     height: 70px;
   }
   
   .projet-etudiant{
+    height: auto;
+    width: auto;
     display: flex;
     margin-left: 5% ;
   }
   
   .voir-site-origine{
+    height: auto;
     display: flex;
     margin-left: 5% ;
     
@@ -115,16 +117,6 @@ header{
   .bouton-x-header-wrap {
     display: flex;
     width: 100%; 
-  }
-  
-  .bouton-x-header {
-    height: auto;
-    width: auto;
-    background-color: #262127;
-    border-color: none;
-    border: #00000000;
-    margin-left: auto; 
-    margin-right: 15%;
   }
   
   
@@ -136,14 +128,7 @@ header{
     align-items: center;
   }
   
-  .logo-federation-wrap{
-    flex:1;
-    margin: auto;
-    width: auto;
-    flex-direction: column;
-    align-items: flex-start;
-  
-  }
+ 
   
   .logo-federation{
     width: auto;
@@ -151,24 +136,12 @@ header{
     margin-left: 10%;
   }
   
-  .bouton-don-wrap{
-    display: flex;
-    margin: auto;
-    margin-right: 10%;
-  }
   
-  .bouton-don {
-    color: #FFFBE2;
-    background-color: #C15A2E;
-    height: 50px;
-    width: 100px;
-    font-size: 30px;
-    border-radius: 40px;
-    border-color: none;
-    border: #00000000;
-  }
 
 }
+
+
+
 
 
 /*<!----------------------------------------------->*/
