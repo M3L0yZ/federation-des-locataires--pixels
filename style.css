@@ -291,15 +291,15 @@ header {
   align-items: center;
   background-color: #262127;
   color: #FFFBE2;
-  font-size: 7px;
+  font-size: 6px;
   height: 70px;
 }
 
 .projet-etudiant {
   display: flex;
-  margin-left: 3%;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin-left: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   width: 100%;
 }
 
@@ -444,14 +444,21 @@ header {
   width: 100%;
   height: 400px;
   margin: auto;
-  display: flex;
+}
+.accueil__hero__container {
+  position: relative;
+  top: 30%;
 }
 .accueil__hero h1 {
   color: #FFFBE2;
   font-size: 24px;
   margin: 0;
+  text-align: center;
+  display: grid;
+  gap: 40px;
 }
 .accueil__hero button {
+  position: relative;
   background-color: #2C856D;
   color: #FFFBE2;
   text-transform: uppercase;
@@ -459,12 +466,17 @@ header {
   border-radius: 30px;
   border-style: none;
   padding: 12px 20px;
+  position: relative;
+  margin-top: 20px;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 
 .accueil__nous-soutenir {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  text-align: center;
   justify-content: center;
   background-color: #FFB8A4;
   border-radius: 35px;
@@ -474,49 +486,6 @@ header {
   margin-top: 60px;
   margin-bottom: 60px;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.281), 0 2px 10px 0 rgba(0, 0, 0, 0.253);
-}
-
-.accueil_temoignages {
-  border: solid 2px blue;
-}
-.accueil_temoignages__grid {
-  width: 100vw;
-  height: 500px;
-  border: solid 1px red;
-}
-.accueil_temoignages__block {
-  width: 100%;
-  height: 250px;
-  border: solid 1px rgb(255, 151, 137);
-}
-.accueil_temoignages__photo1 {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  background-image: url("../sources/carole-simon.jpg");
-  background-size: cover;
-  margin: 0 auto;
-}
-.accueil_temoignages__couleur1 {
-  width: 100%;
-  height: 20%;
-  background-color: #C15A2E;
-}
-.accueil_temoignages__photo2 {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  background-image: url("../sources/fabiola.jpg");
-  background-size: cover;
-  margin: 0 auto;
-}
-.accueil_temoignages__photo3 {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  background-image: url("../sources/jonathan.jpg");
-  background-size: cover;
-  margin: 0 auto;
 }
 
 @font-face {
