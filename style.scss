@@ -8,7 +8,12 @@
 @use 'partials-scss/accueil-services';
 @use 'partials-scss/accueil-temoignages';
 
+@font-face {
+    src: url("./sources/font/ebrima.ttf") format("truetype");
+    font-family: "ebrima";
+  }
+
 html {
+    font-family: "ebrima";
     background-color: variables.$light;
-    font-family: ;
 }
