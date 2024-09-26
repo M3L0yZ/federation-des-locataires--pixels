@@ -466,6 +466,11 @@ header {
   border-radius: 30px;
   border-style: none;
   padding: 12px 20px;
+  position: relative;
+  margin-top: 20px;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 
 .accueil__nous-soutenir {
