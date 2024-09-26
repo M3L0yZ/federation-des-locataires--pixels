@@ -282,7 +282,7 @@
 }
 
 header {
-  background-color: #F1BA85;
+  background-color: #FFFBE2;
 }
 
 .head__etudiant {
@@ -290,7 +290,7 @@ header {
   flex-direction: row;
   align-items: center;
   background-color: #262127;
-  color: #F1BA85;
+  color: #FFFBE2;
   font-size: 7px;
   height: 70px;
 }
@@ -355,7 +355,7 @@ header {
 }
 
 .bouton-don {
-  color: #F1BA85;
+  color: #FFFBE2;
   background-color: #C15A2E;
   height: 45px;
   width: 95px;
@@ -368,14 +368,14 @@ header {
 
 @media screen and (min-width: 900px) {
   header {
-    background-color: #F1BA85;
+    background-color: #FFFBE2;
   }
   .head__etudiant {
     display: flex;
     flex-direction: row;
     align-items: center;
     background-color: #262127;
-    color: #F1BA85;
+    color: #FFFBE2;
     font-size: 9px;
     height: 70px;
   }
@@ -426,7 +426,7 @@ header {
     margin-right: 10%;
   }
   .bouton-don {
-    color: #F1BA85;
+    color: #FFFBE2;
     background-color: #C15A2E;
     height: 50px;
     width: 100px;

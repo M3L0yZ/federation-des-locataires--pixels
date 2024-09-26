@@ -5,16 +5,17 @@
 
 
 header{
-	background-color: variables.$primary-light;
+	background-color: variables.$light;
  
   }
  
   .head__etudiant{
+	
     display: flex;
     flex-direction: row;
     align-items: center;
 	background-color: variables.$dark;
-	color: variables.$primary-light;
+	color: variables.$light;
     font-size: 7px;
     height: 70px;
   }
@@ -83,7 +84,7 @@ header{
   }
  
   .bouton-don {
-    color: variables.$primary-light;
+    color: variables.$light;
     background-color: variables.$primary;
     height: 45px;
     width: 95px;
@@ -97,7 +98,7 @@ header{
  
   @media screen and (min-width: 900px) {
     header{
-      background-color: variables.$primary-light;
+      background-color: variables.$light;
    
     }
    
@@ -106,7 +107,7 @@ header{
       flex-direction: row;
       align-items: center;
 	  background-color: variables.$dark;
-      color: variables.$primary-light;
+      color: variables.$light;
       font-size: 9px;
       height: 70px;
     }
@@ -170,7 +171,7 @@ header{
     }
    
     .bouton-don {
-      color: variables.$primary-light;
+      color: variables.$light;
       background-color: variables.$primary;
       height: 50px;
       width: 100px;
