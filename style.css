@@ -443,6 +443,21 @@ header {
   background-size: cover;
 }
 
+.accueil__nous-soutenir {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFB8A4;
+  border-radius: 35px;
+  width: 450px;
+  height: 800px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.281), 0 2px 10px 0 rgba(0, 0, 0, 0.253);
+}
+
 html {
   background-color: #FFFBE2;
 }/*# sourceMappingURL=style.css.map */
