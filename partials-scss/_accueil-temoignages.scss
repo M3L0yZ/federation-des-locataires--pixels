@@ -1,0 +1,48 @@
+@use 'variables';
+@use "sass:color";
+
+.accueil_temoignages {
+    border: solid 2px blue;
+
+    &__grid {
+    width: 100vw; //debug
+    height: 500px; //debug
+    border: solid 1px red; //debug
+    //background-color: yellow; //debug   
+    }
+    &__block {
+    width: 100%; //debug
+    height: 250px; //debug
+    border: solid 1px rgb(255, 151, 137); //debug
+    //background-color: rgb(212, 0, 255); //debug   
+    }  
+    &__photo1 {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background-image: url("../sources/carole-simon.jpg");
+        background-size: cover;
+        margin: 0 auto;
+    }
+    &__couleur1 {
+        width: 100%;
+        height: 20%;
+        background-color: variables.$primary;
+    }
+    &__photo2 {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background-image: url("../sources/fabiola.jpg");
+        background-size: cover;
+        margin: 0 auto;
+    }
+    &__photo3 {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background-image: url("../sources/jonathan.jpg");
+        background-size: cover;
+        margin: 0 auto;
+    }
+}

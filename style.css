@@ -476,6 +476,49 @@ header {
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.281), 0 2px 10px 0 rgba(0, 0, 0, 0.253);
 }
 
+.accueil_temoignages {
+  border: solid 2px blue;
+}
+.accueil_temoignages__grid {
+  width: 100vw;
+  height: 500px;
+  border: solid 1px red;
+}
+.accueil_temoignages__block {
+  width: 100%;
+  height: 250px;
+  border: solid 1px rgb(255, 151, 137);
+}
+.accueil_temoignages__photo1 {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-image: url("../sources/carole-simon.jpg");
+  background-size: cover;
+  margin: 0 auto;
+}
+.accueil_temoignages__couleur1 {
+  width: 100%;
+  height: 20%;
+  background-color: #C15A2E;
+}
+.accueil_temoignages__photo2 {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-image: url("../sources/fabiola.jpg");
+  background-size: cover;
+  margin: 0 auto;
+}
+.accueil_temoignages__photo3 {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-image: url("../sources/jonathan.jpg");
+  background-size: cover;
+  margin: 0 auto;
+}
+
 @font-face {
   src: url("./sources/font/ebrima.ttf") format("truetype");
   font-family: "ebrima";
