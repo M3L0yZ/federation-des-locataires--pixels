@@ -2,7 +2,7 @@
 @use "sass:color";
 
 //----------------------- STYLES GÉNÉRAUX -----------------------//
-/*
+
 .foot {
     background-color: variables.$secondary;
 
@@ -79,7 +79,6 @@
         font-size: 18px;
         align-self: center;
     }
-}
 
     //----------------------- MEDIA QUERY -----------------------//
     //ENCORE EN COURS D'AJUSTEMENTS
@@ -127,7 +126,7 @@
         &__banner {
             border-radius: 0;
         }
-    
+    }
 
     @media screen and (min-width: 1360px) {
         &__grid {
@@ -158,6 +157,4 @@
             width: 75%;
         }
     }  
-
-
-*/
+}
