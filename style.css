@@ -476,14 +476,21 @@ header {
   width: 100%;
   height: 400px;
   margin: auto;
-  display: flex;
+}
+.accueil__hero__container {
+  position: relative;
+  top: 30%;
 }
 .accueil__hero h1 {
   color: #FFFBE2;
   font-size: 24px;
   margin: 0;
+  text-align: center;
+  display: grid;
+  gap: 40px;
 }
 .accueil__hero button {
+  position: relative;
   background-color: #2C856D;
   color: #FFFBE2;
   text-transform: uppercase;
