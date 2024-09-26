@@ -2,7 +2,7 @@
 @use "sass:color";
 
 //----------------------- STYLES GÉNÉRAUX -----------------------//
-/*
+
 .foot {
     background-color: variables.$secondary;
 
@@ -58,7 +58,7 @@
         background-color: variables.$light;
         padding: 30px;
         border-radius: 20px;
-        display: flex;
+        width: 100px;
         justify-content: center;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -79,12 +79,11 @@
         font-size: 18px;
         align-self: center;
     }
-}
 
     //----------------------- MEDIA QUERY -----------------------//
     //ENCORE EN COURS D'AJUSTEMENTS
 
-    @media all and (min-width: 200px) {
+    @media screen and (min-width: 200px) {
         &__grid {
             grid-template-columns: repeat(2, 1fr);
         }
@@ -98,10 +97,11 @@
         }
         &__banner {
             border-radius: 0;
+            width: 100vw;
         }
     }
 
-    @media all and (min-width: 920px) {
+    @media screen and (min-width: 1000px) {
         &__grid {
             grid-template-columns: repeat(3, 1fr);
         }
@@ -110,7 +110,6 @@
             &:last-child {
                 grid-row: 4;
                 grid-column: span 4;
-                width: 100%;
             }
             //Réseaux sociaux
             &:nth-child(7) {
@@ -127,9 +126,9 @@
         &__banner {
             border-radius: 0;
         }
-    
+    }
 
-    @media all and (min-width: 1360px) {
+    @media screen and (min-width: 1360px) {
         &__grid {
             grid-template-columns: repeat(4, 1fr);
         }
@@ -158,6 +157,4 @@
             width: 75%;
         }
     }  
-
-
-*/
+}
