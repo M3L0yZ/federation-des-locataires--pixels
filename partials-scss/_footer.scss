@@ -2,7 +2,7 @@
 @use "sass:color";
 
 //----------------------- STYLES GÉNÉRAUX -----------------------//
-
+/*
 .foot {
     background-color: variables.$secondary;
 
@@ -104,7 +104,7 @@
 
     @media screen and (min-width: 1000px) {
         &__grid {
-            grid-template-columns: repeat(auto, 1fr);
+            grid-template-columns: repeat(3, 1fr);
         }
         &__block {
             //Bannière
@@ -126,9 +126,8 @@
         }
         &__banner {
             border-radius: 0;
-            width: 100vw;
         }
-    }
+    
 
     @media screen and (min-width: 1360px) {
         &__grid {
@@ -161,3 +160,4 @@
     }  
 
 
+*/
