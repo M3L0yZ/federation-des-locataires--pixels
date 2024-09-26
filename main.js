@@ -1,6 +1,6 @@
 //Navbar fonctions
 
-function myFunction() {
+function boutonHamburger() {
     var list = document.getElementsByClassName("nav__list")[0];
     if (window.matchMedia("(max-width:1400px)").matches) {
         list.classList.toggle('list-active');
