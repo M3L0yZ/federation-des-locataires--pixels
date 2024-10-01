@@ -441,32 +441,44 @@ header {
   width: 100%;
   height: 100%;
   position: relative;
+}
+.accueil__actualites .titre {
+  text-transform: uppercase;
+  color: #C15A2E;
+  font-size: 30px;
+  padding-left: 5%;
+  padding-top: 5%;
+}
+.accueil__actualites .cartes {
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
 }
-.accueil__actualites .carte {
+.accueil__actualites .cartes .carte {
   background-color: #2C856D;
   border-radius: 30px;
   padding: 5%;
 }
-.accueil__actualites .carte img {
+.accueil__actualites .cartes .carte img {
   width: 100%;
   aspect-ratio: 16/9;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 30px;
 }
-.accueil__actualites .carte p {
+.accueil__actualites .cartes .carte p {
   color: #FFFBE2;
   font-weight: 100;
   margin-bottom: 30px;
 }
-.accueil__actualites .carte h3 {
+.accueil__actualites .cartes .carte h3 {
   color: #FFFBE2;
   margin-bottom: 30px;
 }
-.accueil__actualites .carte button {
+.accueil__actualites .cartes .carte button {
   background-color: #F1BA85;
   color: #262127;
   font-weight: 900;
@@ -474,6 +486,9 @@ header {
   border-style: none;
   padding: 12px 20px;
   float: right;
+}
+.accueil__actualites .cartes .carte button:hover {
+  background-color: #C15A2E;
 }
 
 .accueil__hero {
