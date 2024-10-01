@@ -3,6 +3,8 @@
 
 .accueil_temoignages {
     border: solid 2px blue;
+    position: relative;
+    height: 100%;
 
     &__grid {
     width: 100vw; //debug
