@@ -452,13 +452,13 @@ header {
 .accueil__actualites .cartes {
   display: grid;
   gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  background-color: #2C856D;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 5%;
 }
 .accueil__actualites .cartes .carte {
-  background-color: #2C856D;
   border-radius: 30px;
   padding: 5%;
 }
@@ -470,9 +470,7 @@ header {
   border-radius: 30px;
 }
 .accueil__actualites .cartes .carte p {
-  color: #FFFBE2;
-  font-weight: 100;
-  margin-bottom: 30px;
+  display: none;
 }
 .accueil__actualites .cartes .carte h3 {
   color: #FFFBE2;
@@ -491,6 +489,53 @@ header {
   background-color: #C15A2E;
 }
 
+@media only screen and (min-width: 375px) {
+  .accueil__actualites {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: aquamarine;
+  }
+  .accueil__actualites .cartes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: transparent;
+  }
+  .accueil__actualites .cartes .carte {
+    background-color: #2C856D;
+    border-radius: 30px;
+    padding: 5%;
+  }
+  .accueil__actualites .cartes .carte img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 30px;
+  }
+  .accueil__actualites .cartes .carte p {
+    color: #FFFBE2;
+    font-weight: 100;
+    margin-bottom: 30px;
+    display: block;
+  }
+  .accueil__actualites .cartes .carte h3 {
+    color: #FFFBE2;
+    margin-bottom: 30px;
+  }
+  .accueil__actualites .cartes .carte button {
+    background-color: #F1BA85;
+    color: #262127;
+    font-weight: 900;
+    border-radius: 15px;
+    border-style: none;
+    padding: 12px 20px;
+    float: right;
+  }
+  .accueil__actualites .cartes .carte button:hover {
+    background-color: #C15A2E;
+  }
+}
 .accueil__hero {
   background-image: url(../sources/medias/photo_hero.png);
   background-repeat: no-repeat;

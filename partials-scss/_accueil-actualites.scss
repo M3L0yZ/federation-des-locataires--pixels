@@ -17,13 +17,13 @@
     .cartes {
         display: grid;
         gap: 20px;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        background-color: variables.$secondary;
         padding-left: 5%;
         padding-right: 5%;
         padding-bottom: 5%;
 
         .carte {
-            background-color: variables.$secondary;
             border-radius: 30px;
             padding: 5%;
 
@@ -35,9 +35,7 @@
             }
 
             p {
-                color: variables.$light;
-                font-weight: 100;
-                margin-bottom: 30px;
+                display: none;
             }
 
             h3 {
@@ -62,3 +60,56 @@
     }
 }
 
+@media only screen and (min-width: 375px ) {
+    .accueil__actualites {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-color: aquamarine;
+    
+        .cartes {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            background-color: transparent;
+    
+            .carte {
+                background-color: variables.$secondary;
+                border-radius: 30px;
+                padding: 5%;
+    
+                img {
+                    width: 100%;
+                    aspect-ratio: 16/9;
+                    object-fit: cover;
+                    border-radius: 30px;
+                }
+    
+                p {
+                    color: variables.$light;
+                    font-weight: 100;
+                    margin-bottom: 30px;
+                    display: block;
+                }
+    
+                h3 {
+                    color: variables.$light;
+                    margin-bottom: 30px;
+                }
+    
+                button {
+                    background-color: variables.$primary-light;
+                    color: variables.$dark;
+                    font-weight: 900;
+                    border-radius: 15px;
+                    border-style: none;
+                    padding: 12px 20px;
+                    float: right;
+    
+                    &:hover {
+                        background-color: variables.$primary;
+                    }
+                }
+            }
+        }
+    }
+  }
