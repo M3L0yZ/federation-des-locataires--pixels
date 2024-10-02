@@ -447,7 +447,7 @@ header {
   color: #C15A2E;
   font-size: 30px;
   padding-left: 5%;
-  padding-top: 5%;
+  padding-top: 0%;
   display: flex;
   justify-content: center;
   margin-bottom: 5%;
@@ -543,6 +543,7 @@ header {
     display: flex;
     justify-content: flex-start;
     margin-bottom: 0;
+    padding-top: 5%;
   }
   .accueil__actualites .hr-titre {
     width: 45%;
@@ -771,4 +772,15 @@ header {
 html {
   font-family: "ebrima";
   background-color: #FFFBE2;
+}
+
+.division-sections {
+  width: 80%;
+  display: block;
+}
+
+@media only screen and (min-width: 375px) {
+  .division-sections {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
