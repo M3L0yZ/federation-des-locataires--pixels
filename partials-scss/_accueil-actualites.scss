@@ -14,6 +14,11 @@
         padding-top: 5%;
         display: flex;
         justify-content: center;
+        margin-bottom: 5%;
+    }
+
+    .plus-actualites {
+        display: none;
     }
 
     .cartes {
@@ -72,11 +77,38 @@
         hr {
             width: 80%;
             padding: 0;
+        }
+
+        .hr-cartes {
             display: block;
+            color: variables.$light;
         }
     }
 
+    .hr-titre {
+        display: none;
+        color: variables.$dark;
+    }
 
+    .bouton-voir-plus {
+        display: block;
+        background-color: variables.$primary;
+        color: variables.$light;
+        font-weight: 900;
+        border-radius: 15px;
+        border-style: none;
+        position: relative;
+        top: 30px;
+        text-transform: uppercase;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+
+        &:hover {
+            background-color: variables.$primary-light;
+        }
+    }
 }
 
 @media only screen and (min-width: 375px) {
@@ -84,14 +116,32 @@
         width: 100%;
         height: 100%;
         position: relative;
-        background-color: aquamarine;
 
         .titre {
             display: flex;
             justify-content: flex-start;
+            margin-bottom: 0;
         }
 
+        .hr-titre {
+            width: 45%;
+            padding: 0;
+            display: block;
+            text-align: left;
+            margin-left: 5%;
+            margin-bottom: 3%;
+        }
 
+        .plus-actualites {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 5%;
+            text-decoration: underline;
+        }
+
+        .bouton-voir-plus {
+            display: none;
+        }
 
 
         .cartes {
@@ -99,8 +149,8 @@
             grid-template-columns: 1fr 1fr 1fr;
             background-color: transparent;
 
-            hr:first-of-type {
-                display: block;
+            .hr-cartes {
+                display: none;
             }
 
             .carte {
