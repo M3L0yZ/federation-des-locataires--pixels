@@ -448,6 +448,8 @@ header {
   font-size: 30px;
   padding-left: 5%;
   padding-top: 5%;
+  display: flex;
+  justify-content: center;
 }
 .accueil__actualites .cartes {
   display: grid;
@@ -464,7 +466,7 @@ header {
 }
 .accueil__actualites .cartes .carte img {
   width: 100%;
-  aspect-ratio: 16/9;
+  aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 30px;
@@ -476,17 +478,30 @@ header {
   color: #FFFBE2;
   margin-bottom: 30px;
 }
-.accueil__actualites .cartes .carte button {
+.accueil__actualites .cartes .carte .bouton-lire {
+  display: block;
   background-color: #F1BA85;
   color: #262127;
   font-weight: 900;
-  border-radius: 15px;
+  border-radius: 30px;
   border-style: none;
   padding: 12px 20px;
   float: right;
+  display: block;
+  position: relative;
+  right: 10px;
+  top: -60px;
 }
-.accueil__actualites .cartes .carte button:hover {
+.accueil__actualites .cartes .carte .bouton-lire:hover {
   background-color: #C15A2E;
+}
+.accueil__actualites .cartes .carte .bouton-lire-article {
+  display: none;
+}
+.accueil__actualites .cartes hr {
+  width: 80%;
+  padding: 0;
+  display: block;
 }
 
 @media only screen and (min-width: 375px) {
@@ -496,10 +511,17 @@ header {
     position: relative;
     background-color: aquamarine;
   }
+  .accueil__actualites .titre {
+    display: flex;
+    justify-content: flex-start;
+  }
   .accueil__actualites .cartes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: transparent;
+  }
+  .accueil__actualites .cartes hr:first-of-type {
+    display: block;
   }
   .accueil__actualites .cartes .carte {
     background-color: #2C856D;
@@ -507,11 +529,7 @@ header {
     padding: 5%;
   }
   .accueil__actualites .cartes .carte img {
-    width: 100%;
     aspect-ratio: 16/9;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 30px;
   }
   .accueil__actualites .cartes .carte p {
     color: #FFFBE2;
@@ -519,11 +537,10 @@ header {
     margin-bottom: 30px;
     display: block;
   }
-  .accueil__actualites .cartes .carte h3 {
-    color: #FFFBE2;
-    margin-bottom: 30px;
+  .accueil__actualites .cartes .carte .bouton-lire {
+    display: none;
   }
-  .accueil__actualites .cartes .carte button {
+  .accueil__actualites .cartes .carte .bouton-lire-article {
     background-color: #F1BA85;
     color: #262127;
     font-weight: 900;
@@ -531,8 +548,9 @@ header {
     border-style: none;
     padding: 12px 20px;
     float: right;
+    display: block;
   }
-  .accueil__actualites .cartes .carte button:hover {
+  .accueil__actualites .cartes .carte .bouton-lire-article:hover {
     background-color: #C15A2E;
   }
 }

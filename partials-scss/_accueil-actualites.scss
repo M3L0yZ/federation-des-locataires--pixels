@@ -12,6 +12,8 @@
         font-size: 30px;
         padding-left: 5%;
         padding-top: 5%;
+        display: flex;
+        justify-content: center;
     }
 
     .cartes {
@@ -29,7 +31,7 @@
 
             img {
                 width: 100%;
-                aspect-ratio: 16/9;
+                aspect-ratio: 1/1;
                 object-fit: cover;
                 border-radius: 30px;
             }
@@ -43,60 +45,85 @@
                 margin-bottom: 30px;
             }
 
-            button {
+            .bouton-lire {
+                display: block;
                 background-color: variables.$primary-light;
                 color: variables.$dark;
                 font-weight: 900;
-                border-radius: 15px;
+                border-radius: 30px;
                 border-style: none;
                 padding: 12px 20px;
                 float: right;
+                display: block;
+                position: relative;
+                right: 10px;
+                top: -60px;
 
                 &:hover {
                     background-color: variables.$primary;
                 }
             }
+
+            .bouton-lire-article {
+                display: none;
+            }
+        }
+
+        hr {
+            width: 80%;
+            padding: 0;
+            display: block;
         }
     }
+
+
 }
 
-@media only screen and (min-width: 375px ) {
+@media only screen and (min-width: 375px) {
     .accueil__actualites {
         width: 100%;
         height: 100%;
         position: relative;
         background-color: aquamarine;
-    
+
+        .titre {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+
+
+
         .cartes {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             background-color: transparent;
-    
+
+            hr:first-of-type {
+                display: block;
+            }
+
             .carte {
                 background-color: variables.$secondary;
                 border-radius: 30px;
                 padding: 5%;
-    
+
                 img {
-                    width: 100%;
                     aspect-ratio: 16/9;
-                    object-fit: cover;
-                    border-radius: 30px;
                 }
-    
+
                 p {
                     color: variables.$light;
                     font-weight: 100;
                     margin-bottom: 30px;
                     display: block;
                 }
-    
-                h3 {
-                    color: variables.$light;
-                    margin-bottom: 30px;
+
+                .bouton-lire {
+                    display: none;
                 }
-    
-                button {
+
+                .bouton-lire-article {
                     background-color: variables.$primary-light;
                     color: variables.$dark;
                     font-weight: 900;
@@ -104,12 +131,15 @@
                     border-style: none;
                     padding: 12px 20px;
                     float: right;
-    
+                    display: block;
+
+
                     &:hover {
                         background-color: variables.$primary;
                     }
                 }
+
             }
         }
     }
-  }
+}
