@@ -588,7 +588,7 @@ header {
     padding-top: 5%;
   }
   .accueil__actualites .hr-titre {
-    width: 45%;
+    width: 65%;
     padding: 0;
     display: block;
     text-align: left;
@@ -657,6 +657,9 @@ header {
   }
 }
 @media only screen and (min-width: 768px) {
+  .accueil__actualites .hr-titre {
+    width: 45%;
+  }
   .accueil__actualites .cartes-swiper {
     display: none;
   }
@@ -926,13 +929,20 @@ header {
   text-align: center;
   margin-bottom: 30px;
 }
+.accueil_services .hr-titre {
+  display: none;
+  color: #262127;
+}
 .accueil_services img {
   width: 100%;
+  aspect-ratio: 16/9;
   border-radius: 30px;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.14);
 }
 .accueil_services .bouton-voir-plus {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #C15A2E;
   color: #FFFBE2;
   font-weight: 900;
@@ -950,7 +960,54 @@ header {
 .accueil_services .bouton-voir-plus:hover {
   background: #a8522e;
 }
+.accueil_services br {
+  display: block;
+}
+.accueil_services .savoir-plus {
+  display: none;
+}
 
+@media only screen and (min-width: 365px) {
+  .accueil_services__titre {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    padding-top: 5%;
+  }
+  .accueil_services__texte {
+    margin: 5%;
+  }
+  .accueil_services .hr-titre {
+    width: 65%;
+    padding: 0;
+    display: block;
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: 3%;
+  }
+  .accueil_services img {
+    margin: 5%;
+    width: 90%;
+  }
+  .accueil_services br {
+    display: none;
+  }
+  .accueil_services .bouton-voir-plus {
+    margin-top: 10%;
+    margin-bottom: 0%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .accueil_services .hr-titre {
+    width: 45%;
+  }
+  .accueil_services .savoir-plus {
+    display: block;
+  }
+  .accueil_services .bouton-voir-plus {
+    display: none;
+  }
+}
 .accueil_temoignages {
   border: solid 2px blue;
   position: relative;

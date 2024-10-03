@@ -135,7 +135,7 @@
         }
 
         .hr-titre {
-            width: 45%;
+            width: 65%;
             padding: 0;
             display: block;
             text-align: left;
@@ -223,6 +223,11 @@
 
 @media only screen and (min-width: 768px) {
     .accueil__actualites {
+
+        .hr-titre {
+            width: 45%;
+        }
+
         .cartes-swiper {
             display: none;
         }
