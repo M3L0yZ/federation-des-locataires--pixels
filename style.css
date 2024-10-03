@@ -17,6 +17,7 @@
   right: 0;
   background: #c15a2e;
   border-radius: 0 0 15px 15px;
+  z-index: 1000;
 }
 .nav__list.list-active {
   display: flex;
@@ -939,6 +940,9 @@ header {
   border-radius: 30px;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.14);
 }
+.accueil_services .container-informations {
+  display: block;
+}
 .accueil_services .bouton-voir-plus {
   display: flex;
   justify-content: center;
@@ -1002,10 +1006,17 @@ header {
     width: 45%;
   }
   .accueil_services .savoir-plus {
-    display: block;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5%;
+    text-decoration: underline;
   }
   .accueil_services .bouton-voir-plus {
     display: none;
+  }
+  .accueil_services .container-informations {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 .accueil_temoignages {

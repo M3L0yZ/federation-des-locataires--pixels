@@ -33,6 +33,10 @@
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.14);
   }
 
+  .container-informations {
+    display: block;
+  }
+
   .bouton-voir-plus {
     display: flex;
     justify-content: center;
@@ -114,11 +118,19 @@
     }
 
     .savoir-plus {
-      display: block;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 5%;
+        text-decoration: underline;
     }
 
     .bouton-voir-plus {
       display: none;
     }
+
+    .container-informations {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
   }
 }

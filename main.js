@@ -24,7 +24,7 @@ var swiper2 = new Swiper(".swiper-container2", {
       },
 });
 //Navbar fonctions
-
+console.log("test");
 function boutonHamburger() {
     var list = document.getElementsByClassName("nav__list")[0];
     if (window.matchMedia("(max-width:1400px)").matches) {
