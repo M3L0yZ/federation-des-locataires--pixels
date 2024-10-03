@@ -689,26 +689,6 @@ header {
   color: #262127;
 }
 
-.swiper-pagination-bullet {
-  background-color: #ccc; /* Couleur des bullets inactifs */
-  width: 140px; /* Taille de la bullet */
-  height: 12px;
-  opacity: 1; /* Pour un point plus visible */
-}
-
-/* Style du bullet actif */
-.swiper-pagination-bullet-active {
-  background: #ff5733; /* Couleur du bullet actif */
-  width: 16px; /* Vous pouvez aussi agrandir le point actif */
-  height: 16px;
-}
-
-@media only screen and (min-width: 375px) {
-  .swiper-button-next,
-  .swiper-button-prev {
-    z-index: 0;
-  }
-}
 .accueil__nous-soutenir {
   display: flex;
   flex-direction: row;
