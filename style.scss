@@ -16,6 +16,7 @@
 html {
     font-family: "ebrima";
     background-color: variables.$light;
+    overflow-x: hidden;
 }
 
 .division-sections {
@@ -27,4 +28,10 @@ html {
   .division-sections {
     display: none;
   }
+}
+
+:root {
+  --swiper-pagination-bullet-width: 16px;
+  --swiper-pagination-bullet-height: 16px;
+  --swiper-pagination-bullet-inactive-color: #ffff;
 }

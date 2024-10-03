@@ -17,6 +17,7 @@
   right: 0;
   background: #c15a2e;
   border-radius: 0 0 15px 15px;
+  z-index: 1000;
 }
 .nav__list.list-active {
   display: flex;
@@ -588,7 +589,7 @@ header {
     padding-top: 5%;
   }
   .accueil__actualites .hr-titre {
-    width: 45%;
+    width: 65%;
     padding: 0;
     display: block;
     text-align: left;
@@ -610,7 +611,7 @@ header {
   .accueil__actualites .cartes-swiper {
     display: block;
   }
-  .accueil__actualites .cartes-swiper .swiper-container {
+  .accueil__actualites .cartes-swiper .swiper-container2 {
     width: 100%;
     height: 100%;
   }
@@ -619,6 +620,7 @@ header {
     border-radius: 30px;
     padding: 5%;
     margin: 5%;
+    height: 40vh;
   }
   .accueil__actualites .cartes-swiper .carte img {
     width: 100%;
@@ -646,7 +648,8 @@ header {
     border-radius: 15px;
     border-style: none;
     padding: 12px 20px;
-    position: relative;
+    position: absolute;
+    bottom: 7%;
     display: block;
     cursor: pointer;
   }
@@ -655,6 +658,9 @@ header {
   }
 }
 @media only screen and (min-width: 768px) {
+  .accueil__actualites .hr-titre {
+    width: 45%;
+  }
   .accueil__actualites .cartes-swiper {
     display: none;
   }
@@ -677,7 +683,7 @@ header {
   .accueil__actualites .cartes .carte p {
     color: #FFFBE2;
     font-weight: 100;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
     display: block;
   }
   .accueil__actualites .cartes .carte .bouton-lire {
@@ -690,7 +696,8 @@ header {
     border-radius: 15px;
     border-style: none;
     padding: 12px 20px;
-    float: right;
+    position: absolute;
+    bottom: 18%;
     display: block;
     cursor: pointer;
   }
@@ -773,6 +780,13 @@ header {
 }
 .accueil__hero button:hover {
   background: #2c6c5a;
+}
+.accueil__hero .swiper-pagination-bullet-active {
+  background-color: #F1BA85 !important;
+}
+.accueil__hero .swiper-pagination {
+  position: relative !important;
+  top: -10% !important;
 }
 
 .swiper-button-next,
@@ -900,17 +914,109 @@ header {
   display: flex;
   height: 100%;
 }
-.accueil_services__photo1 {
+.accueil_services__titre {
+  text-transform: uppercase;
+  color: #C15A2E;
+  font-size: 30px;
+  padding-left: 5%;
+  padding-top: 0%;
   display: flex;
-  overflow: hidden;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+.accueil_services__texte {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.accueil_services .hr-titre {
+  display: none;
+  color: #262127;
+}
+.accueil_services img {
   width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  background-image: url("../sources/medias/service_photo.png");
-  background-size: cover;
-  margin: 0 auto;
+  aspect-ratio: 16/9;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.14);
+}
+.accueil_services .container-informations {
+  display: block;
+}
+.accueil_services .bouton-voir-plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #C15A2E;
+  color: #FFFBE2;
+  font-weight: 900;
+  border-radius: 15px;
+  border-style: none;
+  position: relative;
+  top: 30px;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  cursor: pointer;
+}
+.accueil_services .bouton-voir-plus:hover {
+  background: #a8522e;
+}
+.accueil_services br {
+  display: block;
+}
+.accueil_services .savoir-plus {
+  display: none;
 }
 
+@media only screen and (min-width: 365px) {
+  .accueil_services__titre {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    padding-top: 5%;
+  }
+  .accueil_services__texte {
+    margin: 5%;
+  }
+  .accueil_services .hr-titre {
+    width: 65%;
+    padding: 0;
+    display: block;
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: 3%;
+  }
+  .accueil_services img {
+    margin: 5%;
+    width: 90%;
+  }
+  .accueil_services br {
+    display: none;
+  }
+  .accueil_services .bouton-voir-plus {
+    margin-top: 10%;
+    margin-bottom: 0%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .accueil_services .hr-titre {
+    width: 45%;
+  }
+  .accueil_services .savoir-plus {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5%;
+    text-decoration: underline;
+  }
+  .accueil_services .bouton-voir-plus {
+    display: none;
+  }
+  .accueil_services .container-informations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .accueil_temoignages {
   border: solid 2px blue;
   position: relative;
@@ -963,6 +1069,7 @@ header {
 html {
   font-family: "ebrima";
   background-color: #FFFBE2;
+  overflow-x: hidden;
 }
 
 .division-sections {
@@ -974,4 +1081,9 @@ html {
   .division-sections {
     display: none;
   }
+}
+:root {
+  --swiper-pagination-bullet-width: 16px;
+  --swiper-pagination-bullet-height: 16px;
+  --swiper-pagination-bullet-inactive-color: #ffff;
 }/*# sourceMappingURL=style.css.map */
