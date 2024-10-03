@@ -812,10 +812,8 @@ header {
     height: 700px;
     width: 1000px;
   }
-  .accueil__nous-soutenir.bouton-dollar {
-    display: flex;
-    flex-direction: row;
-    transform: translate(20%, 0%);
+  .accueil__nous-soutenir .bouton-dollar .cinquente {
+    transform: translate(80px, 50px);
   }
 }
 

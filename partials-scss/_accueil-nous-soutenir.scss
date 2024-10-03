@@ -26,10 +26,11 @@
       height: 700px;
       width: 1000px;
 
-      &.bouton-dollar{
-         display: flex;
-         flex-direction: row;
-         transform: translate(20%, 0%);
+      .bouton-dollar .cinquente{
+         transform: translate(80px, 50px);
+         
+         
+
       }
       
     }
