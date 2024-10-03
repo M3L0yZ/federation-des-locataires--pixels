@@ -975,6 +975,7 @@ header {
 html {
   font-family: "ebrima";
   background-color: #FFFBE2;
+  overflow-x: hidden;
 }
 
 .division-sections {
