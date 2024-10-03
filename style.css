@@ -931,6 +931,7 @@ header {
   color: #262127;
 }
 .accueil_services img {
+  justify-content: center;
   width: 100%;
   aspect-ratio: 16/9;
   border-radius: 30px;
@@ -1015,12 +1016,33 @@ header {
     grid-template-columns: 1fr 1fr;
   }
   .accueil_services img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
     order: 2;
-    max-width: 500px;
+    max-width: 400px;
     aspect-ratio: 1/1;
     border-radius: 50%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .accueil_services__texte {
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
+  .accueil_services .container-informations {
+    display: grid;
+    grid-template-columns: 1fr 35%;
+  }
+  .accueil_services img {
+    max-width: 300px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 .accueil_temoignages {
