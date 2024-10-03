@@ -248,7 +248,7 @@
                 p {
                     color: variables.$light;
                     font-weight: 100;
-                    margin-bottom: 30px;
+                    margin-bottom: 80px;
                     display: block;
                 }
 
@@ -263,7 +263,8 @@
                     border-radius: 15px;
                     border-style: none;
                     padding: 12px 20px;
-                    float: right;
+                    position: absolute;
+                    bottom: 18%;
                     display: block;
                     cursor: pointer;
 
