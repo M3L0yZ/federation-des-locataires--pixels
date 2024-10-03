@@ -110,7 +110,7 @@
         cursor: pointer;
 
         &:hover {
-            background-color: variables.$primary-light;
+            background: color.adjust(variables.$primary, $blackness: 10%); 
         }
     }
 

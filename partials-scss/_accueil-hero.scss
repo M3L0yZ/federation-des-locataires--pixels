@@ -87,6 +87,11 @@
         top: 0%;
         left: 50%;
         transform: translate(-50%, 0%);
+        cursor: pointer;
+
+        &:hover {
+            background: color.adjust(variables.$secondary, $blackness: 10%); 
+        }
     }
 
 }
