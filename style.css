@@ -356,9 +356,6 @@ header {
   margin-right: 15%;
   cursor: pointer;
 }
-.bouton-x-header:hover {
-  background: #a8522e;
-}
 
 .header__don {
   display: flex;
