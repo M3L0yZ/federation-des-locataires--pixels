@@ -1028,13 +1028,6 @@ header {
   height: 1500px;
   margin-bottom: 600px;
   overflow: hidden;
-  /*
-      &__grid {
-          //width: 100vw; //debug
-          //height: 500px; //debug
-          //border: solid 1px red; //debug
-          //background-color: yellow; //debug   
-      }*/
 }
 .accueil_temoignages__titre {
   text-transform: uppercase;
@@ -1211,6 +1204,15 @@ header {
     color: #FFFBE2;
     font-weight: bold;
     font-size: 14px;
+  }
+  .accueil_temoignages__bouton {
+    display: none;
+  }
+  .accueil_temoignages__altbouton {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+    text-decoration: underline;
   }
 }
 @media screen and (min-width: 1240px) {

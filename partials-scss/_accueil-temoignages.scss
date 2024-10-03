@@ -2,19 +2,11 @@
 @use "sass:color";
 
 .accueil_temoignages {
-    //border: solid 2px blue;
     width: 100%;
     height: 1500px;
-    //position: relative;
     margin-bottom: 600px;
     overflow: hidden;
-/*
-    &__grid {
-        //width: 100vw; //debug
-        //height: 500px; //debug
-        //border: solid 1px red; //debug
-        //background-color: yellow; //debug   
-    }*/
+
     &__titre {
         text-transform: uppercase;
         color: variables.$primary;
@@ -24,12 +16,10 @@
         margin-bottom: 5%;
     }
     &__block {
-        width: 100%; //debug
-        height: auto; //debug
+        width: 100%;
+        height: auto; 
         position: relative;
-        margin-top: -6px;
-        //border: solid 1px rgb(255, 151, 137); //debug
-        //background-color: rgb(212, 0, 255); //debug   
+        margin-top: -6px; 
     }  
     &__photo1 {
         width: 250px;
@@ -201,19 +191,24 @@
             color: variables.$light;
             font-weight: bold;
             font-size: 16px;
-            //padding: 60px 40px 0 80px;
-            //width: 450px;
             text-align: center;
-            //margin-left: 140px;
-            //margin: 0 60px 0 80px;
         }
         
         &__nom {
             color: variables.$light;
             font-weight: bold;
             font-size: 14px;
-            //text-align: center;
-           // width: 450px;
+        }
+
+        &__bouton {
+            display: none;
+        }
+
+        &__altbouton {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 5%;
+            text-decoration: underline;
         }
     }
 
