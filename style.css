@@ -523,6 +523,7 @@ header {
   position: relative;
   right: 10px;
   top: -60px;
+  cursor: pointer;
 }
 .accueil__actualites .cartes .carte .bouton-lire:hover {
   background-color: #C15A2E;
@@ -556,6 +557,7 @@ header {
   margin-right: auto;
   margin-top: 5%;
   margin-bottom: 5%;
+  cursor: pointer;
 }
 .accueil__actualites .bouton-voir-plus:hover {
   background-color: #F1BA85;
@@ -637,6 +639,7 @@ header {
     padding: 12px 20px;
     position: relative;
     display: block;
+    cursor: pointer;
   }
   .accueil__actualites .cartes-swiper .carte .bouton-lire-article:hover {
     background-color: #C15A2E;
@@ -680,6 +683,7 @@ header {
     padding: 12px 20px;
     float: right;
     display: block;
+    cursor: pointer;
   }
   .accueil__actualites .cartes .carte .bouton-lire-article:hover {
     background-color: #C15A2E;
