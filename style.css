@@ -619,6 +619,7 @@ header {
     border-radius: 30px;
     padding: 5%;
     margin: 5%;
+    height: 40vh;
   }
   .accueil__actualites .cartes-swiper .carte img {
     width: 100%;
@@ -646,7 +647,8 @@ header {
     border-radius: 15px;
     border-style: none;
     padding: 12px 20px;
-    position: relative;
+    position: absolute;
+    bottom: 7%;
     display: block;
     cursor: pointer;
   }

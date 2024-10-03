@@ -171,6 +171,7 @@
                 border-radius: 30px;
                 padding: 5%;
                 margin: 5%;
+                height: 40vh;
 
                 img {
                     width: 100%;
@@ -201,7 +202,8 @@
                     border-radius: 15px;
                     border-style: none;
                     padding: 12px 20px;
-                    position: relative;
+                    position: absolute;
+                    bottom: 7%;
                     display: block;
                     cursor: pointer;
 
