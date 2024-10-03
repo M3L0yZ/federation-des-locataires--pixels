@@ -4,15 +4,5 @@
 .accueil_services { 
     display: flex;
     height: 100%;
-    
-    &__photo1{ 
-        display: flex;
-        overflow: hidden;
-        width: 100%;
-        height: 100%;
-        border-radius: 100%;
-        background-image: url("../sources/medias/service_photo.png");
-        background-size: cover;
-        margin: 0 auto;
-    }
+
 }
