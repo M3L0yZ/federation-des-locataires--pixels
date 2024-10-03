@@ -1,4 +1,4 @@
-@use 'variables';
+@use "variables";
 @use "sass:color";
 
 .accueil__hero {
@@ -59,11 +59,6 @@
         }
     }
 
-    /*img {
-        width: 100%;
-        position: relative;
-    }*/
-
     h1 {
         color: variables.$light;
         font-size: 24px;
@@ -87,8 +82,21 @@
         top: 0%;
         left: 50%;
         transform: translate(-50%, 0%);
+        cursor: pointer;
+
+        &:hover {
+            background: color.adjust(variables.$secondary, $blackness: 10%);
+        }
     }
 
+    .swiper-pagination-bullet-active {
+        background-color: variables.$primary-light !important;
+    }
+
+    .swiper-pagination {
+        position: relative !important;
+        top: -10% !important;
+    }
 }
 
 .swiper-button-next,

@@ -63,7 +63,11 @@
     </nav>
 
     <!---------------------------------- MAIN ---------------------------------->
+
     <main class="accueil">
+        
+        <!-------------- HERO -------------------->
+
         <section class="accueil__hero">
             <!--- <div class="accueil__hero__container">
                 <h1>Accessibilité et équité</h1>
@@ -98,33 +102,66 @@
                 <div class="swiper-button-next"></div>
             </div>
         </section>
+
+        <!-------------- SERVICES -------------------->
+
         <section class="accueil_services">
             <div class="accueil_services__grid">
                 <div class="accueil_services__block">
-                    <div class="accueil_services__titre"> 
-                        <h1>NOS SERVICES</h1>
-                    </div>
-                    <div class="accueil_services__photo1"></div>
-                    <div class="accueil_services__texte">
-                        <h3>    
+                    <h1  class="accueil_services__titre" >NOS SERVICES</h1>
+                    <hr class="hr-titre">
+                    <div class="container-informations">
+                        <img class="accueil_services__photo1" src="./sources/medias/hannah-busing-Zyx1bK9mqmA-unsplash 2.png">
+                        <h3 class="accueil_services__texte">    
                             Vous êtes près de 300 associations de locataires et de comités consultatifs de résidant-e-s (CCR) à renouveler votre adhésion à la 
                             FLHLMQ chaque année. C’est grâce à vous, que la fédération peut parler d’une voix forte aux gouvernements du Québec et d’Ottawa afin qu’ils 
-                            prennent soin de nos logements.
+                            prennent soin de nos logements. </br></br> En versant votre cotisation pour être membre de la FLHLMQ, vous nous permettez d’être représentatif des locataires de partout au Québec 
+                            et de rester en contact avec vous pour vous aider en tout temps. Dans le cas des CCR, vous pouvez demander à l’office de payer votre cotisation à la FLHLMQ.
                         </h3>
                     </div>
-                    <div class="accueil_services__texte2">
-                        <h3>
-                            En versant votre cotisation pour être membre de la FLHLMQ, vous nous permettez d’être représentatif des locataires de partout au Québec 
-                         et de rester en contact avec vous pour vous aider en tout temps. Dans le cas des CCR, vous pouvez demander à l’office de payer votre cotisation à la FLHLMQ.
-                        </h3>
-                    </div>
+                    <button class="bouton-voir-plus">Voir plus</button>
+                    <h3 class="savoir-plus">En savoir plus ></h3>
                 </div>
             </div>
         </section>
+
         <hr class="division-sections">
+
+        <!-------------- ACTUALITÉS -------------------->
+
         <section class="accueil__actualites">
             <h1 class="titre">Actualités</h1>
             <hr class="hr-titre">
+            <div class="cartes-swiper">
+                <div class="swiper-container2 mySwiper ">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide-1">
+                            <div class="carte--01 carte">
+                                <img src="/sources/medias/actualite_30_aout_voie.png">
+                                <h3>Une nouvelle voie rapide pour les développeurs</h3>
+                                <p>Les offices d'habitation doivent être du nombre.</p>
+                                <button class="bouton-carte-01 bouton-lire-article">Lire l'article</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-2">
+                            <div class="carte--02 carte">
+                                <img src="/sources/medias/actualite_3_sept_demande.png">
+                                <h3>Demande record de HLM à Saguenay</h3>
+                                <p>La liste explose de 200-300 à 454 personnes en attente.</p>
+                                <button class="bouton-carte-02  bouton-lire-article">Lire l'article</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-3">
+                            <div class="carte--03 carte">
+                                <img src="/sources/medias/actualite_27_aout_innondations.jpg">
+                                <h3>Inondations dans Lanaudière</h3>
+                                <p>La SHQ s’occupe de ses locataires.</p>
+                                <button class="bouton-carte-03  bouton-lire-article">Lire l'article</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="cartes">
                 <div class="carte--01 carte">
                     <img src="/sources/medias/actualite_30_aout_voie.png">
@@ -150,13 +187,18 @@
                     <button class="bouton-carte-03  bouton-lire-article">Lire l'article</button>
                 </div>
             </div>
-            <h3 class="plus-actualites">Voir plus d'actualités -></h3>
+            <h3 class="plus-actualites">Voir plus d'actualités ></h3>
             <button class="bouton-voir-plus">Voir plus</button>
         </section>
 
 
         <!------------- TÉMOIGNAGES ------------->
 
+
+
+        <hr class="division-sections">
+
+        <!-------------- TÉMOIGNAGES -------------------->
 
         <section class="accueil_temoignages">
             <h1 class="accueil_temoignages__titre">Témoignage</h1>
@@ -190,8 +232,6 @@
             <h3 class="accueil_temoignages__altbouton">Voir plus de témoignages -></h3>
         </section>
 
-
-
         <!------------- NOUS SOUTENIR------------->
 
         <section class="accueil__nous-soutenir">
@@ -219,7 +259,7 @@
                     </div>
 
                     <div class="wrap-50-dollar">
-                        <button class="bouton-dollar 50" onclick="myFunction()"> 50$ </button>
+                        <button class="bouton-dollar cinquente" onclick="myFunction()"> 50$ </button>
                     </div>
 
                     <div class="wrap-faire-don">

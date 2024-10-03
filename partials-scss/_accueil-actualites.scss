@@ -1,6 +1,8 @@
 @use 'variables';
 @use "sass:color";
 
+// MOBILE
+
 .accueil__actualites {
     width: 100%;
     height: 100%;
@@ -63,6 +65,7 @@
                 position: relative;
                 right: 10px;
                 top: -60px;
+                cursor: pointer;
 
                 &:hover {
                     background-color: variables.$primary;
@@ -104,14 +107,21 @@
         margin-right: auto;
         margin-top: 5%;
         margin-bottom: 5%;
+        cursor: pointer;
 
         &:hover {
-            background-color: variables.$primary-light;
+            background: color.adjust(variables.$primary, $blackness: 10%); 
         }
+    }
+
+    .cartes-swiper {
+        display: none;
     }
 }
 
-@media only screen and (min-width: 768px) {
+// TABLETTE ET DESKTOP
+
+@media only screen and (min-width: 365px) { //768px tablette / 365px mobile
     .accueil__actualites {
         width: 100%;
         height: 100%;
@@ -125,7 +135,7 @@
         }
 
         .hr-titre {
-            width: 45%;
+            width: 65%;
             padding: 0;
             display: block;
             text-align: left;
@@ -144,6 +154,83 @@
             display: none;
         }
 
+        .cartes {
+            display: none;
+        }
+
+        .cartes-swiper {
+            display: block;
+
+            .swiper-container2 {
+                width: 100%;
+                height: 100%;
+            }
+        
+            .carte {
+                background-color: variables.$secondary;
+                border-radius: 30px;
+                padding: 5%;
+                margin: 5%;
+                height: 40vh;
+
+                img {
+                    width: 100%;
+                    aspect-ratio: 16/9;
+                    object-fit: cover;
+                }
+
+                h3 {
+                    color: variables.$light;
+                    margin-bottom: 30px;
+                }
+
+                p {
+                    color: variables.$light;
+                    font-weight: 100;
+                    margin-bottom: 30px;
+                    display: block;
+                }
+
+                .bouton-lire {
+                    display: none;
+                }
+
+                .bouton-lire-article {
+                    background-color: variables.$primary-light;
+                    color: variables.$dark;
+                    font-weight: 900;
+                    border-radius: 15px;
+                    border-style: none;
+                    padding: 12px 20px;
+                    position: absolute;
+                    bottom: 7%;
+                    display: block;
+                    cursor: pointer;
+
+
+                    &:hover {
+                        background-color: variables.$primary;
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+// DESKTOP SEULEMENT    
+
+@media only screen and (min-width: 768px) {
+    .accueil__actualites {
+
+        .hr-titre {
+            width: 45%;
+        }
+
+        .cartes-swiper {
+            display: none;
+        }
 
         .cartes {
             display: grid;
@@ -166,7 +253,7 @@
                 p {
                     color: variables.$light;
                     font-weight: 100;
-                    margin-bottom: 30px;
+                    margin-bottom: 80px;
                     display: block;
                 }
 
@@ -181,8 +268,10 @@
                     border-radius: 15px;
                     border-style: none;
                     padding: 12px 20px;
-                    float: right;
+                    position: absolute;
+                    bottom: 18%;
                     display: block;
+                    cursor: pointer;
 
 
                     &:hover {
@@ -191,6 +280,6 @@
                 }
 
             }
-        }
+            }
     }
 }

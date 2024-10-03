@@ -17,6 +17,24 @@
     margin-bottom: 60px;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.281), 0 2px 10px 0 rgba(0, 0, 0, 0.253);
 
+    @media screen and (min-width: 800px) {
+      width: 680px;
+      
+    }
+
+    @media screen and (min-width: 1000px) {
+      height: 700px;
+      width: 1000px;
+
+      .bouton-dollar .cinquente{
+         transform: translate(80px, 50px);
+         
+         
+
+      }
+      
+    }
+
     
  }
 
@@ -59,6 +77,11 @@
     border-color: none;
     border: #00000000;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.281), 0 2px 10px 0 rgba(0, 0, 0, 0.253);
+    cursor: pointer;
+    &:hover{
+      background: color.adjust(variables.$light, $blackness: 10%);
+  
+    }
  }
 
 
@@ -75,6 +98,12 @@
     border-color: none;
     border: #00000000;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.281), 0 2px 10px 0 rgba(0, 0, 0, 0.253);
+    cursor: pointer;
+
+    &:hover{
+      background: color.adjust(variables.$primary, $blackness: 10%);
+  
+    }
 
   }
 
@@ -91,15 +120,10 @@
     border-color: none;
     border: #00000000;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.281), 0 2px 10px 0 rgba(0, 0, 0, 0.253);
+    cursor: pointer;
+    &:hover{
+      background: color.adjust(variables.$secondary, $blackness: 10%);
+  
+    }
 
   }
-
-
-@media screen and (min-width: 1000px){
-   
-   .soutenir__block{
-      width: 800px;
-
-   }
-   
-}
