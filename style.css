@@ -1015,6 +1015,7 @@ header {
   }
   .accueil_services img {
     order: 2;
+    max-width: 500px;
     aspect-ratio: 1/1;
     border-radius: 50%;
     -o-object-fit: cover;
