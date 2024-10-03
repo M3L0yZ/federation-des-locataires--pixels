@@ -65,6 +65,7 @@
                 position: relative;
                 right: 10px;
                 top: -60px;
+                cursor: pointer;
 
                 &:hover {
                     background-color: variables.$primary;
@@ -106,9 +107,10 @@
         margin-right: auto;
         margin-top: 5%;
         margin-bottom: 5%;
+        cursor: pointer;
 
         &:hover {
-            background-color: variables.$primary-light;
+            background: color.adjust(variables.$primary, $blackness: 10%); 
         }
     }
 
@@ -201,6 +203,7 @@
                     padding: 12px 20px;
                     position: relative;
                     display: block;
+                    cursor: pointer;
 
 
                     &:hover {
@@ -260,6 +263,7 @@
                     padding: 12px 20px;
                     float: right;
                     display: block;
+                    cursor: pointer;
 
 
                     &:hover {
