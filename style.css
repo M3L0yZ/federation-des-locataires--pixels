@@ -594,6 +594,59 @@ header {
     display: none;
   }
   .accueil__actualites .cartes {
+    display: none;
+  }
+  .accueil__actualites .cartes-swiper {
+    display: block;
+  }
+  .accueil__actualites .cartes-swiper .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .accueil__actualites .cartes-swiper .carte {
+    background-color: #2C856D;
+    border-radius: 30px;
+    padding: 5%;
+    margin: 5%;
+  }
+  .accueil__actualites .cartes-swiper .carte img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .accueil__actualites .cartes-swiper .carte h3 {
+    color: #FFFBE2;
+    margin-bottom: 30px;
+  }
+  .accueil__actualites .cartes-swiper .carte p {
+    color: #FFFBE2;
+    font-weight: 100;
+    margin-bottom: 30px;
+    display: block;
+  }
+  .accueil__actualites .cartes-swiper .carte .bouton-lire {
+    display: none;
+  }
+  .accueil__actualites .cartes-swiper .carte .bouton-lire-article {
+    background-color: #F1BA85;
+    color: #262127;
+    font-weight: 900;
+    border-radius: 15px;
+    border-style: none;
+    padding: 12px 20px;
+    position: relative;
+    display: block;
+  }
+  .accueil__actualites .cartes-swiper .carte .bouton-lire-article:hover {
+    background-color: #C15A2E;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .accueil__actualites .cartes-swiper {
+    display: none;
+  }
+  .accueil__actualites .cartes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: transparent;
@@ -630,14 +683,6 @@ header {
   }
   .accueil__actualites .cartes .carte .bouton-lire-article:hover {
     background-color: #C15A2E;
-  }
-  .accueil__actualites .cartes-swiper {
-    display: block;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .accueil__actualites .cartes-swiper {
-    display: none;
   }
 }
 .accueil__hero {
