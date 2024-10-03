@@ -703,10 +703,6 @@ header {
   height: 400px;
   margin: auto;
   overflow: hidden;
-  /*img {
-      width: 100%;
-      position: relative;
-  }*/
 }
 .accueil__hero .swiper-container {
   width: 100%;
@@ -777,6 +773,13 @@ header {
 }
 .accueil__hero button:hover {
   background: #2c6c5a;
+}
+.accueil__hero .swiper-pagination-bullet-active {
+  background-color: #F1BA85 !important;
+}
+.accueil__hero .swiper-pagination {
+  position: relative !important;
+  top: -10% !important;
 }
 
 .swiper-button-next,
@@ -964,4 +967,9 @@ html {
   .division-sections {
     display: none;
   }
+}
+:root {
+  --swiper-pagination-bullet-width: 16px;
+  --swiper-pagination-bullet-height: 16px;
+  --swiper-pagination-bullet-inactive-color: #ffff;
 }/*# sourceMappingURL=style.css.map */

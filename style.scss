@@ -28,3 +28,9 @@ html {
     display: none;
   }
 }
+
+:root {
+  --swiper-pagination-bullet-width: 16px;
+  --swiper-pagination-bullet-height: 16px;
+  --swiper-pagination-bullet-inactive-color: #ffff;
+}

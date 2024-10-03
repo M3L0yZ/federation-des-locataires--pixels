@@ -1,4 +1,4 @@
-@use 'variables';
+@use "variables";
 @use "sass:color";
 
 .accueil__hero {
@@ -85,10 +85,18 @@
         cursor: pointer;
 
         &:hover {
-            background: color.adjust(variables.$secondary, $blackness: 10%); 
+            background: color.adjust(variables.$secondary, $blackness: 10%);
         }
     }
 
+    .swiper-pagination-bullet-active {
+        background-color: variables.$primary-light !important;
+    }
+
+    .swiper-pagination {
+        position: relative !important;
+        top: -10% !important;
+    }
 }
 
 .swiper-button-next,
