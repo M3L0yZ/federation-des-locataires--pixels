@@ -560,8 +560,11 @@ header {
 .accueil__actualites .bouton-voir-plus:hover {
   background-color: #F1BA85;
 }
+.accueil__actualites .cartes-swiper {
+  display: none;
+}
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 365px) {
   .accueil__actualites {
     width: 100%;
     height: 100%;
@@ -627,6 +630,14 @@ header {
   }
   .accueil__actualites .cartes .carte .bouton-lire-article:hover {
     background-color: #C15A2E;
+  }
+  .accueil__actualites .cartes-swiper {
+    display: block;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .accueil__actualites .cartes-swiper {
+    display: none;
   }
 }
 .accueil__hero {
