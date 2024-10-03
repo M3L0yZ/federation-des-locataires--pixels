@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <title>FLHLMQ</title>
 </head>
 
@@ -64,10 +65,37 @@
     <!---------------------------------- MAIN ---------------------------------->
     <main class="accueil">
         <section class="accueil__hero">
-            <div class="accueil__hero__container">
+            <!--- <div class="accueil__hero__container">
                 <h1>Accessibilité et équité</h1>
                 <h1>Se loger dans la dignité</h1>
                 <button>Devenir membre</button>
+            </div> --->
+            <div class="swiper-container mySwiper ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-1">
+                        <div class="slide-1__container">
+                        <h1>Accessibilité et équité</h1>
+                        <h1>Se loger dans la dignité</h1>
+                        <button>Devenir membre</button></div>
+                    </div>
+                    <div class="swiper-slide slide-2">
+                        <div class="slide-2__container">
+                        <h1>Accessibilité et équité</h1>
+                        <h1>Se loger dans la dignité</h1>
+                        <button>Devenir membre</button></div>
+                    </div>
+                    <div class="swiper-slide slide-3">
+                        <div class="slide-3__container">
+                        <h1>Accessibilité et équité</h1>
+                        <h1>Se loger dans la dignité</h1>
+                        <button>Devenir membre</button></div>
+                    </div>
+                </div>
+                <!-- Pagination (if needed) -->
+                <div class="swiper-pagination"></div>
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
         <section class="accueil__services"></section>
@@ -247,6 +275,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./main.js"></script>
 </body>
 

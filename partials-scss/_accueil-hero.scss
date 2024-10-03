@@ -2,17 +2,67 @@
 @use "sass:color";
 
 .accueil__hero {
-    background-image: url(../sources/medias/photo_hero.png);
-    background-repeat: no-repeat;
-    background-size: cover;     
-    width: 100%;   
+    width: 100%;
     height: 400px;
     margin: auto;
+    overflow: hidden;
 
-    &__container {
-        position: relative;
-        top: 30%;
+    .swiper-container {
+        width: 100%;
+        height: 100%;
     }
+
+    .slide-1 {
+        background-image: url(../sources/medias/photo_hero.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+
+        &__container {
+            position: relative;
+            top: 30%;
+            height: 100%;
+        }
+    }
+
+    .slide-2 {
+        background-image: url(../sources/medias/slider_hero_02.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+
+        h1 {
+            color: variables.$dark;
+        }
+
+        &__container {
+            position: relative;
+            top: 30%;
+            height: 100%;
+        }
+    }
+
+    .slide-3 {
+        background-image: url(../sources/medias/slider_hero_03.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+
+        h1 {
+            color: variables.$dark;
+        }
+
+        &__container {
+            position: relative;
+            top: 30%;
+            height: 100%;
+        }
+    }
+
+    /*img {
+        width: 100%;
+        position: relative;
+    }*/
 
     h1 {
         color: variables.$light;
@@ -20,7 +70,7 @@
         margin: 0;
         text-align: center;
         display: grid;
-        gap: 40px;    
+        gap: 40px;
     }
 
     button {
@@ -39,4 +89,36 @@
         transform: translate(-50%, 0%);
     }
 
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: variables.$light;
+    padding: 8px 16px;
+    border-radius: 100%;
+
+    &::after {
+        color: variables.$dark;
+    }
+}
+
+.swiper-pagination-bullet {
+    background-color: #ccc; /* Couleur des bullets inactifs */
+    width: 140px; /* Taille de la bullet */
+    height: 12px;
+    opacity: 1; /* Pour un point plus visible */
+}
+
+/* Style du bullet actif */
+.swiper-pagination-bullet-active {
+    background: #ff5733; /* Couleur du bullet actif */
+    width: 16px; /* Vous pouvez aussi agrandir le point actif */
+    height: 16px;
+}
+
+@media only screen and (min-width: 375px) {
+    .swiper-button-next,
+.swiper-button-prev {
+    z-index: 0;
+}
 }
