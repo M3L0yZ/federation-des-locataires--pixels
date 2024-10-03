@@ -683,6 +683,7 @@ header {
   background-color: #FFFBE2;
   padding: 8px 16px;
   border-radius: 100%;
+  margin: 5%;
 }
 .swiper-button-next::after,
 .swiper-button-prev::after {
