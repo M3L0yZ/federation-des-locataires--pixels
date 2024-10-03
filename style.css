@@ -355,6 +355,9 @@ header {
   margin-right: 15%;
   cursor: pointer;
 }
+.bouton-x-header:hover {
+  background: #a8522e;
+}
 
 .header__don {
   display: flex;
@@ -396,9 +399,8 @@ header {
   border: rgba(0, 0, 0, 0);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.281), 0 2px 10px 0 rgba(0, 0, 0, 0.253);
 }
-
 .bouton-don:hover {
-  background-color: #C15A2E;
+  background: #a8522e;
 }
 
 @media screen and (min-width: 900px) {
@@ -840,6 +842,10 @@ header {
   border-color: none;
   border: rgba(0, 0, 0, 0);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.281), 0 2px 10px 0 rgba(0, 0, 0, 0.253);
+  cursor: pointer;
+}
+.bouton-dollar:hover {
+  background: #e6e5e2;
 }
 
 .bouton-faire-don {
@@ -855,6 +861,10 @@ header {
   border-color: none;
   border: rgba(0, 0, 0, 0);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.281), 0 2px 10px 0 rgba(0, 0, 0, 0.253);
+  cursor: pointer;
+}
+.bouton-faire-don:hover {
+  background: #a8522e;
 }
 
 .bouton-voir-plus {
@@ -870,13 +880,12 @@ header {
   border-color: none;
   border: rgba(0, 0, 0, 0);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.281), 0 2px 10px 0 rgba(0, 0, 0, 0.253);
+  cursor: pointer;
+}
+.bouton-voir-plus:hover {
+  background: #2c6c5a;
 }
 
-@media screen and (min-width: 1000px) {
-  .soutenir__block {
-    width: 800px;
-  }
-}
 .accueil_services {
   display: flex;
   height: 100%;
