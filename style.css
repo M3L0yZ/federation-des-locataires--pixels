@@ -610,7 +610,7 @@ header {
   .accueil__actualites .cartes-swiper {
     display: block;
   }
-  .accueil__actualites .cartes-swiper .swiper-container {
+  .accueil__actualites .cartes-swiper .swiper-container2 {
     width: 100%;
     height: 100%;
   }
