@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <title>FLHLMQ</title>
 </head>
 
@@ -64,43 +65,45 @@
     <!---------------------------------- MAIN ---------------------------------->
     <main class="accueil">
         <section class="accueil__hero">
-            <div class="accueil__hero__container">
+            <!--- <div class="accueil__hero__container">
                 <h1>Accessibilité et équité</h1>
                 <h1>Se loger dans la dignité</h1>
                 <button>Devenir membre</button>
-            </div>
-        </section>
-
-        <!------------- SERVICE------------->
-
-        <section class="accueil_services">
-            <div class="accueil_services__grid">
-                <div class="accueil_services__block">
-                    <div class="accueil_services__titre"> 
-                        <h1>NOS SERVICES</h1>
+            </div> --->
+            <div class="swiper-container mySwiper ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-1">
+                        <div class="slide-1__container">
+                        <h1>Accessibilité et équité</h1>
+                        <h1>Se loger dans la dignité</h1>
+                        <button>Devenir membre</button></div>
                     </div>
-                    <div class="accueil_services__photo1"></div>
-                    <div class="accueil_services__texte">
-                        <h3>    
-                            Vous êtes près de 300 associations de locataires et de comités consultatifs de résidant-e-s (CCR) à renouveler votre adhésion à la 
-                            FLHLMQ chaque année. C’est grâce à vous, que la fédération peut parler d’une voix forte aux gouvernements du Québec et d’Ottawa afin qu’ils 
-                            prennent soin de nos logements.
-                        </h3>
+                    <div class="swiper-slide slide-2">
+                        <div class="slide-2__container">
+                        <h1>Accessibilité et équité</h1>
+                        <h1>Se loger dans la dignité</h1>
+                        <button>Devenir membre</button></div>
                     </div>
-                    <div class="accueil_services__texte2">
-                        <h3>
-                            En versant votre cotisation pour être membre de la FLHLMQ, vous nous permettez d’être représentatif des locataires de partout au Québec 
-                         et de rester en contact avec vous pour vous aider en tout temps. Dans le cas des CCR, vous pouvez demander à l’office de payer votre cotisation à la FLHLMQ.
-                        </h3>
+                    <div class="swiper-slide slide-3">
+                        <div class="slide-3__container">
+                        <h1>Accessibilité et équité</h1>
+                        <h1>Se loger dans la dignité</h1>
+                        <button>Devenir membre</button></div>
                     </div>
                 </div>
+                <!-- Pagination (if needed) -->
+                <div class="swiper-pagination"></div>
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
-
+        <section class="accueil__services"></section>
+        <hr class="division-sections">
         <section class="accueil__actualites">
             <h1 class="titre">Actualités</h1>
-            
-            <div class="cartes"><hr>
+            <hr class="hr-titre">
+            <div class="cartes">
                 <div class="carte--01 carte">
                     <img src="/sources/medias/actualite_30_aout_voie.png">
                     <button class="bouton-lire">Lire</button>
@@ -108,7 +111,7 @@
                     <p>Les offices d'habitation doivent être du nombre.</p>
                     <button class="bouton-carte-01 bouton-lire-article">Lire l'article</button>
                 </div>
-                <hr>
+                <hr class="hr-cartes">
                 <div class="carte--02 carte">
                     <img src="/sources/medias/actualite_3_sept_demande.png">
                     <button class="bouton-lire">Lire</button>
@@ -116,7 +119,7 @@
                     <p>La liste explose de 200-300 à 454 personnes en attente.</p>
                     <button class="bouton-carte-02  bouton-lire-article">Lire l'article</button>
                 </div>
-                <hr>
+                <hr class="hr-cartes">
                 <div class="carte--03 carte">
                     <img src="/sources/medias/actualite_27_aout_innondations.jpg">
                     <button class="bouton-lire">Lire</button>
@@ -125,8 +128,10 @@
                     <button class="bouton-carte-03  bouton-lire-article">Lire l'article</button>
                 </div>
             </div>
-            <h3>Voir plus d'actualités</h3>
+            <h3 class="plus-actualites">Voir plus d'actualités -></h3>
+            <button class="bouton-voir-plus">Voir plus</button>
         </section>
+        <hr class="division-sections">
         <section class="accueil_temoignages">
             <div class="accueil_temoignages__grid">
                 <div class="accueil_temoignages__block">
@@ -270,6 +275,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./main.js"></script>
 </body>
 
