@@ -13,8 +13,8 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
-	background-color: variables.$dark;
-	color: variables.$light;
+	  background-color: variables.$dark;
+	  color: variables.$light;
     font-size: 6px;
     height: 70px;
   }
@@ -118,7 +118,7 @@ header{
       display: flex;
       flex-direction: row;
       align-items: center;
-	  background-color: variables.$dark;
+	    background-color: variables.$dark;
       color: variables.$light;
       font-size: 9px;
       height: 70px;
