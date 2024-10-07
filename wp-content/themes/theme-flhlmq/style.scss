@@ -1,0 +1,41 @@
+@use 'partials-scss/navbar';
+@use 'partials-scss/variables';
+@use 'partials-scss/footer';
+@use 'partials-scss/header';
+@use 'partials-scss/accueil-actualites';
+@use 'partials-scss/accueil-hero';
+@use 'partials-scss/accueil-nous-soutenir';
+@use 'partials-scss/accueil-services';
+@use 'partials-scss/accueil-temoignages';
+
+@font-face {
+    src: url("./sources/font/ebrima.ttf") format("truetype");
+    font-family: "ebrima";
+  }
+
+html {
+    font-family: "ebrima";
+    background-color: variables.$light;
+    overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+.division-sections {
+  width: 80%;
+  display: block;
+}
+
+@media only screen and (min-width: 375px) {
+  .division-sections {
+    display: none;
+  }
+}
+
+:root {
+  --swiper-pagination-bullet-width: 16px;
+  --swiper-pagination-bullet-height: 16px;
+  --swiper-pagination-bullet-inactive-color: #ffff;
+}
