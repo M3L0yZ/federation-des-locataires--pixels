@@ -244,7 +244,7 @@
   .foot__banner {
     width: 100%;
     height: 100px;
-    background-image: url("./sources/logo/logo-federation-mobile.png");
+    background-image: url("../sources/logo-federation-mobile.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -260,7 +260,7 @@
   .foot__banner {
     width: 100%;
     height: 100px;
-    background-image: url("./sources/logo/logo-federation.png");
+    background-image: url("../sources/logo-federation.png");
     background-size: contain;
     background-position: left;
     background-repeat: no-repeat;
@@ -303,7 +303,7 @@
     border-radius: 20px;
     width: 275px;
     height: 150px;
-    background-image: url("./sources/logo/logo-federation-mobile.png");
+    background-image: url("../sources/logo-federation-mobile.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -714,7 +714,7 @@ header {
   height: 100%;
 }
 .accueil__hero .slide-1 {
-  background-image: url("./sources/medias/photo_hero.png");
+  background-image: url(../sources/medias/photo_hero.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -725,7 +725,7 @@ header {
   height: 100%;
 }
 .accueil__hero .slide-2 {
-  background-image: url("./sources/medias/slider_hero_02.jpg");
+  background-image: url(../sources/medias/slider_hero_02.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -739,7 +739,7 @@ header {
   height: 100%;
 }
 .accueil__hero .slide-3 {
-  background-image: url("./sources/medias/slider_hero_03.jpg");
+  background-image: url(../sources/medias/slider_hero_03.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -1092,7 +1092,7 @@ header {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background-image: url("./sources/medias/carole-simon.jpg");
+  background-image: url("../sources/carole-simon.jpg");
   background-size: cover;
   margin: 0 auto;
   position: relative;
@@ -1103,7 +1103,7 @@ header {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background-image: url("./sources/medias/fabiola.jpg");
+  background-image: url("../sources/fabiola.jpg");
   background-size: cover;
   background-position: center;
   margin: 0 auto;
@@ -1115,7 +1115,7 @@ header {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background-image: url("./sources/medias/jonathan.jpg");
+  background-image: url("../sources/jonathan.jpg");
   background-size: cover;
   margin: 0 auto;
   position: relative;
@@ -1190,7 +1190,7 @@ header {
     width: 225px;
     height: 225px;
     border-radius: 50%;
-    background-image: url("./sources/medias/carole-simon.jpg");
+    background-image: url("../sources/carole-simon.jpg");
     background-size: cover;
     margin: 0 auto;
     position: relative;
@@ -1203,7 +1203,7 @@ header {
     width: 225px;
     height: 225px;
     border-radius: 50%;
-    background-image: url("./sources/medias/fabiola.jpg");
+    background-image: url("../sources/fabiola.jpg");
     background-size: cover;
     background-position: center;
     margin: 0 auto;
@@ -1217,7 +1217,7 @@ header {
     width: 225px;
     height: 225px;
     border-radius: 50%;
-    background-image: url("./sources/medias/jonathan.jpg");
+    background-image: url("../sources/jonathan.jpg");
     background-size: cover;
     margin: 0 auto;
     position: relative;
@@ -1285,7 +1285,7 @@ header {
     width: 100%;
     height: 555px;
     background-color: #2C856D;
-    background-image: url("./sources/medias/bg_temoignages.svg");
+    background-image: url("../sources/bg_temoignages.svg");
     background-size: 125%;
     background-position: center;
     padding-left: 20px;
@@ -1312,7 +1312,7 @@ header {
     width: 275px;
     height: 275px;
     border-radius: 50%;
-    background-image: url("./sources/medias/carole-simon.jpg");
+    background-image: url("../sources/carole-simon.jpg");
     background-size: cover;
     background-position: center;
     margin-left: 50px;
@@ -1323,7 +1323,7 @@ header {
     width: 275px;
     height: 275px;
     border-radius: 50%;
-    background-image: url("./sources/medias/fabiola.jpg");
+    background-image: url("../sources/fabiola.jpg");
     background-size: cover;
     background-position: center;
     margin-left: 50px;
@@ -1334,7 +1334,7 @@ header {
     width: 275px;
     height: 275px;
     border-radius: 50%;
-    background-image: url("./sources/medias/jonathan.jpg");
+    background-image: url("../sources/jonathan.jpg");
     background-size: cover;
     margin-left: 50px;
     top: 0;

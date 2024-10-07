@@ -1,22 +1,22 @@
-flhlmq/wp-admin/
-flhlmq/wp-includes/
+wp-admin/
+wp-includes/
 
-flhlmq/index.php
-flhlmq/license.txt
-flhlmq/readme.html
+index.php
+license.txt
+readme.html
 
-flhlmq/wp-activate.php
-flhlmq/wp-blog-header.php
-flhlmq/wp-comments-post.php
-flhlmq/wp-config-sample.php
-flhlmq/wp-cron.php
-flhlmq/wp-links-opml.php
-flhlmq/wp-load.php
-flhlmq/wp-login.php
-flhlmq/wp-mail.php
-flhlmq/wp-settings.php
-flhlmq/wp-signup.php
-flhlmq/wp-trackback.php
-flhlmq/xmlrpc.php
+wp-activate.php
+wp-blog-header.php
+wp-comments-post.php
+wp-config-sample.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
 
-flhlmq/wp-config.php
+wp-config.php

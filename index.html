@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>FLHLMQ</title>
+</head>
+
+<body>
+    <!---------------------------------- HEADER ---------------------------------->
+    <header class="header">
+        <div class="header__grid">
+            <!-- projet par etudiant -->
+            <div class="header__block">
+                <div class="head__etudiant">
+                    <h1 class="projet-etudiant">Projet Étudiant réalisé dans un cadre scolaire au collège Montmorency
+                    </h1>
+                    <h1 class="voir-site-origine">Voir le site d'origine:<a
+                            href="https://flhlmq.com/fr">www.flhlmq.com/fr</a></h1>
+                    <div class="bouton-x-header-wrap">
+                        <button class="bouton-x-header" onclick="myFunction()"> <img src="./sources/boutonX.png"
+                                alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <!-- dons -->
+            <div class="header__block">
+                <div class="header__don">
+                    <div class="logo-federation-wrap">
+                        <img class="logo-federation" src="./sources/logo-federation.png">
+                    </div>
+                    <div class="bouton-don-wrap">
+                        <button class="bouton-don" onclick="myFunction()">Dons</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!---------------------------------- NAV ---------------------------------->
+    <nav class="nav">
+        <img class="logo-search" src="./sources/symbole-de-linterface-de-recherche_light.png">
+        <img class="logo-langue" src="./sources/world.png">
+        <a href="javascript:void(0);" class="menu-hamburger" onclick="boutonHamburger()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#">À propos</a></li>
+            <li class="nav__item"><a href="#">S'impliquer</a></li>
+            <li class="nav__item"><a href="#">Services</a></li>
+            <li class="nav__item"><a href="#">Nouvelles</a></li>
+            <li class="nav__item"><img class="icone-facebook" src="sources/facebook.png"></li>
+            <li class="nav__item"><img class="icone-youtube" src="./sources/youtube.png"></li>
+            <li class="nav__item">
+                <input type="search" id="search" name="search" placeholder="Rechercher">
+            </li>
+            <li class="nav__item"><a href="#">FR/EN</a></li>
+        </ul>
+    </nav>
+
+    <!---------------------------------- MAIN ---------------------------------->
+
+    <main class="accueil">
+        
+        <!-------------- HERO -------------------->
+
+        <section class="accueil__hero">
+            <!--- <div class="accueil__hero__container">
+                <h1>Accessibilité et équité</h1>
+                <h1>Se loger dans la dignité</h1>
+                <button>Devenir membre</button>
+            </div> --->
+            <div class="swiper-container mySwiper ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-1">
+                        <div class="slide-1__container">
+                        <h1>Accessibilité et équité</h1>
+                        <h1>Se loger dans la dignité</h1>
+                        <button>Devenir membre</button></div>
+                    </div>
+                    <div class="swiper-slide slide-2">
+                        <div class="slide-2__container">
+                        <h1>Accessibilité et équité</h1>
+                        <h1>Se loger dans la dignité</h1>
+                        <button>Devenir membre</button></div>
+                    </div>
+                    <div class="swiper-slide slide-3">
+                        <div class="slide-3__container">
+                        <h1>Accessibilité et équité</h1>
+                        <h1>Se loger dans la dignité</h1>
+                        <button>Devenir membre</button></div>
+                    </div>
+                </div>
+                <!-- Pagination (if needed) -->
+                <div class="swiper-pagination"></div>
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        <!-------------- SERVICES -------------------->
+
+        <section class="accueil_services">
+            <div class="accueil_services__grid">
+                <div class="accueil_services__block">
+                    <h1  class="accueil_services__titre" >NOS SERVICES</h1>
+                    <hr class="hr-titre">
+                    <div class="container-informations">
+                        <img class="accueil_services__photo1" src="./sources/medias/hannah-busing-Zyx1bK9mqmA-unsplash 2.png">
+                        <h3 class="accueil_services__texte">    
+                            Vous êtes près de 300 associations de locataires et de comités consultatifs de résidant-e-s (CCR) à renouveler votre adhésion à la 
+                            FLHLMQ chaque année. C’est grâce à vous, que la fédération peut parler d’une voix forte aux gouvernements du Québec et d’Ottawa afin qu’ils 
+                            prennent soin de nos logements. </br></br> En versant votre cotisation pour être membre de la FLHLMQ, vous nous permettez d’être représentatif des locataires de partout au Québec 
+                            et de rester en contact avec vous pour vous aider en tout temps. Dans le cas des CCR, vous pouvez demander à l’office de payer votre cotisation à la FLHLMQ.
+                        </h3>
+                    </div>
+                    <button class="bouton-voir-plus">Voir plus</button>
+                    <h3 class="savoir-plus">En savoir plus ></h3>
+                </div>
+            </div>
+        </section>
+
+        <hr class="division-sections">
+
+        <!-------------- ACTUALITÉS -------------------->
+
+        <section class="accueil__actualites">
+            <h1 class="titre">Actualités</h1>
+            <hr class="hr-titre">
+            <div class="cartes-swiper">
+                <div class="swiper-container2 mySwiper ">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide-1">
+                            <div class="carte--01 carte">
+                                <img src="/sources/medias/actualite_30_aout_voie.png">
+                                <h3>Une nouvelle voie rapide pour les développeurs</h3>
+                                <p>Les offices d'habitation doivent être du nombre.</p>
+                                <button class="bouton-carte-01 bouton-lire-article">Lire l'article</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-2">
+                            <div class="carte--02 carte">
+                                <img src="/sources/medias/actualite_3_sept_demande.png">
+                                <h3>Demande record de HLM à Saguenay</h3>
+                                <p>La liste explose de 200-300 à 454 personnes en attente.</p>
+                                <button class="bouton-carte-02  bouton-lire-article">Lire l'article</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-3">
+                            <div class="carte--03 carte">
+                                <img src="/sources/medias/actualite_27_aout_innondations.jpg">
+                                <h3>Inondations dans Lanaudière</h3>
+                                <p>La SHQ s’occupe de ses locataires.</p>
+                                <button class="bouton-carte-03  bouton-lire-article">Lire l'article</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cartes">
+                <div class="carte--01 carte">
+                    <img src="/sources/medias/actualite_30_aout_voie.png">
+                    <button class="bouton-lire">Lire</button>
+                    <h3>Une nouvelle voie rapide pour les développeurs</h3>
+                    <p>Les offices d'habitation doivent être du nombre.</p>
+                    <button class="bouton-carte-01 bouton-lire-article">Lire l'article</button>
+                </div>
+                <hr class="hr-cartes">
+                <div class="carte--02 carte">
+                    <img src="/sources/medias/actualite_3_sept_demande.png">
+                    <button class="bouton-lire">Lire</button>
+                    <h3>Demande record de HLM à Saguenay</h3>
+                    <p>La liste explose de 200-300 à 454 personnes en attente.</p>
+                    <button class="bouton-carte-02  bouton-lire-article">Lire l'article</button>
+                </div>
+                <hr class="hr-cartes">
+                <div class="carte--03 carte">
+                    <img src="/sources/medias/actualite_27_aout_innondations.jpg">
+                    <button class="bouton-lire">Lire</button>
+                    <h3>Inondations dans Lanaudière</h3>
+                    <p>La SHQ s’occupe de ses locataires.</p>
+                    <button class="bouton-carte-03  bouton-lire-article">Lire l'article</button>
+                </div>
+            </div>
+            <h3 class="plus-actualites">Voir plus d'actualités ></h3>
+            <button class="bouton-voir-plus">Voir plus</button>
+        </section>
+
+
+        <!------------- TÉMOIGNAGES ------------->
+
+
+
+        <hr class="division-sections">
+
+        <!-------------- TÉMOIGNAGES -------------------->
+
+        <section class="accueil_temoignages">
+            <h1 class="accueil_temoignages__titre">Témoignage</h1>
+            <div class="accueil_temoignages__grid">
+
+                <div class="accueil_temoignages__block">
+                    <div class="accueil_temoignages__photo1"></div>
+                    <div class="accueil_temoignages__couleur1">
+                        <p class="accueil_temoignages__texte">« J’ai réussi à trouver un logement abordable pour moi et mon fils. »</p>
+                        <p class="accueil_temoignages__nom">- Carole et Simon, Sorel</p>
+                    </div>
+                </div>
+
+                <div class="accueil_temoignages__block">
+                    <div class="accueil_temoignages__photo2"></div>
+                    <div class="accueil_temoignages__couleur2">
+                        <p class="accueil_temoignages__texte">« J’aime aider les locataires en tant que membre de la FLHLMQ! »</p>
+                        <p  class="accueil_temoignages__nom">- Fabiola, Laval</p>
+                    </div>
+                </div>
+
+                <div class="accueil_temoignages__block">
+                    <div class="accueil_temoignages__photo3"></div>
+                    <div class="accueil_temoignages__couleur3">
+                        <p class="accueil_temoignages__texte">« L’éducation aux droits des locataires m’a beaucoup aidé. »</p>
+                        <p class="accueil_temoignages__nom">- Jonathan, Shawinigan</p>
+                    </div>
+                </div>
+            </div>
+            <button class="accueil_temoignages__bouton">Voir plus</button>
+            <h3 class="accueil_temoignages__altbouton">Voir plus de témoignages -></h3>
+        </section>
+
+        <!------------- NOUS SOUTENIR------------->
+
+        <section class="accueil__nous-soutenir">
+            <div class="soutenir__grid">
+                <div class="soutenir__block">
+
+                    <div class="text-nous-soutenir">
+                        <h1>NOUS SOUTENIR </h1>
+                    </div>
+
+                    <div class="text-mots-encouragement">
+                        <h1> Chaque dons aident notre organisme à soutenir la communauté ainsi que nos membres. </h1>
+                    </div>
+
+                    <div class="text-mots-merci">
+                        <h1> MERCI</h1>
+                    </div>
+
+                    <div class="wrap-5-dollar">
+                        <button class="bouton-dollar 5" onclick="myFunction()"> 5$ </button>
+                    </div>
+
+                    <div class="wrap-20-dollar">
+                        <button class="bouton-dollar 20" onclick="myFunction()"> 20$ </button>
+                    </div>
+
+                    <div class="wrap-50-dollar">
+                        <button class="bouton-dollar cinquente" onclick="myFunction()"> 50$ </button>
+                    </div>
+
+                    <div class="wrap-faire-don">
+                        <button class="bouton-faire-don" onclick="myFunction()"> FAIRE UN DON </button>
+                    </div>
+
+                    <div class="wrap-voir-plus">
+                        <h3 class="en-savoir-plus">En savoir plus ></h3>
+                        <button class="bouton-voir-plus" onclick="myFunction()"> VOIR PLUS </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+    </main>
+
+    <!---------------------------------- FOOTER ---------------------------------->
+    <footer class="foot">
+        <div class="foot__grid">
+            <!-- Services -->
+            <div class="foot__block">
+                <ul class="foot__list">
+                    <h2>Services</h2>
+                    <li class="foot__item"><a class="foot__link" href="#">Devenir membre</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Droits des locataires</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Guides et règlements</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Témoignages</a></li>
+                </ul>
+            </div>
+            <!-- À propos -->
+            <div class="foot__block">
+                <ul class="foot__list">
+                    <h2>À propos</h2>
+                    <li class="foot__item"><a class="foot__link" href="#">La fédération</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Notre histoire</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Notre équipe</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Nous joindre</a></li>
+                </ul>
+            </div>
+            <!-- Publications -->
+            <div class="foot__block">
+                <ul class="foot__list">
+                    <h2>Publications</h2>
+                    <li class="foot__item"><a class="foot__link" href="#">Bulletins et infolettres</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Recherches et mémoires</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Communiqués</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Cahier de congrès</a></li>
+                </ul>
+            </div>
+            <!-- Nouvelles -->
+            <div class="foot__block">
+                <ul class="foot__list">
+                    <h2>Nouvelles</h2>
+                    <li class="foot__item"><a class="foot__link" href="#">Actualité</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Dossiers</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Évènements et calendrier</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Capsules vidéos</a></li>
+                </ul>
+            </div>
+            <!-- S'impliquer -->
+            <div class="foot__block">
+                <ul class="foot__list">
+                    <h2>S'impliquer</h2>
+                    <li class="foot__item"><a class="foot__link" href="#">Association de locataire</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Comité consultatif de résidents</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Conseil d'administration</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Faire un don</a></li>
+                </ul>
+            </div>
+            <br>
+            <!-- Autres -->
+            <div class="foot__block">
+                <div class="foot__social">
+                    <img class="foot__icon" src="sources/Facebook_logo_secondary.png"></li>
+                    <img class="foot__icon" src="sources/youtube.png"></li>
+                </div>
+            </div>
+            <div class="foot__block">
+                <div class="foot__contact">
+                    <a class="foot__link" target="_blank" href="https://www.google.com/maps/place/2520+Av.+Lionel-Groulx+local+202,+Montr%C3%A9al,+QC+H3J+1J8/@45.484095,-73.5796457,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc91a70a26a7eb9:0x7d25ca49693610e0!8m2!3d45.4840913!4d-73.5770708?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D">
+                    2520, av. Lionel-Groulx, local 202<br>
+                    Montréal, (Québec)<br>
+                    H3J 1J8<br></a>
+                </div>
+            </div>
+            <a class="foot__block" href="index.html">
+            <div class="foot__block">
+                <div class="foot__banner"> 
+                    <button class="foot__button" type="button">DONS</button>
+                </div>
+            </div></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
