@@ -1181,6 +1181,10 @@ header {
 .accueil_temoignages__bouton:hover {
   background-color: #F1BA85;
 }
+.accueil_temoignages hr {
+  width: 80%;
+  padding: 0;
+}
 .accueil_temoignages__altbouton {
   display: none;
 }
