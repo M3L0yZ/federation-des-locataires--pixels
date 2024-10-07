@@ -1097,7 +1097,7 @@ header {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background-image: url("../sources/carole-simon.jpg");
+  background-image: url("sources/carole-simon.jpg");
   background-size: cover;
   margin: 0 auto;
   position: relative;
@@ -1108,7 +1108,7 @@ header {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background-image: url("../sources/fabiola.jpg");
+  background-image: url("sources/fabiola.jpg");
   background-size: cover;
   background-position: center;
   margin: 0 auto;
@@ -1120,7 +1120,7 @@ header {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background-image: url("../sources/jonathan.jpg");
+  background-image: url("sources/jonathan.jpg");
   background-size: cover;
   margin: 0 auto;
   position: relative;
