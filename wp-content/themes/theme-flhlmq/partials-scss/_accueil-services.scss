@@ -115,6 +115,10 @@
 @media only screen and (min-width: 768px) {
   .accueil_services {
     
+    &__texte {
+      text-align: left;
+      margin-left: 5%;
+    }
 
     .hr-titre {
       width: 45%;

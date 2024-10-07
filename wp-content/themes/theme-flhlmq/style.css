@@ -1029,6 +1029,10 @@ header {
   }
 }
 @media only screen and (min-width: 768px) {
+  .accueil_services__texte {
+    text-align: left;
+    margin-left: 5%;
+  }
   .accueil_services .hr-titre {
     width: 45%;
   }
