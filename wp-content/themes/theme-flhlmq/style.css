@@ -244,7 +244,7 @@
   .foot__banner {
     width: 100%;
     height: 100px;
-    background-image: url("../sources/logo-federation-mobile.png");
+    background-image: url("sources/logo/logo-federation-mobile.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -260,7 +260,7 @@
   .foot__banner {
     width: 100%;
     height: 100px;
-    background-image: url("../sources/logo-federation.png");
+    background-image: url("sources/logo/logo-federation.png");
     background-size: contain;
     background-position: left;
     background-repeat: no-repeat;
@@ -303,7 +303,7 @@
     border-radius: 20px;
     width: 275px;
     height: 150px;
-    background-image: url("../sources/logo-federation-mobile.png");
+    background-image: url("sources/logo/logo-federation-mobile.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
