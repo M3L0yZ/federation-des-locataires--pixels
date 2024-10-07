@@ -714,7 +714,7 @@ header {
   height: 100%;
 }
 .accueil__hero .slide-1 {
-  background-image: url(../sources/medias/photo_hero.png);
+  background-image: url(sources/medias/photo_hero.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -725,7 +725,7 @@ header {
   height: 100%;
 }
 .accueil__hero .slide-2 {
-  background-image: url(../sources/medias/slider_hero_02.jpg);
+  background-image: url(sources/medias/slider_hero_02.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -739,7 +739,7 @@ header {
   height: 100%;
 }
 .accueil__hero .slide-3 {
-  background-image: url(../sources/medias/slider_hero_03.jpg);
+  background-image: url(sources/medias/slider_hero_03.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
