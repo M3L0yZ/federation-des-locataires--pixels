@@ -344,6 +344,7 @@ header {
 .voir-site-origine a {
   color: #FFFBE2;
   text-decoration: none;
+  margin-left: 10px;
 }
 
 .bouton-x-header-wrap {
