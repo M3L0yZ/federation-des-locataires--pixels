@@ -341,6 +341,10 @@ header {
   width: 100%;
   cursor: pointer;
 }
+.voir-site-origine a {
+  color: #FFFBE2;
+  text-decoration: none;
+}
 
 .bouton-x-header-wrap {
   display: flex;
