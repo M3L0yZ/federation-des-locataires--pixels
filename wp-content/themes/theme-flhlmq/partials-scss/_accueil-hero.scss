@@ -12,17 +12,20 @@
         height: 100%;
     }
 
+    .slides__container {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        height: 100%;
+        z-index: 100;
+    }
+
     .slide-1 {
         background-image: url(sources/medias/photo_hero.png);
         background-repeat: no-repeat;
         background-size: cover;
         height: 100%;
-
-        &__container {
-            position: relative;
-            top: 30%;
-            height: 100%;
-        }
     }
 
     .slide-2 {
@@ -31,12 +34,6 @@
         background-size: cover;
         background-position: 100% 100%;
         height: 100%;
-
-        &__container {
-            position: relative;
-            top: 30%;
-            height: 100%;
-        }
     }
 
     .slide-3 {
@@ -44,27 +41,40 @@
         background-repeat: no-repeat;
         background-size: cover;
         height: 100%;
-
-        &__container {
-            position: relative;
-            top: 30%;
-            height: 100%;
-        }
     }
 
     h1 {
         color: variables.$light;
-        font-size:25px;
+        font-size:20px;
         margin: 0;
         text-align: center;
+
     }
 
     @media only screen and (min-width: 768px) {
         h1 {
-            font-size: 50px;
+            font-size: 30px;
+        }
+
+        .slides__container {
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, 0%);
         }
     }
 
+
+    @media only screen and (min-width: 920px) {
+        h1 {
+            font-size: 40px;
+        }
+
+        .slides__container {
+            top: 42%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            }
+    }
 
     button {
         position: relative;
