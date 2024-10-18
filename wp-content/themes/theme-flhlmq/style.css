@@ -510,6 +510,7 @@ header {
 .accueil__actualites .cartes .carte {
   border-radius: 30px;
   padding: 5%;
+  position: relative;
 }
 .accueil__actualites .cartes .carte img {
   width: 100%;
@@ -626,6 +627,7 @@ header {
     padding: 5%;
     margin: 5%;
     height: 40vh;
+    position: relative;
   }
   .accueil__actualites .cartes-swiper .carte img {
     width: 100%;
@@ -654,8 +656,7 @@ header {
     border-radius: 15px;
     border-style: none;
     padding: 12px 20px;
-    position: absolute;
-    bottom: 7%;
+    bottom: 0px;
     display: block;
     cursor: pointer;
   }
