@@ -249,6 +249,7 @@
     background-position: center;
     background-repeat: no-repeat;
     box-sizing: border-box;
+    border: 50px solid #FFFBE2;
   }
 }
 @media screen and (min-width: 626px) {
@@ -265,6 +266,7 @@
     background-position: left;
     background-repeat: no-repeat;
     box-sizing: border-box;
+    border: 50px solid #FFFBE2;
   }
 }
 @media screen and (min-width: 936px) {
