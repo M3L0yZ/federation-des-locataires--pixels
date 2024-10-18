@@ -516,7 +516,7 @@ header {
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 30px;
+  border-radius: 18px;
 }
 .accueil__actualites .cartes .carte p {
   display: none;
@@ -632,6 +632,7 @@ header {
     aspect-ratio: 16/9;
     -o-object-fit: cover;
        object-fit: cover;
+    border-radius: 20px;
   }
   .accueil__actualites .cartes-swiper .carte h3 {
     color: #FFFBE2;
