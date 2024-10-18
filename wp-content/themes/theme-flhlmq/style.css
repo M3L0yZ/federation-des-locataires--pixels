@@ -850,10 +850,12 @@ header {
   height: 800px;
   margin: auto;
   margin-top: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-bottom: 60px;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.281), 0 2px 10px 0 rgba(0, 0, 0, 0.253);
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .accueil__nous-soutenir {
     width: 680px;
   }
