@@ -1122,6 +1122,8 @@ header {
   text-transform: uppercase;
   color: #C15A2E;
   font-size: 30px;
+  padding-left: 5%;
+  padding-top: 0%;
   display: flex;
   justify-content: center;
   margin-bottom: 5%;
@@ -1216,24 +1218,35 @@ header {
   background-color: #F1BA85;
 }
 .accueil_temoignages hr {
-  width: 80%;
-  padding: 0;
+  display: none;
+  color: #262127;
 }
 .accueil_temoignages__altbouton {
   display: none;
 }
 @media screen and (min-width: 375px) {
   .accueil_temoignages__titre {
-    text-transform: uppercase;
-    color: #C15A2E;
-    font-size: 30px;
     display: flex;
-    justify-content: left;
-    padding-left: 6%;
-    margin-bottom: 5%;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    padding-top: 5%;
+  }
+  .accueil_temoignages hr {
+    width: 65%;
+    padding: 0;
+    display: block;
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: 3%;
   }
 }
 @media screen and (min-width: 800px) {
+  .accueil_temoignages__block {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 65px;
+  }
   .accueil_temoignages__photo1 {
     width: 225px;
     height: 225px;
@@ -1318,15 +1331,6 @@ header {
     margin-right: 5%;
     text-decoration: underline;
   }
-  .accueil_temoignages__titre {
-    text-transform: uppercase;
-    color: #C15A2E;
-    font-size: 30px;
-    display: flex;
-    justify-content: left;
-    padding-left: 6%;
-    margin-bottom: 5%;
-  }
 }
 @media screen and (min-width: 1240px) {
   .accueil_temoignages__grid {
@@ -1355,6 +1359,7 @@ header {
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 20px;
+    margin-top: -6px;
   }
   .accueil_temoignages__photo1 {
     width: 275px;
