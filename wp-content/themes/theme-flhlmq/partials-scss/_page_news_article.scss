@@ -1,6 +1,8 @@
 @use "variables";
 @use "sass:color";
 
+// ----------------------Section héro --------------------------------
+
 .news-article__hero {
     width: 100%;
     height: 400px;
@@ -55,24 +57,6 @@
         height: 100%;
     }
 
-
-
-    @media only screen and (min-width: 768px) {
-        .slides__texte {
-            h1 {
-                font-size: 45px;
-            }
-
-            p {
-                font-size: 25px;
-            }
-        }
-
-        .swiper-container {
-            border-top: 0px solid variables.$light;
-        }
-    }
-
     .swiper-pagination-bullet-active {
         background-color: variables.$primary-light !important;
     }
@@ -90,7 +74,27 @@
         left: 0;
         right: 0;
     }
+
+    // DESKTOP
+
+    @media only screen and (min-width: 768px) {
+        .slides__texte {
+            h1 {
+                font-size: 45px;
+            }
+
+            p {
+                font-size: 25px;
+            }
+        }
+
+        .swiper-container {
+            border-top: 0px solid variables.$light;
+        }
+    }
 }
+
+// ----------------------Section nouvelle -------------------------------
 
 .news-article__nouvelle {
     &__titre {
@@ -185,4 +189,140 @@
             font-size: 20px;
         }
     }
+
+    // DESKTOP
+
+    @media only screen and (min-width: 768px) {
+        .news-article__nouvelle {
+            &__texte {
+                text-align: start;
+            }
+        }
+    }
+}
+
+.news-article__similaire {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    &__titre {
+        text-transform: uppercase;
+        color: variables.$primary;
+        font-size: 30px;
+        padding-top: 0%;
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hr-titre {
+        width: 65%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .cartes {
+        display: none;
+    }
+
+    .cartes-swiper {
+        display: block;
+        margin-top: 5%;
+
+        .swiper-container2 {
+            width: 100%;
+            height: 100%;
+        }
+
+        .carte {
+            background-color: variables.$secondary;
+            border-radius: 30px;
+            padding: 5%;
+            margin: 5%;
+            height: 40vh;
+            position: relative;
+
+            img {
+                width: 100%;
+                aspect-ratio: 16/9;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+
+            h3 {
+                color: variables.$light;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+
+            p {
+                color: variables.$light;
+                font-weight: 100;
+                margin-bottom: 80px;
+                text-align: center;
+            }
+
+        }
+
+    }
+
+    // DESKTOP SEULEMENT    
+
+    @media only screen and (min-width: 768px) {
+        .cartes-swiper {
+            display: none;
+        }
+
+        .cartes {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            background-color: transparent;
+            margin-top: 5%;
+            margin-bottom: 12%;
+            margin-left: 5%;
+            margin-right: 5%;
+
+            .hr-cartes {
+                display: none;
+            }
+
+            .carte {
+                background-color: variables.$secondary;
+                border-radius: 30px;
+                padding: 5%;
+                position: relative;
+                height: 90%;
+                margin: 5%;
+
+                img {
+                    width: 100%;
+                    border-radius: 25px;
+                    aspect-ratio: 16/9;
+                }
+
+                h3 {
+                    color: variables.$light;
+                    margin-bottom: 30px;
+                    text-align: center;
+                }
+
+                p {
+                    color: variables.$light;
+                    font-weight: 100;
+                    display: block;
+                    text-align: center;
+                }
+
+            }
+
+            .carte--02 {
+                top: 50px;
+            }
+        }
+    }
+
 }
