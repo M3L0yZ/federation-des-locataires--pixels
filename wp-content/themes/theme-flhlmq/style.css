@@ -717,6 +717,7 @@ header {
   height: 500px;
   margin: auto;
   overflow: hidden;
+  position: relative;
 }
 .accueil__hero .swiper-container {
   width: 100%;
@@ -724,9 +725,9 @@ header {
 }
 .accueil__hero .slides__container {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, 0%);
+  transform: translate(-50%, -50%);
   z-index: 100;
 }
 .accueil__hero .slide-1 {
@@ -759,9 +760,9 @@ header {
     font-size: 30px;
   }
   .accueil__hero .slides__container {
-    top: 45%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, -50%);
   }
 }
 @media only screen and (min-width: 920px) {
@@ -769,9 +770,9 @@ header {
     font-size: 40px;
   }
   .accueil__hero .slides__container {
-    top: 42%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, -50%);
   }
 }
 .accueil__hero button {
