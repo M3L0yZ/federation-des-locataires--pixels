@@ -172,7 +172,7 @@
                 border-radius: 30px;
                 padding: 5%;
                 margin: 5%;
-                height: 40vh;
+                height: 50vh;
                 position: relative;
 
                 img {
@@ -190,7 +190,7 @@
                 p {
                     color: variables.$light;
                     font-weight: 100;
-                    margin-bottom: 30px;
+                    margin-bottom: 80px;
                     display: block;
                 }
 
@@ -202,10 +202,11 @@
                     background-color: variables.$primary-light;
                     color: variables.$dark;
                     font-weight: 900;
-                    border-radius: 15px;
+                    border-radius: 18px;
                     border-style: none;
                     padding: 12px 20px;
-                    bottom: 0px;
+                    position: absolute;
+                    bottom: 4%;
                     display: block;
                     cursor: pointer;
 
@@ -247,6 +248,8 @@
                 background-color: variables.$secondary;
                 border-radius: 30px;
                 padding: 5%;
+                position: relative;
+                height: 100%;
 
                 img {
                     aspect-ratio: 16/9;
@@ -267,11 +270,11 @@
                     background-color: variables.$primary-light;
                     color: variables.$dark;
                     font-weight: 900;
-                    border-radius: 15px;
+                    border-radius: 18px;
                     border-style: none;
                     padding: 12px 20px;
                     position: absolute;
-                    bottom: 18%;
+                    bottom: 4%;
                     display: block;
                     cursor: pointer;
 

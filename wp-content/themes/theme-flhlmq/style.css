@@ -626,7 +626,7 @@ header {
     border-radius: 30px;
     padding: 5%;
     margin: 5%;
-    height: 40vh;
+    height: 50vh;
     position: relative;
   }
   .accueil__actualites .cartes-swiper .carte img {
@@ -643,7 +643,7 @@ header {
   .accueil__actualites .cartes-swiper .carte p {
     color: #FFFBE2;
     font-weight: 100;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
     display: block;
   }
   .accueil__actualites .cartes-swiper .carte .bouton-lire {
@@ -653,10 +653,11 @@ header {
     background-color: #F1BA85;
     color: #262127;
     font-weight: 900;
-    border-radius: 15px;
+    border-radius: 18px;
     border-style: none;
     padding: 12px 20px;
-    bottom: 0px;
+    position: absolute;
+    bottom: 4%;
     display: block;
     cursor: pointer;
   }
@@ -683,6 +684,8 @@ header {
     background-color: #2C856D;
     border-radius: 30px;
     padding: 5%;
+    position: relative;
+    height: 100%;
   }
   .accueil__actualites .cartes .carte img {
     aspect-ratio: 16/9;
@@ -700,11 +703,11 @@ header {
     background-color: #F1BA85;
     color: #262127;
     font-weight: 900;
-    border-radius: 15px;
+    border-radius: 18px;
     border-style: none;
     padding: 12px 20px;
     position: absolute;
-    bottom: 18%;
+    bottom: 4%;
     display: block;
     cursor: pointer;
   }
