@@ -15,8 +15,9 @@
 
 html {
     font-family: "ebrima";
-    background-color: variables.$light;
     overflow-x: hidden;
+    background-image: url(./sources/medias/background.png);
+    background-size: cover;
 }
 
 body {

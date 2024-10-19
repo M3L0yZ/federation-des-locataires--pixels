@@ -1462,8 +1462,9 @@ header {
 }
 html {
   font-family: "ebrima";
-  background-color: #FFFBE2;
   overflow-x: hidden;
+  background-image: url(./sources/medias/background.png);
+  background-size: cover;
 }
 
 body {
