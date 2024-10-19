@@ -165,6 +165,7 @@
         justify-content: flex-end;
         margin-right: 5%;
         text-decoration: underline;
+        cursor: pointer;
     }
 
     // TABLETTE ET DESKTOP
@@ -232,6 +233,7 @@
     .cartes-swiper {
         display: block;
         margin-top: 5%;
+        margin-bottom: 5%;
 
         .swiper-container2 {
             width: 100%;
@@ -245,6 +247,11 @@
             margin: 5%;
             height: 40vh;
             position: relative;
+            cursor: pointer;
+
+            &:hover {
+                background: color.adjust(variables.$secondary, $blackness: 10%);
+            }
 
             img {
                 width: 100%;
@@ -297,6 +304,11 @@
                 position: relative;
                 height: 90%;
                 margin: 5%;
+                cursor: pointer;
+
+                &:hover {
+                    background: color.adjust(variables.$secondary, $blackness: 10%);
+                }
 
                 img {
                     width: 100%;

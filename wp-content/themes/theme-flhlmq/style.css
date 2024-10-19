@@ -1589,6 +1589,7 @@ header {
   justify-content: flex-end;
   margin-right: 5%;
   text-decoration: underline;
+  cursor: pointer;
 }
 @media only screen and (min-width: 365px) {
   .news-article__nouvelle .news-article__nouvelle__texte {
@@ -1638,6 +1639,7 @@ header {
 .news-article__similaire .cartes-swiper {
   display: block;
   margin-top: 5%;
+  margin-bottom: 5%;
 }
 .news-article__similaire .cartes-swiper .swiper-container2 {
   width: 100%;
@@ -1650,6 +1652,10 @@ header {
   margin: 5%;
   height: 40vh;
   position: relative;
+  cursor: pointer;
+}
+.news-article__similaire .cartes-swiper .carte:hover {
+  background: #2c6c5a;
 }
 .news-article__similaire .cartes-swiper .carte img {
   width: 100%;
@@ -1692,6 +1698,10 @@ header {
     position: relative;
     height: 90%;
     margin: 5%;
+    cursor: pointer;
+  }
+  .news-article__similaire .cartes .carte:hover {
+    background: #2c6c5a;
   }
   .news-article__similaire .cartes .carte img {
     width: 100%;
