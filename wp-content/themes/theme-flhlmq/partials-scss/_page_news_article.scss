@@ -3,7 +3,7 @@
 
 .news-article__hero {
     width: 100%;
-    height: 500px;
+    height: 400px;
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -11,6 +11,7 @@
     .swiper-container {
         width: 100%;
         height: 100%;
+        border-top: 15px solid variables.$light;
     }
 
     .slides__texte {
@@ -32,7 +33,7 @@
     }
 
     .slide-1 {
-        background-image: url(sources/medias/page_news_article/actualite_hero.png);
+        background-image: url(sources/medias/page_news_article/actualite_hero_1.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 0%;
@@ -40,7 +41,7 @@
     }
 
     .slide-2 {
-        background-image: url(sources/medias/slider_hero_02.jpg);
+        background-image: url(sources/medias/page_news_article/actualite_hero_2.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 100% 100%;
@@ -48,7 +49,7 @@
     }
 
     .slide-3 {
-        background-image: url(sources/medias/slider_hero_03.jpg);
+        background-image: url(sources/medias/page_news_article/actualite_hero_3.png);
         background-repeat: no-repeat;
         background-size: cover;
         height: 100%;
@@ -65,6 +66,10 @@
             p {
                 font-size: 25px;
             }
+        }
+
+        .swiper-container {
+            border-top: 0px solid variables.$light;
         }
     }
 
