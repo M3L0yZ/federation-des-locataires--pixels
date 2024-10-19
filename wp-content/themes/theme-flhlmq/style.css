@@ -1530,6 +1530,81 @@ header {
   right: 0;
 }
 
+.news-article__nouvelle__titre {
+  text-transform: uppercase;
+  color: #C15A2E;
+  font-size: 30px;
+  padding-top: 0%;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.news-article__nouvelle__texte {
+  margin: 5%;
+  text-align: center;
+}
+.news-article__nouvelle__resume {
+  text-align: center;
+}
+.news-article__nouvelle__resume__container {
+  background-color: rgba(241, 186, 133, 0.5);
+  padding: 5%;
+  margin-top: 5%;
+}
+.news-article__nouvelle ul {
+  margin: auto;
+  width: 600px;
+}
+.news-article__nouvelle .hr-titre {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  padding: 0;
+  margin-left: 5%;
+  margin-bottom: 3%;
+  margin: auto;
+}
+.news-article__nouvelle button {
+  position: relative;
+  background-color: #2C856D;
+  color: #FFFBE2;
+  text-transform: uppercase;
+  font-weight: 900;
+  border-radius: 15px;
+  border-style: none;
+  padding: 12px 20px;
+  position: relative;
+  margin-top: 20px;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  cursor: pointer;
+}
+.news-article__nouvelle button:hover {
+  background: #2c6c5a;
+}
+.news-article__nouvelle .prochaine-nouvelle {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5%;
+  text-decoration: underline;
+}
+@media only screen and (min-width: 365px) {
+  .news-article__nouvelle .news-article__nouvelle__texte {
+    font-size: 20px;
+  }
+  .news-article__nouvelle .news-article__nouvelle__resume {
+    font-size: 20px;
+  }
+  .news-article__nouvelle button {
+    font-size: 20px;
+  }
+  .news-article__nouvelle li {
+    font-size: 20px;
+  }
+}
+
 @font-face {
   src: url("./sources/font/ebrima.ttf") format("truetype");
   font-family: "ebrima";
