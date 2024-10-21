@@ -1724,6 +1724,140 @@ header {
   }
 }
 
+.news-hub_une {
+  height: 100%;
+}
+.news-hub_une__titre {
+  text-transform: uppercase;
+  color: #C15A2E;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+.news-hub_une__texte {
+  text-align: start;
+}
+.news-hub_une .hr-titre {
+  display: none;
+  color: #262127;
+}
+.news-hub_une img {
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 30px;
+  order: 1;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.14);
+}
+.news-hub_une .container-informations {
+  display: grid;
+  padding: 5% 10%;
+}
+.news-hub_une .container-informations .container-texte {
+  order: 2;
+}
+.news-hub_une .bouton-lire-article {
+  position: relative;
+  background-color: #C15A2E;
+  color: #FFFBE2;
+  text-transform: uppercase;
+  font-weight: 900;
+  border-radius: 15px;
+  border-style: none;
+  padding: 12px 20px;
+  position: relative;
+  margin-top: 20px;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  cursor: pointer;
+}
+.news-hub_une .bouton-lire-article:hover {
+  background: #a8522e;
+}
+
+@media only screen and (min-width: 365px) {
+  .accueil_services__titre {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    padding-top: 5%;
+  }
+  .accueil_services__texte {
+    margin: 5%;
+  }
+  .accueil_services .hr-titre {
+    width: 65%;
+    padding: 0;
+    display: block;
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: 3%;
+  }
+  .accueil_services img {
+    margin: 5%;
+    width: 90%;
+  }
+  .accueil_services br {
+    display: none;
+  }
+  .accueil_services .bouton-voir-plus {
+    margin-top: 10%;
+    margin-bottom: 0%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .accueil_services__texte {
+    text-align: left;
+    margin-left: 10%;
+  }
+  .accueil_services .hr-titre {
+    width: 45%;
+  }
+  .accueil_services .savoir-plus {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5%;
+    text-decoration: underline;
+  }
+  .accueil_services .bouton-voir-plus {
+    display: none;
+  }
+  .accueil_services .container-informations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .accueil_services img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    order: 2;
+    max-width: 400px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .accueil_services__texte {
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
+  .accueil_services .container-informations {
+    display: grid;
+    grid-template-columns: 1fr 35%;
+  }
+  .accueil_services img {
+    max-width: 300px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 @font-face {
   src: url("./sources/font/ebrima.ttf") format("truetype");
   font-family: "ebrima";
