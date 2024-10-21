@@ -14,7 +14,7 @@
   }
 
   &__texte {
-    text-align: start; 
+    text-align: start;
   }
 
   .hr-titre {
@@ -26,6 +26,7 @@
     justify-content: center;
     width: 100%;
     aspect-ratio: 16/9;
+    object-fit: cover;
     border-radius: 30px;
     order: 1;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.14);
@@ -34,7 +35,7 @@
   .container-informations {
     display: grid;
     padding: 5% 10%;
-    
+    position: relative;
 
     .container-texte {
       order: 2;
@@ -50,56 +51,24 @@
     border-radius: 15px;
     border-style: none;
     padding: 12px 20px;
-    position: relative;
     margin-top: 20px;
     top: 0%;
     left: 50%;
     transform: translate(-50%, 0%);
     cursor: pointer;
+    display: flex;
 
     &:hover {
-        background: color.adjust(variables.$primary, $blackness: 10%);
+      background: color.adjust(variables.$primary, $blackness: 10%);
     }
-  }
-}
+  } // TABLETTE ET DESKTOP
 
-// TABLETTE ET DESKTOP
-
-@media only screen and (min-width: 365px) {
-  .accueil_services {
-    &__titre {
-      display: flex;
-      justify-content: flex-start;
-      margin-bottom: 0;
-      padding-top: 5%;
-    }
-
-    &__texte {
-      margin: 5%;
-    }
-
-    .hr-titre {
-      width: 65%;
-      padding: 0;
-      display: block;
-      text-align: left;
-      margin-left: 5%;
-      margin-bottom: 3%;
-    }
-
-    img {
-      margin: 5%;
-      width: 90%;
-    }
-
-    br {
-      display: none;
-    }
-
-    .bouton-voir-plus {
-      margin-top: 10%;
-      margin-bottom: 0%;
-    }
+  @media only screen and (min-width: 365px) {
+      .bouton-lire-article {
+        background-color: aqua;
+        display: flex;
+        justify-content: flex-end;
+      }
   }
 }
 
@@ -107,7 +76,6 @@
 
 @media only screen and (min-width: 768px) {
   .accueil_services {
-    
     &__texte {
       text-align: left;
       margin-left: 10%;
@@ -118,10 +86,10 @@
     }
 
     .savoir-plus {
-        display: flex;
-        justify-content: flex-start;
-        margin-left: 5%;
-        text-decoration: underline;
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 5%;
+      text-decoration: underline;
     }
 
     .bouton-voir-plus {
@@ -129,14 +97,14 @@
     }
 
     .container-informations {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-      }
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
 
     img {
       position: relative;
       left: 50%;
-      transform: translate(-50%,0%);
+      transform: translate(-50%, 0%);
       order: 2;
       max-width: 400px;
       aspect-ratio: 1/1;
@@ -150,24 +118,23 @@
 
 @media only screen and (min-width: 1200px) {
   .accueil_services {
-    
     &__texte {
       position: relative;
       top: 50%;
-      transform: translate(0%,-50%);
+      transform: translate(0%, -50%);
     }
 
     .container-informations {
-        display: grid;
-        grid-template-columns: 1fr 35%;
-      }
+      display: grid;
+      grid-template-columns: 1fr 35%;
+    }
 
     img {
       max-width: 300px;
       position: relative;
       left: 50%;
       top: 50%;
-      transform: translate(-50%,-50%);
+      transform: translate(-50%, -50%);
     }
   }
 }
