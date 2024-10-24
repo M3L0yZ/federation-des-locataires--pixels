@@ -1863,57 +1863,139 @@ header {
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .accueil_services__texte {
-    text-align: left;
-    margin-left: 10%;
-  }
-  .accueil_services .hr-titre {
-    width: 45%;
-  }
-  .accueil_services .savoir-plus {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 5%;
-    text-decoration: underline;
-  }
-  .accueil_services .bouton-voir-plus {
-    display: none;
-  }
-  .accueil_services .container-informations {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .accueil_services img {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    order: 2;
-    max-width: 400px;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
+.news-hub__en-continu {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
-@media only screen and (min-width: 1200px) {
-  .accueil_services__texte {
-    position: relative;
-    top: 50%;
-    transform: translate(0%, -50%);
-  }
-  .accueil_services .container-informations {
-    display: grid;
-    grid-template-columns: 1fr 35%;
-  }
-  .accueil_services img {
-    max-width: 300px;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
+.news-hub__en-continu a {
+  text-decoration: none;
 }
+.news-hub__en-continu .titre {
+  text-transform: uppercase;
+  color: #C15A2E;
+  font-size: 30px;
+  padding-left: 5%;
+  padding-top: 0%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+.news-hub__en-continu .cartes {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #2C856D;
+  padding: 5%;
+}
+.news-hub__en-continu .cartes .menu-pages {
+  background-color: #FFFBE2;
+  margin: 5%;
+  padding: 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 5%;
+  height: 40%;
+  position: relative;
+  border-radius: 15px;
+}
+.news-hub__en-continu .cartes .menu-pages__cercle {
+  position: relative;
+  background-color: #2C856D;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.news-hub__en-continu .cartes .menu-pages__cercle p {
+  margin: 0;
+  text-align: center;
+  color: #FFFBE2;
+  line-height: 28px;
+}
+.news-hub__en-continu .cartes .menu-pages__cercle:hover {
+  background-color: #F1BA85;
+}
+.news-hub__en-continu .cartes .carte {
+  border-radius: 30px;
+  padding: 5%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.news-hub__en-continu .cartes .carte img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 18px;
+  order: 2;
+  display: flex;
+  align-self: center;
+}
+.news-hub__en-continu .cartes .carte p {
+  color: #FFFBE2;
+  padding-right: 10%;
+}
+.news-hub__en-continu .cartes .carte h3 {
+  color: #FFFBE2;
+  margin-bottom: 10px;
+  padding-right: 10%;
+}
+.news-hub__en-continu .cartes .carte .bouton-lire {
+  display: block;
+  background-color: #F1BA85;
+  color: #262127;
+  font-weight: 900;
+  border-radius: 30px;
+  border-style: none;
+  padding: 12px 20px;
+  float: right;
+  display: block;
+  position: relative;
+  right: 10px;
+  top: -60px;
+  cursor: pointer;
+}
+.news-hub__en-continu .cartes .carte .bouton-lire:hover {
+  background-color: #C15A2E;
+}
+.news-hub__en-continu .cartes .carte .bouton-lire-article {
+  display: none;
+}
+.news-hub__en-continu .cartes hr {
+  width: 80%;
+  padding: 0;
+}
+.news-hub__en-continu .cartes .hr-cartes {
+  display: block;
+  color: #FFFBE2;
+}
+.news-hub__en-continu .hr-titre {
+  display: none;
+  color: #262127;
+}
+.news-hub__en-continu .bouton-voir-plus {
+  display: block;
+  background-color: #C15A2E;
+  color: #FFFBE2;
+  font-weight: 900;
+  border-radius: 15px;
+  border-style: none;
+  position: relative;
+  top: 30px;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  cursor: pointer;
+}
+.news-hub__en-continu .bouton-voir-plus:hover {
+  background: #a8522e;
+}
+.news-hub__en-continu .cartes-swiper {
+  display: none;
+}
+
 @font-face {
   src: url("./sources/font/ebrima.ttf") format("truetype");
   font-family: "ebrima";

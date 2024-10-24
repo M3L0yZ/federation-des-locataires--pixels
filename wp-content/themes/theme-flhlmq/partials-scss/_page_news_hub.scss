@@ -159,69 +159,155 @@
   }
 }
 
-// DESKTOP SEULEMENT
+.news-hub__en-continu {
+  width: 100%;
+  height: 100%;
+  position: relative;
 
-@media only screen and (min-width: 768px) {
-  .accueil_services {
-    &__texte {
-      text-align: left;
-      margin-left: 10%;
-    }
-
-    .hr-titre {
-      width: 45%;
-    }
-
-    .savoir-plus {
-      display: flex;
-      justify-content: flex-start;
-      margin-left: 5%;
-      text-decoration: underline;
-    }
-
-    .bouton-voir-plus {
-      display: none;
-    }
-
-    .container-informations {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-
-    img {
-      position: relative;
-      left: 50%;
-      transform: translate(-50%, 0%);
-      order: 2;
-      max-width: 400px;
-      aspect-ratio: 1/1;
-      border-radius: 50%;
-      object-fit: cover;
-    }
+  a {
+      text-decoration: none;
   }
-}
 
-// DESKTOP EXTRA LARGE SEULEMENT
+  .titre {
+      text-transform: uppercase;
+      color: variables.$primary;
+      font-size: 30px;
+      padding-left: 5%;
+      padding-top: 0%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 5%;
+  }
 
-@media only screen and (min-width: 1200px) {
-  .accueil_services {
-    &__texte {
-      position: relative;
-      top: 50%;
-      transform: translate(0%, -50%);
-    }
-
-    .container-informations {
+  .cartes {
       display: grid;
-      grid-template-columns: 1fr 35%;
-    }
+      grid-template-columns: 1fr;
+      background-color: variables.$secondary;
+      padding: 5%;
 
-    img {
-      max-width: 300px;
+      .menu-pages {
+        background-color: variables.$light;
+        margin: 5%;
+        padding: 2%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 5%;
+        height: 40%;
+        position: relative;
+        border-radius: 15px;
+
+        &__cercle {
+          position: relative;
+          background-color: variables.$secondary;
+          aspect-ratio: 1/1;
+          border-radius: 50%;
+          cursor: pointer;
+
+          p {
+            margin: 0;
+            text-align: center;
+            color: variables.$light;
+            line-height: 28px;
+          }
+
+          &:hover {
+            background-color: variables.$primary-light;
+          }
+
+        }
+      }
+
+      .carte {
+          border-radius: 30px;
+          padding: 5%;
+          position: relative;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+
+          img {
+              width: 100%;
+              aspect-ratio: 1/1;
+              object-fit: cover;
+              border-radius: 18px;
+              order:2;
+              display: flex;
+              align-self: center;
+          }
+
+          p {
+              color: variables.$light;
+              padding-right: 10%;
+          }
+
+          h3 {
+              color: variables.$light;
+              margin-bottom: 10px;
+              padding-right: 10%;
+          }
+
+          .bouton-lire {
+              display: block;
+              background-color: variables.$primary-light;
+              color: variables.$dark;
+              font-weight: 900;
+              border-radius: 30px;
+              border-style: none;
+              padding: 12px 20px;
+              float: right;
+              display: block;
+              position: relative;
+              right: 10px;
+              top: -60px;
+              cursor: pointer;
+
+              &:hover {
+                  background-color: variables.$primary;
+              }
+          }
+
+          .bouton-lire-article {
+              display: none;
+          }
+      }
+
+      hr {
+          width: 80%;
+          padding: 0;
+      }
+
+      .hr-cartes {
+          display: block;
+          color: variables.$light;
+      }
+  }
+
+  .hr-titre {
+      display: none;
+      color: variables.$dark;
+  }
+
+  .bouton-voir-plus {
+      display: block;
+      background-color: variables.$primary;
+      color: variables.$light;
+      font-weight: 900;
+      border-radius: 15px;
+      border-style: none;
       position: relative;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
+      top: 30px;
+      text-transform: uppercase;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      cursor: pointer;
+
+      &:hover {
+          background: color.adjust(variables.$primary, $blackness: 10%); 
+      }
+  }
+
+  .cartes-swiper {
+      display: none;
   }
 }
