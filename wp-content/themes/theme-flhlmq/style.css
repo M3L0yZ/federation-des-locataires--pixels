@@ -485,6 +485,9 @@ header {
   height: 100%;
   position: relative;
 }
+.accueil__actualites a {
+  text-decoration: none;
+}
 .accueil__actualites .titre {
   text-transform: uppercase;
   color: #C15A2E;
@@ -607,6 +610,7 @@ header {
     justify-content: flex-end;
     margin-right: 5%;
     text-decoration: underline;
+    color: #262127;
   }
   .accueil__actualites .bouton-voir-plus {
     display: none;

@@ -8,6 +8,10 @@
     height: 100%;
     position: relative;
 
+    a {
+        text-decoration: none;
+    }
+
     .titre {
         text-transform: uppercase;
         color: variables.$primary;
@@ -21,6 +25,7 @@
 
     .plus-actualites {
         display: none;
+        
     }
 
     .cartes {
@@ -149,6 +154,7 @@
             justify-content: flex-end;
             margin-right: 5%;
             text-decoration: underline;
+            color: variables.$dark;
         }
 
         .bouton-voir-plus {
