@@ -1730,6 +1730,7 @@ header {
 
 .news-hub_une {
   height: 100%;
+  position: relative;
 }
 .news-hub_une__titre {
   text-transform: uppercase;
@@ -1765,6 +1766,9 @@ header {
   order: 2;
 }
 .news-hub_une .bouton-lire-article {
+  display: none;
+}
+.news-hub_une .bouton-savoir-plus {
   position: relative;
   background-color: #C15A2E;
   color: #FFFBE2;
@@ -1780,14 +1784,82 @@ header {
   cursor: pointer;
   display: flex;
 }
-.news-hub_une .bouton-lire-article:hover {
+.news-hub_une .bouton-savoir-plus:hover {
   background: #a8522e;
 }
 @media only screen and (min-width: 365px) {
-  .news-hub_une .bouton-lire-article {
-    background-color: aqua;
+  .news-hub_une__texte {
+    font-size: 20px;
+  }
+  .news-hub_une__titre {
+    text-transform: uppercase;
+    color: #C15A2E;
+    font-size: 30px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: start;
+    margin-left: 5%;
+    margin-bottom: 0%;
+  }
+  .news-hub_une .hr-titre {
+    width: 65%;
+    padding: 0;
+    display: block;
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: 3%;
+  }
+  .news-hub_une .bouton-savoir-plus {
+    position: relative;
+    background-color: #C15A2E;
+    color: #FFFBE2;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: 15px;
+    border-style: none;
+    padding: 12px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: flex;
+  }
+  .news-hub_une .bouton-savoir-plus:hover {
+    background: #a8522e;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .news-hub_une img {
+    order: 2;
+    display: flex;
+    align-self: center;
+    height: 100%;
+    max-height: 300px;
+  }
+  .news-hub_une .container-informations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+  }
+  .news-hub_une .container-informations .container-texte {
+    margin-right: 5%;
+  }
+  .news-hub_une .bouton-savoir-plus {
+    display: none;
+  }
+  .news-hub_une .bouton-lire-article {
+    position: relative;
+    background-color: #F1BA85;
+    color: #262127;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: 15px;
+    border-style: none;
+    padding: 12px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: start;
+  }
+  .news-hub_une .bouton-lire-article:hover {
+    background-color: #C15A2E;
   }
 }
 

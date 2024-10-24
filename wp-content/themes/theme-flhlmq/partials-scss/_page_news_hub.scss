@@ -3,6 +3,7 @@
 
 .news-hub_une {
   height: 100%;
+  position: relative;
 
   &__titre {
     text-transform: uppercase;
@@ -43,6 +44,10 @@
   }
 
   .bouton-lire-article {
+    display: none;
+  }
+
+  .bouton-savoir-plus {
     position: relative;
     background-color: variables.$primary;
     color: variables.$light;
@@ -61,14 +66,96 @@
     &:hover {
       background: color.adjust(variables.$primary, $blackness: 10%);
     }
-  } // TABLETTE ET DESKTOP
+  }
+
+  // TABLETTE ET DESKTOP
 
   @media only screen and (min-width: 365px) {
-      .bouton-lire-article {
-        background-color: aqua;
-        display: flex;
-        justify-content: flex-end;
+    &__texte {
+      font-size: 20px;
+    }
+
+    &__titre {
+      text-transform: uppercase;
+      color: variables.$primary;
+      font-size: 30px;
+      display: flex;
+      justify-content: start;
+      margin-left: 5%;
+      margin-bottom: 0%;
+    }
+
+    .hr-titre {
+      width: 65%;
+      padding: 0;
+      display: block;
+      text-align: left;
+      margin-left: 5%;
+      margin-bottom: 3%;
+    }
+
+    .bouton-savoir-plus {
+      position: relative;
+      background-color: variables.$primary;
+      color: variables.$light;
+      text-transform: uppercase;
+      font-weight: 900;
+      border-radius: 15px;
+      border-style: none;
+      padding: 12px 20px;
+      margin-top: 20px;
+      cursor: pointer;
+      display: flex;
+  
+      &:hover {
+        background: color.adjust(variables.$primary, $blackness: 10%);
       }
+    }
+  }
+
+  // DESKTOP
+
+  @media only screen and (min-width: 768px) {
+    img {
+      order: 2;
+      display: flex;
+      align-self: center;
+      height: 100%;
+      max-height: 300px;
+    }
+
+    .container-informations {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      position: relative;
+
+      .container-texte {
+        margin-right: 5%;
+      }
+    }
+
+    .bouton-savoir-plus {
+      display: none;
+    }
+
+    .bouton-lire-article {
+      position: relative;
+      background-color: variables.$primary-light;
+      color: variables.$dark;
+      text-transform: uppercase;
+      font-weight: 900;
+      border-radius: 15px;
+      border-style: none;
+      padding: 12px 20px;
+      margin-top: 20px;
+      cursor: pointer;
+      display: flex;
+      justify-content: start;
+
+      &:hover {
+        background-color: variables.$primary;
+      }
+    }
   }
 }
 
