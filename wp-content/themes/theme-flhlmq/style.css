@@ -2084,6 +2084,36 @@ header {
     order: 1;
   }
 }
+@media only screen and (min-width: 768px) {
+  .news-hub__en-continu .cartes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .news-hub__en-continu .cartes .carte {
+    position: relative;
+  }
+  .news-hub__en-continu .cartes .carte__textes__sous-titre {
+    display: block;
+    margin-bottom: 80px;
+  }
+  .news-hub__en-continu .cartes .carte .bouton-lire-article {
+    position: absolute;
+    bottom: 15px;
+    background-color: #F1BA85;
+    color: #262127;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: 15px;
+    border-style: none;
+    padding: 12px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: block;
+  }
+  .news-hub__en-continu .cartes .carte .bouton-lire-article:hover {
+    background-color: #C15A2E;
+  }
+}
 
 @font-face {
   src: url("./sources/font/ebrima.ttf") format("truetype");
