@@ -454,5 +454,18 @@
         }
       }
     }
+
+    .menu-pages {
+      display: flex;
+      justify-content: end;
+      margin-right: 5%;
+
+      &__cercles {
+        background-color: transparent;
+        max-width: 350px;
+        width: 50%;
+        margin-top: 0;
+      }
+    }
   }
 }
