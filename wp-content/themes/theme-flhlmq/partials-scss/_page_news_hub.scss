@@ -222,27 +222,6 @@
     }
   }*/
 
-  .pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.pagination-button {
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-  background-color: #ccc;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.pagination-button.active {
-  background-color: #333;
-}
-
   .menu-pages {
     background-color: variables.$secondary;
     padding: 5%;
@@ -250,12 +229,12 @@
     &__cercles {
       background-color: variables.$light;
       padding: 2%;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      display: flex;
+      justify-self: center;
       gap: 5%;
-      height: 40%;
       position: relative;
       border-radius: 15px;
+      width: 85px;
     }
 
     &__cercle {
@@ -263,10 +242,15 @@
       background-color: variables.$secondary;
       aspect-ratio: 1/1;
       border-radius: 50%;
-      cursor: pointer;
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 30px;
+      height: 30px;
+      margin: 0 5px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
 
       p {
         margin: 0;
@@ -280,11 +264,16 @@
     }
   }
 
+  .pagination-button.active {
+    background-color: variables.$primary-light;
+  }
+
   .cartes {
     display: grid;
     grid-template-columns: 1fr;
     background-color: variables.$secondary;
     padding: 5%;
+
     .carte {
       border-radius: 30px;
       padding: 5%;
@@ -480,6 +469,7 @@
       }
     }
   }
+
   @media only screen and (min-width: 768px) {
     .cartes {
       display: grid;

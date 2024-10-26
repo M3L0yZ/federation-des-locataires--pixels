@@ -1921,24 +1921,6 @@ header {
   justify-content: center;
   margin-bottom: 5%;
 }
-.news-hub__en-continu .pagination {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-.news-hub__en-continu .pagination-button {
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-  background-color: #ccc;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-.news-hub__en-continu .pagination-button.active {
-  background-color: #333;
-}
 .news-hub__en-continu .menu-pages {
   background-color: #2C856D;
   padding: 5%;
@@ -1946,22 +1928,27 @@ header {
 .news-hub__en-continu .menu-pages__cercles {
   background-color: #FFFBE2;
   padding: 2%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
+  justify-self: center;
   gap: 5%;
-  height: 40%;
   position: relative;
   border-radius: 15px;
+  width: 85px;
 }
 .news-hub__en-continu .menu-pages__cercle {
   position: relative;
   background-color: #2C856D;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 .news-hub__en-continu .menu-pages__cercle p {
   margin: 0;
@@ -1969,6 +1956,9 @@ header {
   color: #FFFBE2;
 }
 .news-hub__en-continu .menu-pages__cercle:hover {
+  background-color: #F1BA85;
+}
+.news-hub__en-continu .pagination-button.active {
   background-color: #F1BA85;
 }
 .news-hub__en-continu .cartes {
