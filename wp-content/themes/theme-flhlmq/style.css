@@ -1732,6 +1732,9 @@ header {
   height: 100%;
   position: relative;
 }
+.news-hub_une a {
+  text-decoration: none;
+}
 .news-hub_une__titre {
   text-transform: uppercase;
   color: #C15A2E;

@@ -5,6 +5,10 @@
   height: 100%;
   position: relative;
 
+  a {
+    text-decoration: none;
+  }
+
   &__titre {
     text-transform: uppercase;
     color: variables.$primary;
