@@ -23,6 +23,33 @@ var swiper2 = new Swiper(".swiper-container2", {
         clickable: true,
       },
 });
+
+var swiper2 = new Swiper(".mySwiperHub", {
+    loop: false,
+    centeredSlides: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
+          },
+      },
+});
+
+let currentSlide = 0;
+
+function goToSlide(slideIndex) {
+    const slides = document.querySelector('.swiper-wrapper');
+    const buttons = document.querySelectorAll('.pagination-button');
+    
+    slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+    
+    buttons[currentSlide].classList.remove('active');
+    buttons[slideIndex].classList.add('active');
+    
+    currentSlide = slideIndex;
+}
+
 //Navbar fonctions
 console.log("test");
 function boutonHamburger() {

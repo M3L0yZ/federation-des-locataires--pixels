@@ -183,6 +183,66 @@
     margin-bottom: 5%;
   }
 
+  /*.mySwiperHub {
+    position: relative;
+    .swiper-pagination-bullet {
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 20px;
+      font-size: 20px;
+      color: variables.$light;
+      opacity: 1;
+      background-color: variables.$secondary;
+    }
+
+    .swiper-pagination-bullet-active {
+      color: variables.$light;
+      background-color: variables.$primary-light;
+    }
+
+    .swiper-pagination-horizontal {
+      background-color: variables.$light;
+      width: 100%;
+      padding: 10px;
+      position: absolute;
+      bottom: 0%;
+      text-align: center;
+    }
+  }*/
+
+  /*.slide-2 {
+    .swiper-pagination-horizontal {
+      background-color: variables.$light;
+      width: 100%;
+      padding: 10px;
+      position: absolute;
+      bottom: -100px;
+      text-align: center;
+    }
+  }*/
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.pagination-button {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination-button.active {
+  background-color: #333;
+}
+
   .menu-pages {
     background-color: variables.$secondary;
     padding: 5%;
@@ -225,7 +285,6 @@
     grid-template-columns: 1fr;
     background-color: variables.$secondary;
     padding: 5%;
-
     .carte {
       border-radius: 30px;
       padding: 5%;
