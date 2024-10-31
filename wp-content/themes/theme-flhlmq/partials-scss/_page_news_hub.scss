@@ -183,38 +183,10 @@
     margin-bottom: 5%;
   }
 
-  /*.mySwiperHub {
-    position: relative;
-    .swiper-pagination-bullet {
-      width: 30px;
-      height: 30px;
-      text-align: center;
-      line-height: 20px;
-      font-size: 20px;
-      color: variables.$light;
-      opacity: 1;
-      background-color: variables.$secondary;
-    }
-
-    .swiper-pagination-bullet-active {
-      color: variables.$light;
-      background-color: variables.$primary-light;
-    }
-
-    .swiper-pagination-horizontal {
-      background-color: variables.$light;
-      width: 100%;
-      padding: 10px;
-      position: absolute;
-      bottom: 0%;
-      text-align: center;
-    }
-  }*/
-
-
   .menu-pages {
     background-color: variables.$secondary;
     padding: 5%;
+    position: relative;
 
     &__cercles {
       background-color: variables.$light;
@@ -258,11 +230,17 @@
     background-color: variables.$primary-light;
   }
 
+  #button1 .cartes {
+    position: relative;
+    width: 100%;
+  }
+
   .cartes {
     display: grid;
     grid-template-columns: 1fr;
     background-color: variables.$secondary;
     padding: 5%;
+    position: relative;
 
     .carte {
       border-radius: 30px;
