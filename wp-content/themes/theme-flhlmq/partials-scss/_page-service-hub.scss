@@ -5,7 +5,8 @@
 .service {
     display: flex;
     justify-content: center;
-
+    flex-direction: column;
+    align-items: center;
 
     &__congrecontainer{
         display: flex;
@@ -15,26 +16,25 @@
         width: 100%;
         height: auto;
         max-width: 42vh;
+        padding-left: 2vh;
+        padding-right: 2vh;
         
     }
 
-    &__shadowcolor{ 
-        color: aqua;
-        z-index: 2;
-    }
-
+  
     
 
     &__congretitre{
         font-size: 3.8vh;
         color: variables.$light;
         transition: transform 0.5s; 
-        transform: translate(0vh, 14vh); 
+        transform: translate(0vh, 13vh); 
     }
 
     &__textcongres{
         padding-left: 2vh;
         padding-right: 2vh;
+        height: 20vh;
     }
 
     &__congretexte{
@@ -42,6 +42,18 @@
         color: rgba(240, 248, 255, 0);
         transition: 0.5s;  
     }
+
+    &__shadowcolor{ 
+        display: flex;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.247); 
+        z-index: 1;
+        height: auto;
+        border-radius: 25px;
+        transition: 2s;
+        
+    }
+
 
     &__ensavoirplus{
          padding-bottom: 1vh;   
@@ -56,8 +68,8 @@
             border-radius: 15px;
             border-color: none;
             border: #00000000;
-            text-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.281), 0 2px 10px 0 rgba(0, 0, 0, 0.253);
-            box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.281), 0 2px 10px 0 rgba(0, 0, 0, 0.253);
+            text-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0);
             cursor: pointer;
             transition: 0.5s;
 
@@ -73,10 +85,11 @@
         
     }
 
-    &__insidecontainer{
-      
-        background: url(sources/medias/page_service/congres.png) ;
-        background-size: 50vh , 30vh ; 
+    
+
+    &__insidecontainer__congres{
+        background: no-repeat url(sources/medias/page_service/congres.png ) ;
+        background-size:cover;
         border-radius: 25px;
         
         
@@ -89,6 +102,9 @@
             }
 
             .service__congretitre{
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 transform: translate(0vh, 1vh); 
                 transition: 0.3s; 
             }
@@ -96,15 +112,155 @@
             .bouttonsavoirplus{
                 color: variables.$light;
                 background-color: variables.$secondary;
+                text-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.281) ;
+                box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.281);
             }
 
-            #overlay{ 
+            .service__shadowcolor{ 
+                display: flex;
+                flex-direction: column;
+                background: rgba(0, 0, 0, 0.644); 
+                z-index: 1;
+                height: auto;
                 
-                color: red;
             }
 
         }
+
+      
     }
+
+    &__insidecontainer__association{
+        background: no-repeat url(sources/medias/page_service/association.png ) ;
+        background-size:cover;
+        border-radius: 25px;
+        
+        
+        &:hover{
+            
+            .service__congretexte{
+                font-size: 1.8vh;
+                color: variables.$light;
+                
+            }
+
+            .service__congretitre{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform: translate(0vh, 1vh); 
+                transition: 0.3s; 
+            }
+
+            .bouttonsavoirplus{
+                color: variables.$light;
+                background-color: variables.$secondary;
+                text-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.281) ;
+                box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.281);
+            }
+
+            .service__shadowcolor{ 
+                display: flex;
+                flex-direction: column;
+                background: rgba(0, 0, 0, 0.644); 
+                z-index: 1;
+                height: auto;
+                
+            }
+
+        }
+
+      
+    }
+    
+    &__insidecontainer__ccr{
+        background: no-repeat url(sources/medias/page_service/ccr.png ) ;
+        background-size:cover;
+        border-radius: 25px;
+        
+        
+        &:hover{
+            
+            .service__congretexte{
+                font-size: 1.8vh;
+                color: variables.$light;
+                
+            }
+
+            .service__congretitre{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform: translate(0vh, 1vh); 
+                transition: 0.3s; 
+            }
+
+            .bouttonsavoirplus{
+                color: variables.$light;
+                background-color: variables.$secondary;
+                text-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.281) ;
+                box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.281);
+            }
+
+            .service__shadowcolor{ 
+                display: flex;
+                flex-direction: column;
+                background: rgba(0, 0, 0, 0.644); 
+                z-index: 1;
+                height: auto;
+                
+            }
+
+        }
+
+      
+    }
+
+    &__insidecontainer__locataire{
+        background: no-repeat url(sources/medias/page_service/locataire.png ) ;
+        background-size:cover; 
+        border-radius: 25px;
+        
+        
+        &:hover{
+            
+            .service__congretexte{
+                font-size: 1.8vh;
+                color: variables.$light;
+                
+            }
+
+            .service__congretitre{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform: translate(0vh, 1vh); 
+                transition: 0.3s; 
+            }
+
+            .bouttonsavoirplus{
+                color: variables.$light;
+                background-color: variables.$secondary;
+                text-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.281) ;
+                box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.281);
+            }
+
+            .service__shadowcolor{ 
+                display: flex;
+                flex-direction: column;
+                background: rgba(0, 0, 0, 0.644); 
+                z-index: 1;
+                height: auto;
+                
+            }
+
+        }
+
+      
+    }
+    
+
+    
 
     
 }
