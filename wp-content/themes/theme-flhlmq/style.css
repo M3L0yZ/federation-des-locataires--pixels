@@ -2160,6 +2160,50 @@ header {
   padding-left: 2vh;
   padding-right: 2vh;
 }
+.service__associationbackgroundcontainer {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(193, 90, 46, 0.4588235294);
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  width: 100%;
+}
+.service__ccrbackgroundcontainer {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(241, 185, 133, 0.4666666667);
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  width: 100%;
+}
+.service__congrebackgroundcontainer {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(44, 133, 109, 0.337254902);
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  width: 100%;
+}
+.service__locatairebackgroundcontainer {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(44, 133, 109, 0.337254902);
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  width: 100%;
+}
 .service__congretitre {
   font-size: 3.8vh;
   color: #FFFBE2;

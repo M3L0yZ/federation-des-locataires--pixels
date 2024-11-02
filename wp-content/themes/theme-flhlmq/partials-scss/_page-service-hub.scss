@@ -18,11 +18,57 @@
         max-width: 42vh;
         padding-left: 2vh;
         padding-right: 2vh;
-        
     }
 
+    &__associationbackgroundcontainer{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #c15a2e75;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        width: 100%;
+    }
   
+    &__ccrbackgroundcontainer{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #f1b98577;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        width: 100%;
+    }
+
+
+    &__congrebackgroundcontainer{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #2c856d56;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        width: 100%;
+    }
     
+    &__locatairebackgroundcontainer{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #2c856d56;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        width: 100%;
+    }
+
 
     &__congretitre{
         font-size: 3.8vh;
