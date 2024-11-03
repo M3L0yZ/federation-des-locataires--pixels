@@ -2160,6 +2160,17 @@ header {
   padding-left: 2vh;
   padding-right: 2vh;
 }
+.service__congrebackgroundcontainer {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(44, 133, 109, 0.337254902);
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  width: 100%;
+}
 .service__associationbackgroundcontainer {
   display: flex;
   text-align: center;
@@ -2182,17 +2193,6 @@ header {
   padding-bottom: 2vh;
   width: 100%;
 }
-.service__congrebackgroundcontainer {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-  background-color: rgba(44, 133, 109, 0.337254902);
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-  width: 100%;
-}
 .service__locatairebackgroundcontainer {
   display: flex;
   text-align: center;
@@ -2205,7 +2205,7 @@ header {
   width: 100%;
 }
 .service__congretitre {
-  font-size: 3.8vh;
+  font-size: 3.5vh;
   color: #FFFBE2;
   transition: transform 0.5s;
   transform: translate(0vh, 13vh);
@@ -2260,7 +2260,6 @@ header {
   border-radius: 25px;
 }
 .service__insidecontainer__congres:hover .service__congretexte {
-  font-size: 1.8vh;
   color: #FFFBE2;
 }
 .service__insidecontainer__congres:hover .service__congretitre {
@@ -2289,7 +2288,6 @@ header {
   border-radius: 25px;
 }
 .service__insidecontainer__association:hover .service__congretexte {
-  font-size: 1.8vh;
   color: #FFFBE2;
 }
 .service__insidecontainer__association:hover .service__congretitre {
@@ -2318,7 +2316,6 @@ header {
   border-radius: 25px;
 }
 .service__insidecontainer__ccr:hover .service__congretexte {
-  font-size: 1.8vh;
   color: #FFFBE2;
 }
 .service__insidecontainer__ccr:hover .service__congretitre {
@@ -2347,7 +2344,6 @@ header {
   border-radius: 25px;
 }
 .service__insidecontainer__locataire:hover .service__congretexte {
-  font-size: 1.8vh;
   color: #FFFBE2;
 }
 .service__insidecontainer__locataire:hover .service__congretitre {
@@ -2369,6 +2365,32 @@ header {
   background: rgba(0, 0, 0, 0.644);
   z-index: 1;
   height: auto;
+}
+@media only screen and (min-width: 768px) {
+  .service .service__congrecontainer {
+    max-width: 65vh;
+  }
+  .service .service__congretitre {
+    font-size: 4vh;
+  }
+  .service .service__congretexte {
+    font-size: 2vh;
+    color: rgba(240, 248, 255, 0);
+    transition: 0.5s;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .service .service__congrecontainer {
+    max-width: 80vh;
+  }
+  .service .service__congretitre {
+    font-size: 4vh;
+  }
+  .service .service__congretexte {
+    font-size: 2.2vh;
+    color: rgba(240, 248, 255, 0);
+    transition: 0.5s;
+  }
 }
 
 @font-face {
