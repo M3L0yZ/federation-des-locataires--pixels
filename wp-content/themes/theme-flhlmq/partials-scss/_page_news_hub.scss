@@ -66,6 +66,7 @@
     transform: translate(-50%, 0%);
     cursor: pointer;
     display: flex;
+    transition-duration: 0.2s;
 
     &:hover {
       background: color.adjust(variables.$primary, $blackness: 10%);
@@ -155,6 +156,7 @@
       cursor: pointer;
       display: flex;
       justify-content: start;
+      transition-duration: 0.2s;
 
       &:hover {
         background-color: variables.$primary;
@@ -187,6 +189,7 @@
     background-color: variables.$secondary;
     padding: 5%;
     position: relative;
+    margin-bottom: 30px;
 
     &__cercles {
       background-color: variables.$light;
@@ -248,6 +251,12 @@
       position: relative;
       display: grid;
       grid-template-columns: 1fr 1fr;
+      transition-duration: 0.2s;
+
+      &:hover {
+        background: color.adjust(variables.$secondary, $blackness: 10%);
+        cursor: pointer;
+      }
 
       &__textes {
         &__sous-titre {
@@ -290,6 +299,7 @@
         right: 10px;
         top: -60px;
         cursor: pointer;
+        transition-duration: 0.2s;
 
         &:hover {
           background-color: variables.$primary;
@@ -309,6 +319,7 @@
     .hr-cartes {
       display: block;
       color: variables.$light;
+      width: 90%;
     }
   }
 
@@ -461,6 +472,195 @@
       &__cercle {
         width: 50px;
         height: 50px;
+      }
+    }
+  }
+}
+
+//-------------------- LES PLUS CONSULTÉS ---------------------
+
+.news-hub__consultes {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  a {
+    text-decoration: none;
+  }
+
+  &__titre {
+    text-transform: uppercase;
+    color: variables.$primary;
+    font-size: 30px;
+    padding-left: 5%;
+    padding-top: 0%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    text-align: center;
+  }
+
+  .cartes {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 5%;
+    position: relative;
+
+    .carte {
+      border-radius: 30px;
+      padding: 5%;
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      transition-duration: 0.2s;
+
+      &__textes {
+        &__sous-titre {
+          display: none;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+      }
+
+      img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 18px;
+        order: 2;
+        display: flex;
+        align-self: center;
+      }
+
+      p {
+        padding-right: 10%;
+      }
+
+      h3 {
+        margin-bottom: 10px;
+        padding-right: 10%;
+      }
+
+      h2 {
+        margin-bottom: 0;
+      }
+    }
+
+    hr {
+      width: 80%;
+      padding: 0;
+    }
+
+    .hr-cartes {
+      display: block;
+      color: variables.$light;
+      width: 90%;
+    }
+  }
+
+  .hr-titre {
+    display: none;
+    color: variables.$dark;
+  }
+
+  @media only screen and (min-width: 365px) {
+    .hr-titre {
+      width: 65%;
+      padding: 0;
+      display: block;
+      text-align: left;
+      margin-left: 5%;
+      margin-bottom: 3%;
+    }
+
+    &__titre {
+      display: flex;
+      justify-content: start;
+      margin-left: 5%;
+      margin-bottom: 0%;
+      padding: 0;
+      text-align: left;
+    }
+
+    .cartes {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      background-color: transparent;
+      padding: 5%;
+
+      .hr-cartes {
+        display: none;
+        color: variables.$light;
+      }
+
+      .carte--02 {
+        background-image: url(sources/medias/actualite_27_aout_hlm.jpg);
+      }
+
+      .carte--01 {
+        background-image: url(sources/medias/actualite_27_aout_innondations.jpg);
+      }
+
+      .carte--03 {
+        background-image: url(sources/medias/actuaite_19_aout_benoit.jpg);
+      }
+
+      .carte--04 {
+        background-image: url(sources/medias/actualite_20_aout_manifestation.png);
+      }
+
+      .carte {
+        border-radius: 30px;
+        padding: 0%;
+        margin-bottom: 5%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        &__textes {
+          background-color: variables.$secondary;
+          padding: 8%;
+          border-radius: 0 30px 30px 0;
+          opacity: 90%;
+          color: variables.$light;
+          position: relative;
+          left: 100%;
+
+          &__sous-titre {
+            display: block;
+          }
+        }
+
+        h2 {
+          color: variables.$secondary;
+          background-color: variables.$light;
+          text-align: center;
+          width: 30px;
+          padding: 5px;
+          border-radius: 10px;
+        }
+
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .cartes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+
+      .carte {
+        position: relative;
       }
     }
   }

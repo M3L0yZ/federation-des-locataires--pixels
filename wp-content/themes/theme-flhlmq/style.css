@@ -1786,6 +1786,7 @@ header {
   transform: translate(-50%, 0%);
   cursor: pointer;
   display: flex;
+  transition-duration: 0.2s;
 }
 .news-hub_une .bouton-savoir-plus:hover {
   background: #a8522e;
@@ -1860,6 +1861,7 @@ header {
     cursor: pointer;
     display: flex;
     justify-content: start;
+    transition-duration: 0.2s;
   }
   .news-hub_une .bouton-lire-article:hover {
     background-color: #C15A2E;
@@ -1888,6 +1890,7 @@ header {
   background-color: #2C856D;
   padding: 5%;
   position: relative;
+  margin-bottom: 30px;
 }
 .news-hub__en-continu .menu-pages__cercles {
   background-color: #FFFBE2;
@@ -1942,6 +1945,11 @@ header {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  transition-duration: 0.2s;
+}
+.news-hub__en-continu .cartes .carte:hover {
+  background: #2c6c5a;
+  cursor: pointer;
 }
 .news-hub__en-continu .cartes .carte__textes__sous-titre {
   display: none;
@@ -1979,6 +1987,7 @@ header {
   right: 10px;
   top: -60px;
   cursor: pointer;
+  transition-duration: 0.2s;
 }
 .news-hub__en-continu .cartes .carte .bouton-lire:hover {
   background-color: #C15A2E;
@@ -1993,6 +2002,7 @@ header {
 .news-hub__en-continu .cartes .hr-cartes {
   display: block;
   color: #FFFBE2;
+  width: 90%;
 }
 .news-hub__en-continu .hr-titre {
   display: none;
@@ -2116,6 +2126,164 @@ header {
   .news-hub__en-continu .menu-pages__cercle {
     width: 50px;
     height: 50px;
+  }
+}
+
+.news-hub__consultes {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.news-hub__consultes a {
+  text-decoration: none;
+}
+.news-hub__consultes__titre {
+  text-transform: uppercase;
+  color: #C15A2E;
+  font-size: 30px;
+  padding-left: 5%;
+  padding-top: 0%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.news-hub__consultes .cartes {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 5%;
+  position: relative;
+}
+.news-hub__consultes .cartes .carte {
+  border-radius: 30px;
+  padding: 5%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  transition-duration: 0.2s;
+}
+.news-hub__consultes .cartes .carte__textes__sous-titre {
+  display: none;
+}
+.news-hub__consultes .cartes .carte:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.news-hub__consultes .cartes .carte img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 18px;
+  order: 2;
+  display: flex;
+  align-self: center;
+}
+.news-hub__consultes .cartes .carte p {
+  padding-right: 10%;
+}
+.news-hub__consultes .cartes .carte h3 {
+  margin-bottom: 10px;
+  padding-right: 10%;
+}
+.news-hub__consultes .cartes .carte h2 {
+  margin-bottom: 0;
+}
+.news-hub__consultes .cartes hr {
+  width: 80%;
+  padding: 0;
+}
+.news-hub__consultes .cartes .hr-cartes {
+  display: block;
+  color: #FFFBE2;
+  width: 90%;
+}
+.news-hub__consultes .hr-titre {
+  display: none;
+  color: #262127;
+}
+@media only screen and (min-width: 365px) {
+  .news-hub__consultes .hr-titre {
+    width: 65%;
+    padding: 0;
+    display: block;
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: 3%;
+  }
+  .news-hub__consultes__titre {
+    display: flex;
+    justify-content: start;
+    margin-left: 5%;
+    margin-bottom: 0%;
+    padding: 0;
+    text-align: left;
+  }
+  .news-hub__consultes .cartes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    background-color: transparent;
+    padding: 5%;
+  }
+  .news-hub__consultes .cartes .hr-cartes {
+    display: none;
+    color: #FFFBE2;
+  }
+  .news-hub__consultes .cartes .carte--02 {
+    background-image: url(sources/medias/actualite_27_aout_hlm.jpg);
+  }
+  .news-hub__consultes .cartes .carte--01 {
+    background-image: url(sources/medias/actualite_27_aout_innondations.jpg);
+  }
+  .news-hub__consultes .cartes .carte--03 {
+    background-image: url(sources/medias/actuaite_19_aout_benoit.jpg);
+  }
+  .news-hub__consultes .cartes .carte--04 {
+    background-image: url(sources/medias/actualite_20_aout_manifestation.png);
+  }
+  .news-hub__consultes .cartes .carte {
+    border-radius: 30px;
+    padding: 0%;
+    margin-bottom: 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .news-hub__consultes .cartes .carte__textes {
+    background-color: #2C856D;
+    padding: 8%;
+    border-radius: 0 30px 30px 0;
+    opacity: 90%;
+    color: #FFFBE2;
+    position: relative;
+    left: 100%;
+  }
+  .news-hub__consultes .cartes .carte__textes__sous-titre {
+    display: block;
+  }
+  .news-hub__consultes .cartes .carte h2 {
+    color: #2C856D;
+    background-color: #FFFBE2;
+    text-align: center;
+    width: 30px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .news-hub__consultes .cartes .carte img {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .news-hub__consultes .cartes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  .news-hub__consultes .cartes .carte {
+    position: relative;
   }
 }
 
