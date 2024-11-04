@@ -1786,6 +1786,7 @@ header {
   transform: translate(-50%, 0%);
   cursor: pointer;
   display: flex;
+  transition-duration: 0.2s;
 }
 .news-hub_une .bouton-savoir-plus:hover {
   background: #a8522e;
@@ -1860,6 +1861,7 @@ header {
     cursor: pointer;
     display: flex;
     justify-content: start;
+    transition-duration: 0.2s;
   }
   .news-hub_une .bouton-lire-article:hover {
     background-color: #C15A2E;
@@ -1943,6 +1945,11 @@ header {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  transition-duration: 0.2s;
+}
+.news-hub__en-continu .cartes .carte:hover {
+  background: #2c6c5a;
+  cursor: pointer;
 }
 .news-hub__en-continu .cartes .carte__textes__sous-titre {
   display: none;
@@ -1980,6 +1987,7 @@ header {
   right: 10px;
   top: -60px;
   cursor: pointer;
+  transition-duration: 0.2s;
 }
 .news-hub__en-continu .cartes .carte .bouton-lire:hover {
   background-color: #C15A2E;
@@ -2152,9 +2160,14 @@ header {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  transition-duration: 0.2s;
 }
 .news-hub__consultes .cartes .carte__textes__sous-titre {
   display: none;
+}
+.news-hub__consultes .cartes .carte:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 .news-hub__consultes .cartes .carte img {
   width: 100%;
@@ -2238,7 +2251,6 @@ header {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    transition-duration: 0.2s;
   }
   .news-hub__consultes .cartes .carte__textes {
     background-color: #2C856D;
@@ -2262,10 +2274,6 @@ header {
   }
   .news-hub__consultes .cartes .carte img {
     display: none;
-  }
-  .news-hub__consultes .cartes .carte:hover {
-    cursor: pointer;
-    transform: scale(1.05);
   }
 }
 @media only screen and (min-width: 768px) {

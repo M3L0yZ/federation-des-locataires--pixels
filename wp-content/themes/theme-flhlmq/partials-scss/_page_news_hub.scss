@@ -66,6 +66,7 @@
     transform: translate(-50%, 0%);
     cursor: pointer;
     display: flex;
+    transition-duration: 0.2s;
 
     &:hover {
       background: color.adjust(variables.$primary, $blackness: 10%);
@@ -155,6 +156,7 @@
       cursor: pointer;
       display: flex;
       justify-content: start;
+      transition-duration: 0.2s;
 
       &:hover {
         background-color: variables.$primary;
@@ -249,6 +251,12 @@
       position: relative;
       display: grid;
       grid-template-columns: 1fr 1fr;
+      transition-duration: 0.2s;
+
+      &:hover {
+        background: color.adjust(variables.$secondary, $blackness: 10%);
+        cursor: pointer;
+      }
 
       &__textes {
         &__sous-titre {
@@ -291,6 +299,7 @@
         right: 10px;
         top: -60px;
         cursor: pointer;
+        transition-duration: 0.2s;
 
         &:hover {
           background-color: variables.$primary;
@@ -503,11 +512,17 @@
       position: relative;
       display: grid;
       grid-template-columns: 1fr 1fr;
+      transition-duration: 0.2s;
 
       &__textes {
         &__sous-titre {
           display: none;
         }
+      }
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
       }
 
       img {
@@ -607,7 +622,6 @@
         position: relative;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        transition-duration: 0.2s;
 
         &__textes {
           background-color: variables.$secondary;
@@ -634,12 +648,6 @@
 
         img {
           display: none;
-        }
-
-        &:hover {
-          cursor: pointer;
-          transform: scale(1.05);
-          
         }
       }
     }
