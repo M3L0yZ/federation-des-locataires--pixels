@@ -1946,10 +1946,15 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   transition-duration: 0.2s;
+  min-height: 300px;
 }
 .news-hub__en-continu .cartes .carte:hover {
   background: #2c6c5a;
   cursor: pointer;
+}
+.news-hub__en-continu .cartes .carte__textes {
+  position: relative;
+  top: 60px;
 }
 .news-hub__en-continu .cartes .carte__textes__sous-titre {
   display: none;
