@@ -345,44 +345,15 @@
   @media only screen and (min-width: 365px) {
     .menu-pages {
       background-color: transparent;
-      padding: 5%;
-      position: relative;
   
       &__cercles {
-        background-color: variables.$light;
-        padding: 2%;
-        display: flex;
-        justify-self: center;
-        gap: 5%;
-        position: relative;
-        border-radius: 15px;
-        width: 85px;
+        background-color: transparent;
+        padding: 0%;
       }
-  
+
       &__cercle {
-        position: relative;
-        background-color: variables.$secondary;
-        aspect-ratio: 1/1;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 30px;
-        height: 30px;
-        margin: 0 5px;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s;
-  
-        p {
-          margin: 0;
-          text-align: center;
-          color: variables.$light;
-        }
-  
-        &:hover {
-          background-color: variables.$primary-light;
-        }
+        width: 40px;
+        height: 40px;
       }
     }
 
@@ -479,15 +450,17 @@
     }
 
     .menu-pages {
-      display: flex;
-      justify-content: end;
-      margin-right: 5%;
-
+      background-color: transparent;
+      padding: 0;
+  
       &__cercles {
         background-color: transparent;
-        max-width: 350px;
-        width: 50%;
-        margin-top: 0;
+        padding: 0%;
+      }
+
+      &__cercle {
+        width: 50px;
+        height: 50px;
       }
     }
   }
