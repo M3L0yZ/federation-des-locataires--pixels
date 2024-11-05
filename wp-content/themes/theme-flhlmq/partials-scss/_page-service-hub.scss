@@ -8,6 +8,14 @@
     flex-direction: column;
     align-items: center;
 
+    &__titreservice{
+        color: variables.$primary;
+        font-size: 5vh;
+        text-decoration:underline #6d6d6d 0.05em;
+        
+    } 
+
+
     &__congrecontainer{
         display: flex;
         justify-content: center;
@@ -75,15 +83,9 @@
         padding-top: 2vh;
         padding-bottom: 2vh;
         width: 100%;
-    }
-
-
-
-
+    } 
 
     
-
-
     &__congretitre{
         font-size: 3.5vh;
         color: variables.$light;
@@ -324,6 +326,13 @@
     @media only screen and (min-width: 768px) {
 
         .service {
+            &__titreservice{
+               
+                font-size: 7vh;
+                text-decoration:underline #6d6d6d 0.05em;
+                
+            } 
+        
         
             &__congrecontainer{
                 
@@ -347,6 +356,12 @@
     @media only screen and (min-width: 1600px) {
 
         .service {
+            &__titreservice{
+               
+                font-size: 8vh;
+                text-decoration:underline #6d6d6d 0.05em;
+                
+            } 
         
             &__congrecontainer{
                 
