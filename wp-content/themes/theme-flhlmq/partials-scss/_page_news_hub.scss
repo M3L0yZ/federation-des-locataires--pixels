@@ -32,7 +32,7 @@
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
-    border-radius: 30px;
+    border-radius: 20px;
     order: 1;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.14);
   }
@@ -260,8 +260,9 @@
         }
 
         &__textes {
-          position: relative;
-          top: 0px;
+          display: flex;
+          flex-direction: column;
+          align-self: center;
           &__sous-titre {
             display: none;
           }
@@ -409,6 +410,8 @@
         background-color: variables.$secondary;
 
         &__textes {
+          display: block;
+          
           &__date {
             display: none;
           }
