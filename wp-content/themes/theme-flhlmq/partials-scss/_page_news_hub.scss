@@ -1,6 +1,8 @@
 @use "variables";
 @use "sass:color";
 
+//-------------------- À LA UNE ---------------------
+
 .news-hub_une {
   height: 100%;
   position: relative;
@@ -164,6 +166,8 @@
     }
   }
 }
+
+//-------------------- EN CONTINU ---------------------
 
 .news-hub__en-continu {
   width: 100%;
@@ -358,6 +362,7 @@
     display: none;
   }
 
+  // TABLETTE ET DESKTOP
   @media only screen and (min-width: 365px) {
     .menu-pages {
       background-color: transparent;
@@ -428,6 +433,8 @@
       }
     }
   }
+
+  // DESKTOP
 
   @media only screen and (min-width: 768px) {
     .cartes {
@@ -573,6 +580,7 @@
     color: variables.$dark;
   }
 
+  // TABLETTE ET DESKTOP
   @media only screen and (min-width: 365px) {
     .hr-titre {
       width: 65%;
@@ -660,6 +668,7 @@
     }
   }
 
+  // DESKTOP
   @media only screen and (min-width: 768px) {
     .cartes {
       display: grid;
