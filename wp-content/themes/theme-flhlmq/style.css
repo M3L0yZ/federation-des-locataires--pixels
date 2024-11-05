@@ -1954,7 +1954,7 @@ header {
 }
 .news-hub__en-continu .cartes .carte__textes {
   position: relative;
-  top: 60px;
+  top: 0px;
 }
 .news-hub__en-continu .cartes .carte__textes__sous-titre {
   display: none;
@@ -2362,10 +2362,11 @@ header {
 .service__textcongres {
   padding-left: 2vh;
   padding-right: 2vh;
-  height: 20vh;
+  height: 100%;
+  min-height: 22vh;
 }
 .service__congretexte {
-  font-size: 1.8vh;
+  font-size: 1.6vh;
   color: rgba(240, 248, 255, 0);
   transition: 0.5s;
 }
@@ -2377,12 +2378,12 @@ header {
   height: auto;
   border-radius: 25px;
   transition: 2s;
+  padding: 20px;
 }
 .service__ensavoirplus {
-  padding-bottom: 1vh;
+  padding-top: 2vh;
 }
 .service__ensavoirplus .bouttonsavoirplus {
-  margin-top: -1vh;
   color: rgba(240, 248, 255, 0);
   background-color: rgba(0, 139, 139, 0);
   height: 5vh;
@@ -2399,7 +2400,7 @@ header {
   transition: 0.5s;
 }
 .service__ensavoirplus .bouttonsavoirplus:hover {
-  background: #2c5248;
+  background: #1b5747;
   height: 5.2vh;
   max-width: 15.2vh;
   font-size: 1.85vh;
@@ -2540,6 +2541,9 @@ header {
     font-size: 2.2vh;
     color: rgba(240, 248, 255, 0);
     transition: 0.5s;
+  }
+  .service .service__shadowcolor {
+    padding: 50px;
   }
 }
 
