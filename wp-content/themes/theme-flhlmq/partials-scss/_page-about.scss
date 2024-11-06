@@ -2,3 +2,180 @@
 
 @use 'variables';
 @use "sass:color";
+
+//----------------------- STYLES GÉNÉRAUX -----------------------//
+
+.aPropos {
+    position: relative;
+    width: 80%;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    //padding-bottom: 10%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    background-color: variables.$light;
+    color: variables.$dark;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.281), 0 2px 10px 0 rgba(0, 0, 0, 0.253);
+    border-radius: 10px;
+
+    & h1 {
+        color: variables.$secondary;
+        width: 80%;
+        padding: 4px;
+        border-radius: 5px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    & h3 {
+        background-color: variables.$primary-light;
+        width: 80%;
+        padding: 4px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    &__hr {
+        width: 80%;
+        color: variables.$primary-light;
+    }
+
+    &__paragraphe {
+        width: 80%;
+        //margin-top: 10%;
+    }
+
+    &__liste {
+        width: 80%;
+        //margin-top: 10%;
+    }
+
+    &__photoHistoire {
+        width: 80%;
+        height: 316px;
+        background-image: url("./sources/medias/page_aPropos/kiosque.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        background-position: -140px;
+    }
+
+    &__photoMission {
+        width: 80%;
+        height: 316px;
+        background-image: url("./sources/medias/page_aPropos/manifestation.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        background-position: -120px;
+    }
+
+    & a {
+        text-decoration: none;
+
+        &:visited {
+            color: inherit;
+        }
+    }
+
+    &__links {
+        display: flex;
+        width: 80%;
+        height: auto;
+        margin-top: 4%;
+        margin-bottom: 4%;
+        //border: solid 1px blue;
+    }
+
+    &__btn {
+        display: block;
+        margin: auto;
+        height: 60px;
+        width: 40%;
+        font-size: 16px;
+        border-radius: 5px;
+        border: none;
+        background-color: variables.$primary;
+        color: variables.$light;
+        font-weight: bold;
+        padding: 6px;
+        margin-top: 8px;
+
+        &:hover {
+            background-color: variables.$secondary;
+            color: variables.$light;
+            cursor: pointer;
+        }
+    }
+
+
+
+
+
+@media screen and (min-width: 375px) { 
+    &__photoHistoire {
+        background-position: -80px;
+    }
+
+    &__photoMission {
+        background-position: -120px;
+    }
+}
+
+@media screen and (min-width: 525px) {
+    &__btn {
+        height: 60px;
+        width: 40%;
+        font-size: 18px;
+    }
+
+    &__photoHistoire {
+        background-position: 0;
+    }
+
+    &__photoMission {
+        background-position: 0;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    &__btn {
+        height: 60px;
+        width: 40%;
+        font-size: 22px;
+    }
+
+    &__photoHistoire {
+        background-position: 0;
+    }
+
+    &__photoMission {
+        background-position: 0;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    &__photoHistoire {
+        background-position: 0 0;
+    }
+
+}
+
+
+@media screen and (min-width: 1240px) {
+    width: 60%;
+    
+    &__links {
+        width: 60%;
+    }
+    
+    &__photoMission {
+        background-position: 0 -110px;
+    }
+}
+
+}
