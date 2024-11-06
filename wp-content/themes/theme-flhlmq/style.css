@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .nav {
   background-color: #C15A2E;
   padding: 15px;
@@ -2566,6 +2567,214 @@ header {
   }
   .service .service__shadowcolor {
     padding: 50px;
+  }
+}
+
+.congre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.congre__titreservice {
+  text-align: center;
+  color: #C15A2E;
+  font-size: 5vh;
+  -webkit-text-decoration: underline #6d6d6d 0.05em;
+          text-decoration: underline #6d6d6d 0.05em;
+}
+.congre__containerpremiertext {
+  background-color: rgba(193, 90, 46, 0.5215686275);
+  padding: 1vh;
+}
+.congre__backgroundcolortext {
+  padding-left: 2vh;
+  padding-right: 2vh;
+}
+.congre__premiertext {
+  text-align: justify;
+  font-size: 2vh;
+}
+.congre__containerdeuxiemetext {
+  padding: 2vh;
+}
+.congre__deuxiemetext {
+  text-align: justify;
+  font-size: 2vh;
+}
+.congre__containertroisièmetext {
+  padding: 2vh;
+}
+.congre__troisièmetext {
+  text-align: justify;
+  font-size: 2vh;
+}
+.congre__rapportcarte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+.congre__containercarte {
+  width: 100%;
+  max-width: 20vh;
+}
+.congre__carte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #2C856D;
+  border-radius: 2vh;
+}
+.congre__cartetext {
+  padding-left: 0.2vh;
+  padding-right: 0.2vh;
+  font-size: 1vh;
+  color: #FFFBE2;
+}
+.congre__ensavoirplus {
+  padding-bottom: 1vh;
+}
+.congre__bouttonsavoirpluscongre {
+  color: #2C856D;
+  background-color: #FFFBE2;
+  height: 3vh;
+  width: 100%;
+  max-width: 15vh;
+  font-size: 1.5vh;
+  font-weight: bolder;
+  border-radius: 15px;
+  border-color: none;
+  border: rgba(0, 0, 0, 0);
+  text-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.congre__bouttonsavoirpluscongre:hover {
+  background: #dbd7bf;
+}
+.congre__congreensavoirplus {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+.congre__bouttonsavoirplus {
+  color: #FFFBE2;
+  background-color: #2C856D;
+  height: 3vh;
+  width: 100%;
+  max-width: 15vh;
+  font-size: 1.5vh;
+  font-weight: bolder;
+  border-radius: 15px;
+  border-color: none;
+  border: rgba(0, 0, 0, 0);
+  text-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.congre__bouttonsavoirplus:hover {
+  background: #194e40;
+}
+@media only screen and (min-width: 768px) {
+  .congre .congre__titreservice {
+    font-size: 5.8vh;
+    -webkit-text-decoration: underline #6d6d6d 0.06em;
+            text-decoration: underline #6d6d6d 0.06em;
+  }
+  .congre .congre__premiertext {
+    font-size: 2.5vh;
+  }
+  .congre .congre__deuxiemetext {
+    font-size: 2.5vh;
+  }
+  .congre .congre__troisièmetext {
+    font-size: 2.5vh;
+  }
+  .congre .congre__rapportcarte {
+    flex-direction: row;
+    gap: 2.5vh;
+  }
+  .congre .congre__cartetext {
+    font-size: 1.3vh;
+  }
+  .congre .congre__bouttonsavoirpluscongre {
+    font-size: 1.6vh;
+    height: 3.2vh;
+    max-width: 20vh;
+  }
+  .congre .congre__bouttonsavoirplus {
+    height: 3.5vh;
+    max-width: 20vh;
+    font-size: 1.7vh;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .congre .congre__titreservice {
+    font-size: 6vh;
+    -webkit-text-decoration: underline #6d6d6d 0.06em;
+            text-decoration: underline #6d6d6d 0.06em;
+  }
+  .congre .congre__premiertext {
+    font-size: 3vh;
+  }
+  .congre .congre__deuxiemetext {
+    font-size: 3vh;
+  }
+  .congre .congre__troisièmetext {
+    font-size: 3vh;
+  }
+  .congre .congre__rapportcarte {
+    flex-direction: row;
+    gap: 2.5vh;
+  }
+  .congre .congre__cartetext {
+    font-size: 1.3vh;
+  }
+  .congre .congre__bouttonsavoirpluscongre {
+    font-size: 1.6vh;
+    height: 3.2vh;
+    max-width: 20vh;
+  }
+  .congre .congre__bouttonsavoirplus {
+    height: 3.5vh;
+    max-width: 20vh;
+    font-size: 1.7vh;
+  }
+  .congre .congre__backgroundcolortext {
+    padding-left: 40vh;
+    padding-right: 40vh;
+  }
+  .congre .congre__containerdeuxiemetext {
+    padding-left: 40vh;
+    padding-right: 40vh;
+  }
+  .congre .congre__containertroisièmetext {
+    padding-left: 40vh;
+    padding-right: 40vh;
+  }
+  .congre .congre__bouttonsavoirpluscongre {
+    font-size: 1.8vh;
+    height: 3.2vh;
+    max-width: 20vh;
+  }
+  .congre .congre__bouttonsavoirplus {
+    height: 4vh;
+    max-width: 25vh;
+    font-size: 2vh;
+  }
+  .congre .congre__cartetext {
+    font-size: 1.8vh;
+  }
+  .congre .congre__containercarte {
+    width: 100%;
+    max-width: 30vh;
   }
 }
 

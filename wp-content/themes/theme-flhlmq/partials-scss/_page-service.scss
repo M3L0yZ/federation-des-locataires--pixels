@@ -1,3 +1,277 @@
 @use 'variables';
 @use "sass:color";
 
+.congre  {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__titreservice{
+        text-align: center;
+        color: variables.$primary;
+        font-size: 5vh;
+        text-decoration:underline #6d6d6d 0.05em;
+    } 
+
+    &__containerpremiertext{
+        background-color: #c15a2e85;
+        padding: 1vh;
+    }
+
+    &__backgroundcolortext{
+        padding-left: 2vh;
+        padding-right: 2vh;
+    }
+
+    &__premiertext{
+        text-align: justify;
+        font-size: 2vh;
+    }
+
+    &__containerdeuxiemetext{
+        padding: 2vh;
+    } 
+
+    &__deuxiemetext{
+        text-align: justify;
+        font-size: 2vh;
+    } 
+
+    &__containertroisièmetext{
+        padding: 2vh;
+    } 
+
+    &__troisièmetext{
+        text-align: justify;
+        font-size: 2vh;
+    } 
+
+
+
+    &__rapportcarte{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2vh;
+    }
+
+    &__containercarte{
+        width: 100%;
+        max-width: 20vh;
+    }
+
+    &__carte{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: variables.$secondary;
+        border-radius: 2vh;
+    }
+
+    &__cartetext{
+        padding-left: 0.2vh;
+        padding-right: 0.2vh;
+        font-size: 1vh;
+        color: variables.$light;
+    }
+
+    &__ensavoirplus{
+        padding-bottom: 1vh;
+    }
+
+    &__bouttonsavoirpluscongre{
+        color: variables.$secondary;
+        background-color: variables.$light;
+        height: 3vh;
+        width: 100%;
+        max-width: 15vh;
+        font-size: 1.5vh;
+        font-weight: bolder;
+        border-radius: 15px;
+        border-color: none;
+        border: #00000000;
+        text-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0);
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0);
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover{
+            background:#dbd7bf;
+        }
+    } 
+
+
+    &__congreensavoirplus{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    } 
+
+
+    &__bouttonsavoirplus{
+        color: variables.$light;
+        background-color: variables.$secondary;
+        height: 3vh;
+        width: 100%;
+        max-width: 15vh;
+        font-size: 1.5vh;
+        font-weight: bolder;
+        border-radius: 15px;
+        border-color: none;
+        border: #00000000;
+        text-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0);
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0);
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover{
+            background:#194e40;
+        }
+    } 
+
+
+    @media only screen and (min-width: 768px) {
+        .congre  {
+            &__titreservice{
+                font-size: 5.8vh;
+                text-decoration:underline #6d6d6d 0.06em;
+            } 
+
+            &__premiertext{
+               
+                font-size: 2.5vh;
+            }
+        
+            &__deuxiemetext{
+                
+                font-size: 2.5vh;
+            } 
+        
+            &__troisièmetext{
+               
+                font-size: 2.5vh;
+            } 
+
+            &__rapportcarte{
+                flex-direction: row;
+            
+                gap: 2.5vh;
+            }
+            
+            &__cartetext{
+                font-size: 1.3vh;
+            }
+
+            &__bouttonsavoirpluscongre{
+                font-size: 1.6vh;
+                height: 3.2vh;
+                max-width: 20vh;
+            } 
+
+
+            &__bouttonsavoirplus{
+                height: 3.5vh;
+                max-width: 20vh;
+                font-size: 1.7vh;
+                
+            } 
+
+        }
+
+    }
+
+    @media only screen and (min-width: 1600px) {
+        .congre  {
+            &__titreservice{
+                font-size: 6vh;
+                text-decoration:underline #6d6d6d 0.06em;
+            } 
+
+            &__premiertext{
+                font-size: 3vh;
+            }
+        
+            &__deuxiemetext{
+                
+                font-size: 3vh;
+            } 
+        
+            &__troisièmetext{
+               
+                font-size: 3vh;
+            } 
+
+            &__rapportcarte{
+                flex-direction: row;
+                gap: 2.5vh;
+            }
+            
+            &__cartetext{
+                font-size: 1.3vh;
+            }
+
+            &__bouttonsavoirpluscongre{
+                font-size: 1.6vh;
+                height: 3.2vh;
+                max-width: 20vh;
+            } 
+
+
+            &__bouttonsavoirplus{
+                height: 3.5vh;
+                max-width: 20vh;
+                font-size: 1.7vh;
+                
+            } 
+
+
+            &__backgroundcolortext{
+                padding-left: 40vh;
+                padding-right: 40vh;
+            }
+        
+           
+            &__containerdeuxiemetext{
+                padding-left: 40vh;
+                padding-right: 40vh;
+            } 
+        
+        
+            &__containertroisièmetext{
+                padding-left: 40vh;
+                padding-right: 40vh;
+            } 
+        
+           
+            &__bouttonsavoirpluscongre{
+                font-size: 1.8vh;
+                height: 3.2vh;
+                max-width: 20vh;
+            } 
+
+
+            &__bouttonsavoirplus{
+                height: 4vh;
+                max-width: 25vh;
+                font-size: 2vh;
+                
+            } 
+            &__cartetext{
+                font-size: 1.8vh;
+            }
+
+            &__containercarte{
+                width: 100%;
+                max-width: 30vh;
+            }
+        }
+
+    }
+}
+
