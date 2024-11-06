@@ -544,6 +544,7 @@ header {
   right: 10px;
   top: -60px;
   cursor: pointer;
+  transition-duration: 0.2s;
 }
 .accueil__actualites .cartes .carte .bouton-lire:hover {
   background-color: #C15A2E;
@@ -665,6 +666,7 @@ header {
     bottom: 4%;
     display: block;
     cursor: pointer;
+    transition-duration: 0.2s;
   }
   .accueil__actualites .cartes-swiper .carte .bouton-lire-article:hover {
     background-color: #C15A2E;
@@ -797,6 +799,7 @@ header {
   top: 0%;
   left: 50%;
   transform: translate(-50%, 0%);
+  transition-duration: 0.2s;
   cursor: pointer;
 }
 .accueil__hero button:hover {
@@ -944,6 +947,7 @@ header {
   border: rgba(0, 0, 0, 0);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.281), 0 2px 10px 0 rgba(0, 0, 0, 0.253);
   cursor: pointer;
+  transition-duration: 0.2s;
 }
 .bouton-dollar:hover {
   background: #e6e5e2;
@@ -963,6 +967,7 @@ header {
   border: rgba(0, 0, 0, 0);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.281), 0 2px 10px 0 rgba(0, 0, 0, 0.253);
   cursor: pointer;
+  transition-duration: 0.2s;
 }
 .bouton-faire-don:hover {
   background: #a8522e;
@@ -2775,6 +2780,335 @@ header {
   .congre .congre__containercarte {
     width: 100%;
     max-width: 30vh;
+  }
+}
+
+.nousJoindre {
+  position: relative;
+  width: 80%;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding-bottom: 10%;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFBE2;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.281), 0 2px 10px 0 rgba(0, 0, 0, 0.253);
+  border-radius: 10px;
+}
+.nousJoindre h1 {
+  color: #2C856D;
+  width: 80%;
+  padding: 4px;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.nousJoindre h3 {
+  background-color: #F1BA85;
+  padding: 4px;
+  border-radius: 5px;
+  text-align: center;
+}
+.nousJoindre p {
+  width: 80%;
+}
+.nousJoindre__hr {
+  width: 80%;
+  color: #F1BA85;
+}
+.nousJoindre__contact {
+  width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+  background-color: #FFFBE2;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.nousJoindre__map {
+  max-width: 100%;
+  list-style: none;
+  transition: none;
+  overflow: hidden;
+  width: 80%;
+  height: 500px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+.nousJoindre__map__iframe {
+  height: 100%;
+  width: 100%;
+  border: 0;
+}
+.nousJoindre__formulaire {
+  width: 80%;
+  background-color: #FFB8A4;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.nousJoindre__formulaire p {
+  padding: 10px 10%;
+}
+.nousJoindre__formulaire__style {
+  color: #262127;
+  padding: 0 10% 10% 10%;
+}
+.nousJoindre input {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 6px;
+  background-color: #FFFBE2;
+  box-sizing: border-box;
+}
+.nousJoindre #choix {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 6px;
+  background-color: #FFFBE2;
+  box-sizing: border-box;
+}
+.nousJoindre #message {
+  resize: none;
+  width: 100%;
+  height: 80px;
+  border: none;
+  border-radius: 4px;
+  padding: 6px;
+  background-color: #FFFBE2;
+  box-sizing: border-box;
+}
+.nousJoindre #soumettre {
+  display: block;
+  margin: auto;
+  height: 40px;
+  width: 40%;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #C15A2E;
+  color: #FFFBE2;
+  font-weight: bold;
+  padding: 6px;
+  margin-top: 28px;
+}
+.nousJoindre #soumettre:hover {
+  background-color: #2C856D;
+  color: #FFFBE2;
+  cursor: pointer;
+}
+.nousJoindre label {
+  font-size: 20px;
+}
+@media screen and (min-width: 1240px) {
+  .nousJoindre {
+    width: 60%;
+  }
+  .nousJoindre__formulaire {
+    width: 80%;
+    background-color: #FFB8A4;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  .nousJoindre__formulaire p {
+    padding: 10px 10%;
+  }
+  .nousJoindre__formulaire__style {
+    color: #262127;
+    padding: 0 10% 10% 10%;
+  }
+  .nousJoindre input {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    padding: 6px;
+    background-color: #FFFBE2;
+    box-sizing: border-box;
+  }
+  .nousJoindre #choix {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    padding: 6px;
+    background-color: #FFFBE2;
+    box-sizing: border-box;
+  }
+  .nousJoindre #message {
+    resize: none;
+    width: 100%;
+    height: 80px;
+    border: none;
+    border-radius: 4px;
+    padding: 6px;
+    background-color: #FFFBE2;
+    box-sizing: border-box;
+  }
+  .nousJoindre #soumettre {
+    display: block;
+    margin: auto;
+    height: 40px;
+    width: 40%;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #C15A2E;
+    color: #FFFBE2;
+    font-weight: bold;
+    padding: 6px;
+    margin-top: 28px;
+  }
+  .nousJoindre #soumettre:hover {
+    background-color: #2C856D;
+    color: #FFFBE2;
+    cursor: pointer;
+  }
+}
+
+.aPropos {
+  position: relative;
+  width: 80%;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFBE2;
+  color: #262127;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.281), 0 2px 10px 0 rgba(0, 0, 0, 0.253);
+  border-radius: 10px;
+}
+.aPropos h1 {
+  color: #2C856D;
+  width: 80%;
+  padding: 4px;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.aPropos h3 {
+  background-color: #F1BA85;
+  width: 80%;
+  padding: 4px;
+  border-radius: 5px;
+  text-align: center;
+}
+.aPropos__hr {
+  width: 80%;
+  color: #F1BA85;
+}
+.aPropos__paragraphe {
+  width: 80%;
+}
+.aPropos__liste {
+  width: 80%;
+}
+.aPropos__photoHistoire {
+  width: 80%;
+  height: 316px;
+  background-image: url("./sources/medias/page_aPropos/kiosque.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  background-position: -140px;
+}
+.aPropos__photoMission {
+  width: 80%;
+  height: 316px;
+  background-image: url("./sources/medias/page_aPropos/manifestation.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  background-position: -120px;
+}
+.aPropos a {
+  text-decoration: none;
+}
+.aPropos a:visited {
+  color: inherit;
+}
+.aPropos__links {
+  display: flex;
+  width: 80%;
+  height: auto;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.aPropos__btn {
+  display: block;
+  margin: auto;
+  height: 60px;
+  width: 40%;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #C15A2E;
+  color: #FFFBE2;
+  font-weight: bold;
+  padding: 6px;
+  margin-top: 8px;
+}
+.aPropos__btn:hover {
+  background-color: #2C856D;
+  color: #FFFBE2;
+  cursor: pointer;
+}
+@media screen and (min-width: 375px) {
+  .aPropos__photoHistoire {
+    background-position: -80px;
+  }
+  .aPropos__photoMission {
+    background-position: -120px;
+  }
+}
+@media screen and (min-width: 525px) {
+  .aPropos__btn {
+    height: 60px;
+    width: 40%;
+    font-size: 18px;
+  }
+  .aPropos__photoHistoire {
+    background-position: 0;
+  }
+  .aPropos__photoMission {
+    background-position: 0;
+  }
+}
+@media screen and (min-width: 800px) {
+  .aPropos__btn {
+    height: 60px;
+    width: 40%;
+    font-size: 22px;
+  }
+  .aPropos__photoHistoire {
+    background-position: 0;
+  }
+  .aPropos__photoMission {
+    background-position: 0;
+  }
+}
+@media screen and (min-width: 950px) {
+  .aPropos__photoHistoire {
+    background-position: 0 0;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .aPropos {
+    width: 60%;
+  }
+  .aPropos__links {
+    width: 60%;
+  }
+  .aPropos__photoMission {
+    background-position: 0 -110px;
   }
 }
 
