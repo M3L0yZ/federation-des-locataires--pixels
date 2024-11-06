@@ -9,7 +9,222 @@
     <title>À propos</title>
 </head>
 <body>
-    
+    <!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>FLHLMQ</title>
+</head>
+
+<body>
+    <!---------------------------------- HEADER ---------------------------------->
+    <header class="header">
+        <div class="header__grid">
+            <!-- projet par etudiant -->
+            <div class="header__block">
+                <div class="head__etudiant">
+                    <h1 class="projet-etudiant">Projet Étudiant réalisé dans un cadre scolaire au collège Montmorency
+                    </h1>
+                    <h1 class="voir-site-origine">Voir le site d'origine:<a
+                            href="https://flhlmq.com/fr">www.flhlmq.com/fr</a></h1>
+                    <div class="bouton-x-header-wrap">
+                        <button class="bouton-x-header" onclick="myFunction()"> <img src="./sources/boutonX.png"
+                                alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <!-- dons -->
+            <div class="header__block">
+                <div class="header__don">
+                    <div class="logo-federation-wrap">
+                        <a href="./index.html"><img class="logo-federation" src="./sources/logo/logo-federation.png"></a>
+                    </div>
+                    <div class="bouton-don-wrap">
+                        <button class="bouton-don" onclick="myFunction()">Dons</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!---------------------------------- NAV ---------------------------------->
+    <nav class="nav">
+        <img class="logo-search" src="./sources/icons/symbole-de-linterface-de-recherche_light.png">
+        <img class="logo-langue" src="./sources/icons/world.png">
+        <a href="javascript:void(0);" class="menu-hamburger" onclick="boutonHamburger()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#">À propos</a></li>
+            <li class="nav__item"><a href="#">S'impliquer</a></li>
+            <li class="nav__item"><a href="#">Services</a></li>
+            <li class="nav__item"><a href="./news_hub.html">Nouvelles</a></li>
+            <li class="nav__item"><img class="icone-facebook" src="./sources/icons/facebook.png"></li>
+            <li class="nav__item"><img class="icone-youtube" src="./sources/icons/youtube.png"></li>
+            <li class="nav__item">
+                <input type="search" id="search" name="search" placeholder="Rechercher">
+            </li>
+            <li class="nav__item"><a href="#">FR/EN</a></li>
+        </ul>
+    </nav>
+
+    <!---------------------------------- MAIN ---------------------------------->
+
+    <main class="accueil">
+        
+        <!-------------- HERO -------------------->
+
+        <section class="accueil__hero">
+            <!--- <div class="accueil__hero__container">
+                <h1>Accessibilité et équité</h1>
+                <h1>Se loger dans la dignité</h1>
+                <button>Devenir membre</button>
+            </div> --->
+            <div class="swiper-container mySwiper ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-1">
+                        
+                    </div>
+                    <div class="swiper-slide slide-2">
+                        <div class="fade-black"></div>
+                        
+                    </div>
+                    <div class="swiper-slide slide-3">
+                        <div class="fade-black"></div>
+                        
+                    </div>
+                </div>
+                
+                <!-- Pagination (if needed) -->
+                <div class="swiper-pagination"></div>
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div><div class="slides__container">
+                    <h1>Accessibilité et équité <br> Se loger dans la dignité</h1>
+                    <button>Devenir membre</button></div>
+        </section>
+
+    <!---------------------------------- À PROPOS -------------------------------->
+<section class="aPropos">
+    <h1>À propos de la FLHLMQ</h1>
+    <hr class="aPropos__hr">
+    <p class="aPropos__paragraphe">
+        Née en 1993, la Fédération des locataires d'habitations à loyer modique du Québec (FLHLMQ) regroupe plus de 300 associations de locataires d'HLM et comités consultatifs de résidants et de résidantes (CCR) répartis sur tout le territoire du Québec.</p>
+    <hr class="aPropos__hr">
+    <h3>Notre histoire</h3>
+    <div class="aPropos__photoHistoire"></div><br>
+    <p class="aPropos__paragraphe">C'est en 1993 que huit associations de locataires de Laval, Trois-Rivières, Mont-Joli, Rivière-du-Loup, Québec et Montréal ont eu la bonne idée de créer la Fédération des locataires d'habitations à loyer modique du Québec (FLHLMQ). Pour y parvenir, elles ont pu bénéficier du soutien généreux du Front d'action populaire en réaménagement urbain (FRAPRU).</p>
+    <p class="aPropos__paragraphe">La Fédération a obtenu sa première grande victoire, en avril 1998, en obtenant une première directive de la SHQ. Ce gain avait demandé le dépôt d'une pétition de 30 000 signatures ainsi qu'une manifestation de plus de 700 locataires devant l'Assemblée nationale du Québec. Le président de la Fédération de l'époque, Claude Gelderblom, de Rivière-du-Loup, avait déclaré avec enthousiasme que ce gain représenterait une « véritable révolution tranquille pour les HLM ». Il a eu raison puisque, depuis ce temps, plus de 300 associations de locataires et près de 75 comités consultatifs des résidant-e-s (CCR) se sont formés dans les 149 offices d'habitation du Québec pour améliorer la vie dans nos HLM.</p>
+    <hr class="aPropos__hr">
+    <h3>Notre mission</h3>
+    <div class="aPropos__photoMission"></div><br>
+    <ul class="aPropos__liste">
+        <li>de promouvoir et défendre les intérêts des locataires et travailler à l'amélioration de leur qualité de vie;</li><br>
+        <li>d'apporter un soutien au travail réalisé localement par les associations de locataires;</li><br>
+        <li>de favoriser l'implication et la prise en charge des locataires dans les HLM;</li><br>
+        <li>de représenter les locataires auprès des instances politiques et administratives.</li>
+    </ul>
+    <p class="aPropos__paragraphe">
+    La FLHLMQ est dirigée par un conseil d'administration de 18 locataires représentant les différentes régions du Québec. Ils sont élus pour deux ans, lors du congrès de la FLHLMQ. Chacun d'eux est responsable des liens avec les associations et CCR de sa région, en plus d'être organisateur des activités régionales de la FLHLMQ.
+    <br><br>
+    La FLHLMQ emploie 4 personnes : Robert Pilon, Élisabeth Pham, Patricia Viannay et Anik Leroux. Les bureaux de la fédération sont situés à Montréal.
+    <br><br>
+    <hr class="aPropos__hr">
+    <div class="aPropos__links">
+        <button class="aPropos__btn"><a href="./team.html">Notre équipe</a></button>
+        <button class="aPropos__btn"><a href="./contact-us.html">Nous joindre</a></button>
+    </div>    
+    </p>
+</section>
+
+    <!---------------------------------- FOOTER ---------------------------------->
+    <footer class="foot">
+        <div class="foot__grid">
+            <!-- Services -->
+            <div class="foot__block">
+                <ul class="foot__list">
+                    <h2>Services</h2>
+                    <li class="foot__item"><a class="foot__link" href="#">Devenir membre</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Droits des locataires</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Guides et règlements</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Témoignages</a></li>
+                </ul>
+            </div>
+            <!-- À propos -->
+            <div class="foot__block">
+                <ul class="foot__list">
+                    <h2>À propos</h2>
+                    <li class="foot__item"><a class="foot__link" href="#">La fédération</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Notre histoire</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Notre équipe</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Nous joindre</a></li>
+                </ul>
+            </div>
+            <!-- Publications -->
+            <div class="foot__block">
+                <ul class="foot__list">
+                    <h2>Publications</h2>
+                    <li class="foot__item"><a class="foot__link" href="#">Bulletins et infolettres</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Recherches et mémoires</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Communiqués</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Cahier de congrès</a></li>
+                </ul>
+            </div>
+            <!-- Nouvelles -->
+            <div class="foot__block">
+                <ul class="foot__list">
+                    <h2>Nouvelles</h2>
+                    <li class="foot__item"><a class="foot__link" href="#">Actualité</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Dossiers</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Évènements et calendrier</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Capsules vidéos</a></li>
+                </ul>
+            </div>
+            <!-- S'impliquer -->
+            <div class="foot__block">
+                <ul class="foot__list">
+                    <h2>S'impliquer</h2>
+                    <li class="foot__item"><a class="foot__link" href="#">Association de locataire</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Comité consultatif de résidents</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Conseil d'administration</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Faire un don</a></li>
+                </ul>
+            </div>
+            <br>
+            <!-- Autres -->
+            <div class="foot__block">
+                <div class="foot__social">
+                    <img class="foot__icon" src="./sources/icons/facebook_logo_secondary.png"></li>
+                    <img class="foot__icon" src="./sources/icons/youtube.png"></li>
+                </div>
+            </div>
+            <div class="foot__block">
+                <div class="foot__contact">
+                    <a class="foot__link" target="_blank" href="https://www.google.com/maps/place/2520+Av.+Lionel-Groulx+local+202,+Montr%C3%A9al,+QC+H3J+1J8/@45.484095,-73.5796457,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc91a70a26a7eb9:0x7d25ca49693610e0!8m2!3d45.4840913!4d-73.5770708?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D">
+                    2520, av. Lionel-Groulx, local 202<br>
+                    Montréal, (Québec)<br>
+                    H3J 1J8<br></a>
+                </div>
+            </div>
+            <a class="foot__block" href="index.html">
+            <div class="foot__block">
+                <div class="foot__banner"> 
+                    <button class="foot__button" type="button">DONS</button>
+                </div>
+            </div></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
 </body>
     <script src="./main.js"></script>
 </html>
