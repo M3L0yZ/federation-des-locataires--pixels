@@ -2217,7 +2217,7 @@ header {
 }
 .news-hub__consultes .cartes .carte:hover {
   cursor: pointer;
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 .news-hub__consultes .cartes .carte img {
   width: 100%;
