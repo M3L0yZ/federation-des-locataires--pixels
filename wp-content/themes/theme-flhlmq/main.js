@@ -41,11 +41,10 @@ var swiper2 = new Swiper(".mySwiperHub", {
 // ---------------------- PAGE NOUVELLE HUB -> EN CONTINU ------------------------
 
 let slideActuelle = 0;
+let slide = document.querySelector('.swiper-wrapper');
+let boutton = document.querySelectorAll('.pagination-button');
 
 function changerSlide(indexSlide) {
-    const slide = document.querySelector('.swiper-wrapper');
-    const boutton = document.querySelectorAll('.pagination-button');
-    
     slide.style.transform = `translateX(-${indexSlide * 100}%)`;
     
     boutton[slideActuelle].classList.remove('active');
