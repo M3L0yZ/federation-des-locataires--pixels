@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gsap.registerPlugin(MorphSVGPlugin);">
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <title>FLHLMQ</title>
@@ -99,8 +101,33 @@
                     <button>Devenir membre</button></div>
         </section>
 
-        <!-------------- erreur -------------------->
+        <!-------------- 404 -------------------->
+        
+        <div class="tryanima">
+            <div class="chapeau">
+                <img class="imgerrerno" src="./sources/medias/page_erreur/hat.png" alt="">
+            </div>
+            <div class="erreurchiffre">
+                <img class="imgerrerhat" src="./sources/medias/page_erreur/errornohat.png" alt="">
+            </div>
+        </div>
+        
+        <div class="texterreur">
+            <p>
+                Oups il n'y a aucun locataire ici! 
+            </p>
+            <p>
+               La page que vous recherchez semble introuvable
+            </p>
+        </div>
 
+         
+    
+
+            
+        
+
+        
       
     </main>
 
@@ -181,8 +208,13 @@
             </div></a>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script>gsap.registerPlugin(MorphSVGPlugin);</script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/MorphSVGPlugin.min.js"></script>
 </body>
 
 </html>
