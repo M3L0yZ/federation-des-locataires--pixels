@@ -200,6 +200,34 @@
     margin-bottom: 5%;
   }
 
+  &__menuDeroulant {
+    max-width: 95%;
+    margin-bottom: 5px;
+    margin-top: 10%;
+    position: relative;
+    display: flex;
+    justify-content: end;
+
+    select {
+      background-color: variables.$primary;
+      color: variables.$light;
+      height: 30px;
+      border-radius: 10px 10px 0px 0px;
+      border: none;
+      transition-duration: 0.2s;
+
+      &:hover {
+        background: color.adjust(variables.$primary, $blackness: 10%);
+      }
+    }
+
+    option {
+      &:hover {
+        background: color.adjust(variables.$primary, $blackness: 10%);
+      }
+    }
+  }
+
     .menu-pages {
       background-color: variables.$secondary;
       padding: 5%;
