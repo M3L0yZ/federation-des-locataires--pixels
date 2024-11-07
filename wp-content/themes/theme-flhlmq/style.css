@@ -1952,11 +1952,9 @@ header {
   border-radius: 10px 10px 0px 0px;
   border: none;
   transition-duration: 0.2s;
+  cursor: pointer;
 }
 .news-hub__en-continu__menuDeroulant select:hover {
-  background: #a8522e;
-}
-.news-hub__en-continu__menuDeroulant option:hover {
   background: #a8522e;
 }
 .news-hub__en-continu .menu-pages {
