@@ -1,5 +1,3 @@
-// ----------------------------- SWIPER --------------------------------------------
-
 var swiper = new Swiper(".swiper-container", {
     loop: true,
     navigation: {
@@ -38,81 +36,53 @@ var swiper2 = new Swiper(".mySwiperHub", {
       },
 });
 
-// ---------------------- PAGE NOUVELLE HUB -> EN CONTINU ------------------------
+let currentSlide = 0;
 
-let slideActuelle = 0;
-let slide = document.querySelector('.swiper-wrapper');
-let boutton = document.querySelectorAll('.pagination-button');
-
-function changerSlide(indexSlide) {
-    slide.style.transform = `translateX(-${indexSlide * 100}%)`;
+function goToSlide(slideIndex) {
+    const slides = document.querySelector('.swiper-wrapper');
+    const buttons = document.querySelectorAll('.pagination-button');
     
-    boutton[slideActuelle].classList.remove('active');
-    boutton[indexSlide].classList.add('active');
+    slides.style.transform = `translateX(-${slideIndex * 100}%)`;
     
-    slideActuelle = indexSlide;
+    buttons[currentSlide].classList.remove('active');
+    buttons[slideIndex].classList.add('active');
+    
+    currentSlide = slideIndex;
 }
 
-// ----------------------------- NAVBAR BOUTON HAMBURGER -----------------------------------
-var navList = document.getElementsByClassName("nav__list")[0];
+//Navbar fonctions
+console.log("test");
 function boutonHamburger() {
+    var list = document.getElementsByClassName("nav__list")[0];
     if (window.matchMedia("(max-width:1400px)").matches) {
-        navList.classList.toggle('list-active');
+        list.classList.toggle('list-active');
     } else {
-        navList.classList.remove('list-active');
+        list.classList.remove('list-active');
     }
 }
 
 function TailleFenetre() {
+    var list = document.getElementsByClassName("nav__list")[0];
     if (window.innerWidth >= 1400) {
-        navList.classList.remove('list-active');
+        list.classList.remove('list-active');
     } else {
-        navList.classList.remove('list-active');
+        list.classList.remove('list-active');
     }
 }
 
-window.addEventListener('resize', TailleFenetre);
+gsap.set(".imgerrerno", { opacity: 1, rotation: 0, x: 0, y: 0 });
 
-// ----------------------------- GSAP -----------------------------------------
-
-// Bouton hanburger
-
-const hamburger = document.querySelector('.menu-hamburger');
-
-hamburger.addEventListener('mouseover', () => {
-  gsap.to(hamburger, {
-    scale: 1.2,
-    duration: 0.2
-    }
-  );
-});
-
-hamburger.addEventListener('mouseout', () => {
-    gsap.to(hamburger, {
-        scale: 1,
-        duration: 0.2
-    }
-    );
-  });
-
-// Don page d'accueil
-
-const cinqDollar = document.querySelector('.wrap-5-dollar');
-const vingtDollar = document.querySelector('.wrap-20-dollar');
-const cinquanteDollar = document.querySelector('.wrap-50-dollar');
-const boutonDon = document.querySelector('.wrap-faire-don');
-const sectionDon = document.querySelector('.soutenir__block');
-
-sectionDon.addEventListener('mouseover', function() {
-    gsap.timeline()
-      .to(cinqDollar, { scale: 1.2 , duration: 0.2 })
-      .to(vingtDollar, { scale: 1.2 , duration: 0.2 })
-      .to(cinquanteDollar, { scale: 1.2 , duration: 0.2 });
-  });
-
-sectionDon.addEventListener('mouseout', function() {
-    gsap.timeline()
-      .to(cinqDollar, { scale: 1 , duration: 0.2 })
-      .to(vingtDollar, { scale: 1 , duration: 0.2 })
-      .to(cinquanteDollar, { scale: 1 , duration: 0.2 });
-});
+// Create a timeline for the fade transition with more fun effects
+gsap.timeline({ repeat: -1, yoyo: true })
+    .to(".imgerrerno", {
+        duration: 2,
+        opacity: 0,
+        rotation: -90,     
+        ease: "bounce.out",
+    })
+    .to(".imgerrerno", {
+        duration: 2,
+        opacity: 1,
+        rotation: 0,       // Reset rotation
+        ease: "bounce.out"
+    });

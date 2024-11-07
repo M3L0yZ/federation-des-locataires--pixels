@@ -2846,6 +2846,63 @@ header {
   }
 }
 
+#hippo {
+  opacity: 0;
+}
+
+.tryanima {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  padding: 5vh;
+  padding-top: 10vh;
+}
+
+.imgerrerno {
+  margin-right: 0px;
+  transform: translate(0px, -40px);
+  width: 100%;
+  max-width: 20vh;
+}
+
+.imgerrerhat {
+  margin-right: 0px;
+  transform: translate(-50px, 0px);
+  width: 100%;
+  max-width: 40vh;
+}
+
+.texterreur {
+  font-size: 2.5vh;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 5vh;
+}
+
+@media only screen and (min-width: 768px) {
+  .imgerrerno {
+    max-width: 30vh;
+  }
+  .imgerrerhat {
+    max-width: 50vh;
+  }
+  .texterreur {
+    font-size: 3vh;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .imgerrerno {
+    max-width: 30vh;
+  }
+  .imgerrerhat {
+    max-width: 50vh;
+  }
+  .texterreur {
+    font-size: 3vh;
+  }
+}
 .nousJoindre {
   position: relative;
   width: 80%;
@@ -3322,29 +3379,53 @@ header {
     grid-column-gap: 26px;
   }
   .equipe__carte1__photo {
-    width: 70%;
+    width: 80%;
     height: 320px;
   }
   .equipe__carte2__photo {
-    width: 70%;
+    width: 80%;
     height: 320px;
   }
   .equipe__carte3__photo {
-    width: 70%;
+    width: 80%;
     height: 320px;
   }
   .equipe__carte4__photo {
-    width: 70%;
+    width: 80%;
     height: 320px;
   }
   .equipe__carte5__photo {
-    width: 70%;
+    width: 80%;
     height: 320px;
   }
   .equipe__carte6__photo {
-    width: 70%;
+    width: 80%;
     height: 320px;
   }
+}
+
+.slide-equipe1 {
+  background-image: url("./sources/medias/page_equipe/equipe2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 30%;
+  height: 100%;
+}
+
+.slide-equipe2 {
+  background-image: url("./sources/medias/page_equipe/equipe1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 40%;
+  height: 100%;
+}
+
+.slide-equipe3 {
+  background-image: url("./sources/medias/page_equipe/equipe3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+  height: 100%;
 }
 
 .aPropos {
@@ -3543,6 +3624,30 @@ header {
   .aPropos__photoMission {
     background-position: 0 -110px;
   }
+}
+
+.slide-propos1 {
+  background-image: url("./sources/medias/page_aPropos/propos1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 55%;
+  height: 100%;
+}
+
+.slide-propos2 {
+  background-image: url("./sources/medias/page_aPropos/propos2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 95%;
+  height: 100%;
+}
+
+.slide-propos3 {
+  background-image: url("./sources/medias/page_aPropos/propos3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 80%;
+  height: 100%;
 }
 
 @font-face {
