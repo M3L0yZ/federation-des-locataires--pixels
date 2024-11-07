@@ -326,6 +326,8 @@
         }
     }
 
+    
+
     //----------------------- MEDIA QUERIES -----------------------//
 
 
@@ -343,7 +345,6 @@
 
     @media screen and (min-width: 950px) {
         
-
     }
 
 
@@ -359,45 +360,68 @@
 
         &__carte1 {
             &__photo {
-                width: 70%;
+                width: 80%;
                 height: 320px;
             }
         }
 
         &__carte2 {
             &__photo {
-                width: 70%;
+                width: 80%;
                 height: 320px;
             }
         }
 
         &__carte3 {
             &__photo {
-                width: 70%;
+                width: 80%;
                 height: 320px;
             }
         }
 
         &__carte4 {
             &__photo {
-                width: 70%;
+                width: 80%;
                 height: 320px;
             }
         }
 
         &__carte5 {
             &__photo {
-                width: 70%;
+                width: 80%;
                 height: 320px;
             }
         }
 
         &__carte6 {
             &__photo {
-                width: 70%;
+                width: 80%;
                 height: 320px;
             }
         }
     }
 }
 
+.slide-equipe1 {
+    background-image: url("./sources/medias/page_equipe/equipe2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 30%;
+    height: 100%;
+}
+
+.slide-equipe2 {
+    background-image: url("./sources/medias/page_equipe/equipe1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 40%;
+    height: 100%;
+}
+
+.slide-equipe3 {
+    background-image: url("./sources/medias/page_equipe/equipe3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    height: 100%;
+}
