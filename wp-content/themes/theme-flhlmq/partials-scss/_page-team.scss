@@ -10,7 +10,6 @@
     margin: 0 auto;
     margin-top: 80px;
     margin-bottom: 80px;
-    //padding-bottom: 10%;
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
@@ -315,14 +314,13 @@
         display: block;
         margin: auto;
         height: 60px;
-        width: 50%;
+        width: 30%;
         font-size: 16px;
         border-radius: 5px;
         border: none;
         background-color: variables.$primary;
         color: variables.$light;
         font-weight: bold;
-        //padding: 6px;
         margin-top: 8px;
 
         &:hover {
@@ -333,8 +331,221 @@
     }
 
 //----------------------- MEDIA QUERIES -----------------------//
+@media screen and (min-width: 585px) {
 
-    @media screen and (min-width: 1240px) {
+    &__carte1 {
+        &__photo {
+            height: 400px;
+        }
+    }
+
+    &__carte2 {
+        &__photo {
+            height: 400px;
+        }
+    }
+
+    &__carte3 {
+        &__photo {
+            height: 400px;
+        }
+    }
+
+    &__carte4 {
+        &__photo {
+            height: 400px;
+        }
+    }
+
+    &__carte5 {
+        &__photo {
+            height: 400px;
+        }
+    }
+
+    &__carte6 {
+        &__photo {
+            height: 400px;
+        }
+    }
+}
+
+@media screen and (min-width: 780px) {
+    &__cartes {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 16px;
+        grid-column-gap: 26px;
+    }
+
+    &__carte1 {
+        &__photo {
+            height: 200px;
+        }
+    }
+
+    &__carte2 {
+        &__photo {
+            height: 200px;
+        }
+    }
+
+    &__carte3 {
+        &__photo {
+            height: 200px;
+        }
+    }
+
+    &__carte4 {
+        &__photo {
+            height: 200px;
+        }
+    }
+
+    &__carte5 {
+        &__photo {
+            height: 200px;
+        }
+    }
+
+    &__carte6 {
+        &__photo {
+            height: 200px;
+        }
+    }
+}
+
+@media screen and (min-width: 850px) {
+
+    &__carte1 {
+        &__photo {
+            height: 250px;
+        }
+    }
+
+    &__carte2 {
+        &__photo {
+            height: 250px;
+        }
+    }
+
+    &__carte3 {
+        &__photo {
+            height: 250px;
+        }
+    }
+
+    &__carte4 {
+        &__photo {
+            height: 250px;
+        }
+    }
+
+    &__carte5 {
+        &__photo {
+            height: 250px;
+        }
+    }
+
+    &__carte6 {
+        &__photo {
+            height: 250px;
+        }
+    }
+}
+
+@media screen and (min-width: 1050px) {
+
+    &__carte1 {
+        &__photo {
+            height: 300px;
+        }
+    }
+
+    &__carte2 {
+        &__photo {
+            height: 300px;
+        }
+    }
+
+    &__carte3 {
+        &__photo {
+            height: 300px;
+        }
+    }
+
+    &__carte4 {
+        &__photo {
+            height: 300px;
+        }
+    }
+
+    &__carte5 {
+        &__photo {
+            height: 300px;
+        }
+    }
+
+    &__carte6 {
+        &__photo {
+            height: 300px;
+        }
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    width: 70%;
+    &__cartes {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 16px;
+        grid-column-gap: 26px;
+    }
+
+    &__carte1 {
+        &__photo {
+            width: 80%;
+            height: 320px;
+        }
+    }
+
+    &__carte2 {
+        &__photo {
+            width: 80%;
+            height: 320px;
+        }
+    }
+
+    &__carte3 {
+        &__photo {
+            width: 80%;
+            height: 320px;
+        }
+    }
+
+    &__carte4 {
+        &__photo {
+            width: 80%;
+            height: 320px;
+        }
+    }
+
+    &__carte5 {
+        &__photo {
+            width: 80%;
+            height: 320px;
+        }
+    }
+
+    &__carte6 {
+        &__photo {
+            width: 80%;
+            height: 320px;
+        }
+    }
+}
+
+    @media screen and (min-width: 1600px) {
         width: 60%;
         
         &__cartes {
