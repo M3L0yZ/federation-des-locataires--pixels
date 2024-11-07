@@ -94,3 +94,25 @@ hamburger.addEventListener('mouseout', () => {
     }
     );
   });
+
+// Don page d'accueil
+
+const cinqDollar = document.querySelector('.wrap-5-dollar');
+const vingtDollar = document.querySelector('.wrap-20-dollar');
+const cinquanteDollar = document.querySelector('.wrap-50-dollar');
+const boutonDon = document.querySelector('.wrap-faire-don');
+const sectionDon = document.querySelector('.soutenir__block');
+
+sectionDon.addEventListener('mouseover', function() {
+    gsap.timeline()
+      .to(cinqDollar, { scale: 1.2 , duration: 0.2 })
+      .to(vingtDollar, { scale: 1.2 , duration: 0.2 })
+      .to(cinquanteDollar, { scale: 1.2 , duration: 0.2 });
+  });
+
+sectionDon.addEventListener('mouseout', function() {
+    gsap.timeline()
+      .to(cinqDollar, { scale: 1 , duration: 0.2 })
+      .to(vingtDollar, { scale: 1 , duration: 0.2 })
+      .to(cinquanteDollar, { scale: 1 , duration: 0.2 });
+});
