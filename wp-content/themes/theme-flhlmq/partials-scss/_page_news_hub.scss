@@ -3,13 +3,14 @@
 
 .news-hub {
   overflow: hidden;
+
   @media only screen and (min-width: 768px) {
     max-width: 80%;
     display: flex;
     flex-direction: column;
     justify-self: center;
   }
-  
+
 }
 
 //-------------------- À LA UNE ---------------------
@@ -200,148 +201,173 @@
     margin-bottom: 5%;
   }
 
-    .menu-pages {
+  &__menuDeroulant {
+    max-width: 95%;
+    margin-bottom: 5px;
+    margin-top: 10%;
+    position: relative;
+    display: flex;
+    justify-content: end;
+
+
+    select {
+      background-color: variables.$primary;
+      color: variables.$light;
+      height: 30px;
+      border-radius: 10px 10px 0px 0px;
+      border: none;
+      transition-duration: 0.2s;
+      cursor: pointer;
+
+      &:hover {
+        background: color.adjust(variables.$primary, $blackness: 10%);
+      }
+    }
+  }
+
+  .menu-pages {
+    background-color: variables.$secondary;
+    padding: 5%;
+    position: relative;
+    margin-bottom: 30px;
+
+    &__cercles {
+      background-color: variables.$light;
+      padding: 2%;
+      display: flex;
+      justify-self: center;
+      gap: 5%;
+      position: relative;
+      border-radius: 15px;
+      width: 85px;
+    }
+
+    &__cercle {
+      position: relative;
       background-color: variables.$secondary;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      margin: 0 5px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      p {
+        margin: 0;
+        text-align: center;
+        color: variables.$light;
+      }
+
+      &:hover {
+        background-color: variables.$primary-light;
+      }
+    }
+  }
+
+  .pagination-button.active {
+    background-color: variables.$primary-light;
+  }
+
+  #button1 .cartes {
+    position: relative;
+    width: 100%;
+  }
+
+  .cartes {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: variables.$secondary;
+    padding: 5%;
+    position: relative;
+
+    .carte {
+      border-radius: 30px;
       padding: 5%;
       position: relative;
-      margin-bottom: 30px;
-
-      &__cercles {
-        background-color: variables.$light;
-        padding: 2%;
-        display: flex;
-        justify-self: center;
-        gap: 5%;
-        position: relative;
-        border-radius: 15px;
-        width: 85px;
-      }
-
-      &__cercle {
-        position: relative;
-        background-color: variables.$secondary;
-        aspect-ratio: 1/1;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 30px;
-        height: 30px;
-        margin: 0 5px;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s;
-
-        p {
-          margin: 0;
-          text-align: center;
-          color: variables.$light;
-        }
-
-        &:hover {
-          background-color: variables.$primary-light;
-        }
-      }
-    }
-
-    .pagination-button.active {
-      background-color: variables.$primary-light;
-    }
-
-    #button1 .cartes {
-      position: relative;
-      width: 100%;
-    }
-
-    .cartes {
       display: grid;
-      grid-template-columns: 1fr;
-      background-color: variables.$secondary;
-      padding: 5%;
-      position: relative;
+      grid-template-columns: 1fr 1fr;
+      transition-duration: 0.2s;
+      min-height: 300px;
 
-      .carte {
-        border-radius: 30px;
-        padding: 5%;
-        position: relative;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        transition-duration: 0.2s;
-        min-height: 300px;
+      &:hover {
+        background: color.adjust(variables.$secondary, $blackness: 10%);
+        cursor: pointer;
+      }
 
-        &:hover {
-          background: color.adjust(variables.$secondary, $blackness: 10%);
-          cursor: pointer;
-        }
+      &__textes {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
 
-        &__textes {
-          display: flex;
-          flex-direction: column;
-          align-self: center;
-          &__sous-titre {
-            display: none;
-          }
-        }
-
-        img {
-          width: 100%;
-          aspect-ratio: 1/1;
-          object-fit: cover;
-          border-radius: 18px;
-          order: 2;
-          display: flex;
-          align-self: center;
-        }
-
-        p {
-          color: variables.$light;
-          padding-right: 10%;
-        }
-
-        h3 {
-          color: variables.$light;
-          margin-bottom: 10px;
-          padding-right: 10%;
-        }
-
-        .bouton-lire {
-          display: block;
-          background-color: variables.$primary-light;
-          color: variables.$dark;
-          font-weight: 900;
-          border-radius: 30px;
-          border-style: none;
-          padding: 12px 20px;
-          float: right;
-          display: block;
-          position: relative;
-          right: 10px;
-          top: -60px;
-          cursor: pointer;
-          transition-duration: 0.2s;
-
-          &:hover {
-            background-color: variables.$primary;
-          }
-        }
-
-        .bouton-lire-article {
+        &__sous-titre {
           display: none;
         }
       }
 
-      hr {
-        width: 80%;
-        padding: 0;
+      img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 18px;
+        order: 2;
+        display: flex;
+        align-self: center;
       }
 
-      .hr-cartes {
-        display: block;
+      p {
         color: variables.$light;
-        width: 90%;
+        padding-right: 10%;
+      }
+
+      h3 {
+        color: variables.$light;
+        margin-bottom: 10px;
+        padding-right: 10%;
+      }
+
+      .bouton-lire {
+        display: block;
+        background-color: variables.$primary-light;
+        color: variables.$dark;
+        font-weight: 900;
+        border-radius: 30px;
+        border-style: none;
+        padding: 12px 20px;
+        float: right;
+        display: block;
+        position: relative;
+        right: 10px;
+        top: -60px;
+        cursor: pointer;
+        transition-duration: 0.2s;
+
+        &:hover {
+          background-color: variables.$primary;
+        }
+      }
+
+      .bouton-lire-article {
+        display: none;
       }
     }
-  
+
+    hr {
+      width: 80%;
+      padding: 0;
+    }
+
+    .hr-cartes {
+      display: block;
+      color: variables.$light;
+      width: 90%;
+    }
+  }
+
 
   .hr-titre {
     display: none;
@@ -427,7 +453,7 @@
 
         &__textes {
           display: block;
-          
+
           &__date {
             display: none;
           }

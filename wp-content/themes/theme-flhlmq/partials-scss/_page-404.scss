@@ -1,3 +1,84 @@
 @use 'variables';
 @use "sass:color";
 
+#hippo{
+    opacity: 0;
+}
+  
+ 
+
+
+
+.tryanima{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    
+    padding: 5vh;
+    padding-top: 10vh;
+}
+
+.imgerrerno{
+    margin-right: 0px;
+    transform: translate(0px, -40px);
+    width: 100%;
+    max-width: 20vh;
+    
+}
+
+.imgerrerhat{
+    margin-right: 0px;
+    transform: translate(-50px, 0px);
+    width: 100%;
+    max-width: 40vh;
+}
+
+
+.texterreur{
+    font-size: 2.5vh;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 5vh;
+}
+
+@media only screen and (min-width: 768px) {
+    .imgerrerno{
+       
+        max-width: 30vh;
+        
+    }
+    
+    .imgerrerhat{
+        
+        max-width: 50vh;
+    }
+    
+    
+    .texterreur{
+        font-size: 3vh;
+    
+    }
+}
+
+
+@media only screen and (min-width: 1600px) {
+    .imgerrerno{
+    
+        max-width: 30vh;
+        
+    }
+    
+    .imgerrerhat{
+        
+        max-width: 50vh;
+    }
+    
+    
+    .texterreur{
+        font-size: 3vh;
+    
+    }
+
+}

@@ -144,25 +144,11 @@
     }
 
 
-
-
-    @media screen and (min-width: 375px) { 
-    }
-    
-    @media screen and (min-width: 525px) {
-    }
-    
-    @media screen and (min-width: 800px) {
-    }
-    
-    @media screen and (min-width: 950px) {
-    
-    }
-    
+//----------------------- MEDIA QUERIES -----------------------//
     
     @media screen and (min-width: 1240px) {
         width: 60%;
-
+        padding-bottom: 4%;
         
     &__formulaire {
         width: 80%;
@@ -176,7 +162,7 @@
 
         &__style {
             color: variables.$dark;
-            padding: 0 10% 10% 10%;
+            padding: 0 10% 4% 10%;
         }
     }
 

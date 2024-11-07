@@ -41,7 +41,6 @@
 
     &__hr {
         width: 80%;
-        color: variables.$primary-light;
     }
 
     &__paragraphe {
@@ -95,6 +94,7 @@
     }
 
     & a {
+        width: 100%;
         text-decoration: none;
 
         &:visited {
@@ -104,7 +104,7 @@
 
     &__links {
         display: flex;
-        width: 80%;
+        width: 100%;
         height: auto;
         margin-top: 4%;
         margin-bottom: 4%;
@@ -115,14 +115,14 @@
         display: block;
         margin: auto;
         height: 60px;
-        width: 40%;
-        font-size: 16px;
+        width: 30%;
+        font-size: 12px;
         border-radius: 5px;
         border: none;
         background-color: variables.$primary;
         color: variables.$light;
         font-weight: bold;
-        padding: 6px;
+        padding: 4px;
         margin-top: 8px;
 
         &:hover {
@@ -177,7 +177,7 @@
     &__btn {
         height: 60px;
         width: 40%;
-        font-size: 22px;
+        padding: 0;
     }
 
     &__photoHistoire {
@@ -235,7 +235,7 @@
     width: 60%;
     
     &__links {
-        width: 60%;
+        width: 100%;
     }
     
     &__photoMission {
@@ -243,4 +243,28 @@
     }
 }
 
+}
+
+.slide-propos1 {
+    background-image: url("./sources/medias/page_aPropos/propos1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 55%;
+    height: 100%;
+}
+
+.slide-propos2 {
+    background-image: url("./sources/medias/page_aPropos/propos2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 95%;
+    height: 100%;
+}
+
+.slide-propos3 {
+    background-image: url("./sources/medias/page_aPropos/propos3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 80%;
+    height: 100%;
 }

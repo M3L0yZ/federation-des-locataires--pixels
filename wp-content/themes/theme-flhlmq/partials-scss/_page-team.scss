@@ -2,3 +2,669 @@
 
 @use 'variables';
 @use "sass:color";
+
+.equipe {
+    position: relative;
+    width: 80%;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    background-color: variables.$light;
+    color: variables.$dark;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.281), 0 2px 10px 0 rgba(0, 0, 0, 0.253);
+    border-radius: 10px;
+    
+    & hr {
+        width: 80%;
+    }
+
+    &__content {
+        width: 80%;
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding-bottom: 2%; 
+
+        & h1 {
+            color: variables.$secondary;
+            width: 100%;
+            padding: 4px;
+            border-radius: 5px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+
+    &__description {
+        width: 100%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        text-align: left;
+    }
+
+    & p {
+        text-align: center;
+    }
+
+    &__cartes {
+        padding-top: 2%;
+        display: grid;
+        width: 100%;
+        grid-template-rows: repeat(1, 1fr);
+        grid-row-gap: 16px;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+    & h3 {
+        text-align: center;
+    }
+
+    &__carte1 {
+        border-radius: 5px;
+        display: block;
+        width: 100%;
+        margin-bottom: 4%;
+        background-color: variables.$primary-light;
+
+        &__photo {
+            background-image: url("./sources/medias/page_equipe/robert.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 85%;
+            height: 280px;
+            margin: 0 auto;
+            border-radius: 15px;
+
+            &:hover {
+                opacity: 0.5;
+                cursor: pointer;
+            }
+        }
+
+        &__more {
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            color: variables.$light;
+            font-size: 24px;
+            text-align: center;
+            line-height: 14;
+            font-weight: bold;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__carte2 {
+        border-radius: 5px;
+        display: block;
+        width: 100%;
+        margin-bottom: 4%;
+        background-color: variables.$primary-light;
+
+        &__photo {
+            background-image: url("./sources/medias/page_equipe/elisabeth.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 85%;
+            height: 280px;
+            margin: 0 auto;
+            border-radius: 15px;
+
+            &:hover {
+                opacity: 0.5;
+                cursor: pointer;
+            }
+        }
+
+        &__more {
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            color: variables.$light;
+            font-size: 24px;
+            text-align: center;
+            line-height: 14;
+            font-weight: bold;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__carte3 {
+        border-radius: 5px;
+        display: block;
+        width: 100%;
+        margin-bottom: 4%;
+        background-color: variables.$primary-light;
+
+        &__photo {
+            background-image: url("./sources/medias/page_equipe/patricia.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 85%;
+            height: 280px;
+            margin: 0 auto;
+            border-radius: 15px;
+
+            &:hover {
+                opacity: 0.5;
+                cursor: pointer;
+            }
+        }
+
+        &__more {
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            color: variables.$light;
+            font-size: 24px;
+            text-align: center;
+            line-height: 14;
+            font-weight: bold;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__carte4 {
+        border-radius: 5px;
+        display: block;
+        width: 100%;
+        margin-bottom: 4%;
+        background-color: variables.$primary-light;
+
+        &__photo {
+            background-image: url("./sources/medias/page_equipe/anik.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 85%;
+            height: 280px;
+            margin: 0 auto;
+            border-radius: 15px;
+
+            &:hover {
+                opacity: 0.5;
+                cursor: pointer;
+            }
+        }
+
+        &__more {
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            color: variables.$light;
+            font-size: 24px;
+            text-align: center;
+            line-height: 14;
+            font-weight: bold;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__carte5 {
+        border-radius: 5px;
+        display: block;
+        width: 100%;
+        margin-bottom: 4%;
+        background-color: variables.$primary-light;
+
+        &__photo {
+            background-image: url("./sources/medias/page_equipe/raoul.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 85%;
+            height: 280px;
+            margin: 0 auto;
+            border-radius: 15px;
+
+            &:hover {
+                opacity: 0.5;
+                cursor: pointer;
+            }
+        }
+
+        &__more {
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            color: variables.$light;
+            font-size: 24px;
+            text-align: center;
+            line-height: 14;
+            font-weight: bold;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__carte6 {
+        border-radius: 5px;
+        display: block;
+        width: 100%;
+        margin-bottom: 4%;
+        background-color: variables.$primary-light;
+
+        &__photo {
+            background-image: url("./sources/medias/page_equipe/florian.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 85%;
+            height: 280px;
+            margin: 0 auto;
+            border-radius: 15px;
+
+            &:hover {
+                opacity: 0.5;
+                cursor: pointer;
+            }
+        }
+
+        &__more {
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            color: variables.$light;
+            font-size: 24px;
+            text-align: center;
+            line-height: 14;
+            font-weight: bold;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    & a {
+        width: 100%;
+        text-decoration: none;
+
+        &:visited {
+            color: inherit;
+        }
+    }
+
+    &__links {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-top: 4%;
+        margin-bottom: 4%;
+        //border: solid 1px blue;
+    }
+
+    &__btn {
+        display: block;
+        margin: auto;
+        height: 60px;
+        width: 30%;
+        font-size: 16px;
+        border-radius: 5px;
+        border: none;
+        background-color: variables.$primary;
+        color: variables.$light;
+        font-weight: bold;
+        margin-top: 8px;
+
+        &:hover {
+            background-color: variables.$secondary;
+            color: variables.$light;
+            cursor: pointer;
+        }
+    }
+
+//----------------------- MEDIA QUERIES -----------------------//
+@media screen and (min-width: 585px) {
+
+    &__carte1 {
+        &__photo {
+            height: 400px;
+        }
+    }
+
+    &__carte2 {
+        &__photo {
+            height: 400px;
+        }
+    }
+
+    &__carte3 {
+        &__photo {
+            height: 400px;
+        }
+    }
+
+    &__carte4 {
+        &__photo {
+            height: 400px;
+        }
+    }
+
+    &__carte5 {
+        &__photo {
+            height: 400px;
+        }
+    }
+
+    &__carte6 {
+        &__photo {
+            height: 400px;
+        }
+    }
+}
+
+@media screen and (min-width: 780px) {
+    &__cartes {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 16px;
+        grid-column-gap: 26px;
+    }
+
+    &__carte1 {
+        &__photo {
+            height: 200px;
+        }
+    }
+
+    &__carte2 {
+        &__photo {
+            height: 200px;
+        }
+    }
+
+    &__carte3 {
+        &__photo {
+            height: 200px;
+        }
+    }
+
+    &__carte4 {
+        &__photo {
+            height: 200px;
+        }
+    }
+
+    &__carte5 {
+        &__photo {
+            height: 200px;
+        }
+    }
+
+    &__carte6 {
+        &__photo {
+            height: 200px;
+        }
+    }
+}
+
+@media screen and (min-width: 850px) {
+
+    &__carte1 {
+        &__photo {
+            height: 250px;
+        }
+    }
+
+    &__carte2 {
+        &__photo {
+            height: 250px;
+        }
+    }
+
+    &__carte3 {
+        &__photo {
+            height: 250px;
+        }
+    }
+
+    &__carte4 {
+        &__photo {
+            height: 250px;
+        }
+    }
+
+    &__carte5 {
+        &__photo {
+            height: 250px;
+        }
+    }
+
+    &__carte6 {
+        &__photo {
+            height: 250px;
+        }
+    }
+}
+
+@media screen and (min-width: 1050px) {
+
+    &__carte1 {
+        &__photo {
+            height: 300px;
+        }
+    }
+
+    &__carte2 {
+        &__photo {
+            height: 300px;
+        }
+    }
+
+    &__carte3 {
+        &__photo {
+            height: 300px;
+        }
+    }
+
+    &__carte4 {
+        &__photo {
+            height: 300px;
+        }
+    }
+
+    &__carte5 {
+        &__photo {
+            height: 300px;
+        }
+    }
+
+    &__carte6 {
+        &__photo {
+            height: 300px;
+        }
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    width: 70%;
+    &__cartes {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 16px;
+        grid-column-gap: 26px;
+    }
+
+    &__carte1 {
+        &__photo {
+            width: 80%;
+            height: 320px;
+        }
+    }
+
+    &__carte2 {
+        &__photo {
+            width: 80%;
+            height: 320px;
+        }
+    }
+
+    &__carte3 {
+        &__photo {
+            width: 80%;
+            height: 320px;
+        }
+    }
+
+    &__carte4 {
+        &__photo {
+            width: 80%;
+            height: 320px;
+        }
+    }
+
+    &__carte5 {
+        &__photo {
+            width: 80%;
+            height: 320px;
+        }
+    }
+
+    &__carte6 {
+        &__photo {
+            width: 80%;
+            height: 320px;
+        }
+    }
+}
+
+    @media screen and (min-width: 1600px) {
+        width: 60%;
+        
+        &__cartes {
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            grid-row-gap: 16px;
+            grid-column-gap: 26px;
+        }
+
+        &__carte1 {
+            &__photo {
+                width: 80%;
+                height: 320px;
+            }
+        }
+
+        &__carte2 {
+            &__photo {
+                width: 80%;
+                height: 320px;
+            }
+        }
+
+        &__carte3 {
+            &__photo {
+                width: 80%;
+                height: 320px;
+            }
+        }
+
+        &__carte4 {
+            &__photo {
+                width: 80%;
+                height: 320px;
+            }
+        }
+
+        &__carte5 {
+            &__photo {
+                width: 80%;
+                height: 320px;
+            }
+        }
+
+        &__carte6 {
+            &__photo {
+                width: 80%;
+                height: 320px;
+            }
+        }
+    }
+}
+
+//----------------------- HERO -----------------------//
+.slide-equipe1 {
+    background-image: url("./sources/medias/page_equipe/equipe2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 30%;
+    height: 100%;
+}
+
+.slide-equipe2 {
+    background-image: url("./sources/medias/page_equipe/equipe1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 40%;
+    height: 100%;
+}
+
+.slide-equipe3 {
+    background-image: url("./sources/medias/page_equipe/equipe3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    height: 100%;
+}
+
+
+//----------------------- MODALS -----------------------//
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: variables.$light;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 60%;
+}
+
+.btnClose {
+    color: variables.$dark;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.btnClose:hover,
+.btnClose:focus {
+    color: variables.$primary;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.paraModal {
+    box-sizing: border-box;
+    font-size: 16px;
+    width: 100%;
+    padding: 20px;
+}
