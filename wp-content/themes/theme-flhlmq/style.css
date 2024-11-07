@@ -2679,39 +2679,46 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 5vh;
+}
+.congre__backgroundcolor {
+  background-color: #FFFBE2;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.congre__contenue {
+  padding: 2vh;
 }
 .congre__titreservice {
-  text-align: center;
-  color: #C15A2E;
-  font-size: 5vh;
-  -webkit-text-decoration: underline #6d6d6d 0.05em;
-          text-decoration: underline #6d6d6d 0.05em;
-}
-.congre__containerpremiertext {
-  background-color: rgba(193, 90, 46, 0.5215686275);
-  padding: 1vh;
+  display: flex;
+  justify-content: center;
+  color: #2C856D;
+  font-size: 4vh;
 }
 .congre__backgroundcolortext {
-  padding-left: 2vh;
-  padding-right: 2vh;
+  background-color: rgba(193, 90, 46, 0.4392156863);
+  border-radius: 10px;
 }
 .congre__premiertext {
-  text-align: justify;
-  font-size: 2vh;
+  padding: 1vh;
+  text-align: center;
+  font-size: 1.8vh;
 }
 .congre__containerdeuxiemetext {
-  padding: 2vh;
+  padding-left: 1.5vh;
+  padding-right: 1.5vh;
 }
 .congre__deuxiemetext {
+  font-size: 1.7vh;
   text-align: justify;
-  font-size: 2vh;
 }
 .congre__containertroisièmetext {
-  padding: 2vh;
+  padding-left: 1.5vh;
+  padding-right: 1.5vh;
 }
 .congre__troisièmetext {
+  font-size: 1.7vh;
   text-align: justify;
-  font-size: 2vh;
 }
 .congre__rapportcarte {
   display: flex;
@@ -2731,11 +2738,12 @@ header {
   text-align: center;
   background-color: #2C856D;
   border-radius: 2vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .congre__cartetext {
   padding-left: 0.2vh;
   padding-right: 0.2vh;
-  font-size: 1vh;
+  font-size: 1.5vh;
   color: #FFFBE2;
 }
 .congre__ensavoirplus {
@@ -2788,98 +2796,125 @@ header {
   background: #194e40;
 }
 @media only screen and (min-width: 768px) {
-  .congre .congre__titreservice {
-    font-size: 5.8vh;
-    -webkit-text-decoration: underline #6d6d6d 0.06em;
-            text-decoration: underline #6d6d6d 0.06em;
+  .congre .congre__backgroundcolor {
+    border-radius: 15px;
   }
-  .congre .congre__premiertext {
-    font-size: 2.5vh;
+  .congre .congre__contenue {
+    padding-top: 2vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
   }
-  .congre .congre__deuxiemetext {
-    font-size: 2.5vh;
-  }
-  .congre .congre__troisièmetext {
-    font-size: 2.5vh;
-  }
-  .congre .congre__rapportcarte {
-    flex-direction: row;
-    gap: 2.5vh;
-  }
-  .congre .congre__cartetext {
-    font-size: 1.3vh;
-  }
-  .congre .congre__bouttonsavoirpluscongre {
-    font-size: 1.6vh;
-    height: 3.2vh;
-    max-width: 20vh;
-  }
-  .congre .congre__bouttonsavoirplus {
-    height: 3.5vh;
-    max-width: 20vh;
-    font-size: 1.7vh;
-  }
-}
-@media only screen and (min-width: 1600px) {
   .congre .congre__titreservice {
     font-size: 6vh;
-    -webkit-text-decoration: underline #6d6d6d 0.06em;
-            text-decoration: underline #6d6d6d 0.06em;
+    margin-top: 0px;
+  }
+  .congre .congre__backgroundcolortext {
+    border-radius: 15px;
   }
   .congre .congre__premiertext {
-    font-size: 3vh;
+    padding: 1vh;
+    text-align: center;
+    font-size: 2vh;
+  }
+  .congre .congre__containerdeuxiemetext {
+    padding-left: 1.8vh;
+    padding-right: 1.8vh;
   }
   .congre .congre__deuxiemetext {
-    font-size: 3vh;
+    font-size: 1.9vh;
+  }
+  .congre .congre__containertroisièmetext {
+    padding-left: 1.8vh;
+    padding-right: 1.8vh;
   }
   .congre .congre__troisièmetext {
-    font-size: 3vh;
+    font-size: 1.9vh;
   }
   .congre .congre__rapportcarte {
     flex-direction: row;
-    gap: 2.5vh;
-  }
-  .congre .congre__cartetext {
-    font-size: 1.3vh;
-  }
-  .congre .congre__bouttonsavoirpluscongre {
-    font-size: 1.6vh;
-    height: 3.2vh;
-    max-width: 20vh;
-  }
-  .congre .congre__bouttonsavoirplus {
-    height: 3.5vh;
-    max-width: 20vh;
-    font-size: 1.7vh;
-  }
-  .congre .congre__backgroundcolortext {
-    padding-left: 40vh;
-    padding-right: 40vh;
-  }
-  .congre .congre__containerdeuxiemetext {
-    padding-left: 40vh;
-    padding-right: 40vh;
-  }
-  .congre .congre__containertroisièmetext {
-    padding-left: 40vh;
-    padding-right: 40vh;
-  }
-  .congre .congre__bouttonsavoirpluscongre {
-    font-size: 1.8vh;
-    height: 3.2vh;
-    max-width: 20vh;
-  }
-  .congre .congre__bouttonsavoirplus {
-    height: 4vh;
-    max-width: 25vh;
-    font-size: 2vh;
-  }
-  .congre .congre__cartetext {
-    font-size: 1.8vh;
+    gap: 2vh;
   }
   .congre .congre__containercarte {
     width: 100%;
-    max-width: 30vh;
+    max-width: 25vh;
+  }
+  .congre .congre__carte {
+    border-radius: 2.5vh;
+  }
+  .congre .congre__cartetext {
+    padding-left: 0.3vh;
+    padding-right: 0.3vh;
+    font-size: 1.5vh;
+  }
+  .congre .congre__bouttonsavoirpluscongre {
+    font-size: 1.5vh;
+  }
+  .congre .congre__bouttonsavoirplus {
+    font-size: 1.5vh;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .congre .congre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50vh;
+  }
+  .congre .congre__backgroundcolor {
+    border-radius: 25px;
+  }
+  .congre .congre__contenue {
+    padding-top: 2vh;
+    padding-left: 10vh;
+    padding-right: 10vh;
+  }
+  .congre .congre__titreservice {
+    font-size: 6vh;
+    margin-top: 0px;
+  }
+  .congre .congre__backgroundcolortext {
+    border-radius: 15px;
+  }
+  .congre .congre__premiertext {
+    padding: 1vh;
+    text-align: center;
+    font-size: 2vh;
+  }
+  .congre .congre__containerdeuxiemetext {
+    padding-left: 1.8vh;
+    padding-right: 1.8vh;
+  }
+  .congre .congre__deuxiemetext {
+    font-size: 1.9vh;
+  }
+  .congre .congre__containertroisièmetext {
+    padding-left: 1.8vh;
+    padding-right: 1.8vh;
+  }
+  .congre .congre__troisièmetext {
+    font-size: 1.9vh;
+  }
+  .congre .congre__rapportcarte {
+    flex-direction: row;
+    gap: 2vh;
+  }
+  .congre .congre__containercarte {
+    width: 100%;
+    max-width: 25vh;
+  }
+  .congre .congre__carte {
+    border-radius: 2.5vh;
+  }
+  .congre .congre__cartetext {
+    padding-left: 0.3vh;
+    padding-right: 0.3vh;
+    font-size: 1.5vh;
+  }
+  .congre .congre__bouttonsavoirpluscongre {
+    font-size: 1.5vh;
+  }
+  .congre .congre__bouttonsavoirplus {
+    font-size: 1.5vh;
   }
 }
 
