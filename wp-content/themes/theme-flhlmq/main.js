@@ -1,3 +1,5 @@
+// ----------------------------- SWIPER --------------------------------------------
+
 var swiper = new Swiper(".swiper-container", {
     loop: true,
     navigation: {
@@ -36,6 +38,8 @@ var swiper2 = new Swiper(".mySwiperHub", {
       },
 });
 
+// ---------------------- PAGE NOUVELLE HUB -> EN CONTINU ------------------------
+
 let currentSlide = 0;
 
 function goToSlide(slideIndex) {
@@ -50,7 +54,7 @@ function goToSlide(slideIndex) {
     currentSlide = slideIndex;
 }
 
-//Navbar fonctions
+// ----------------------------- NAVBAR BOUTON HAMBURGER -----------------------------------
 console.log("test");
 function boutonHamburger() {
     var list = document.getElementsByClassName("nav__list")[0];
