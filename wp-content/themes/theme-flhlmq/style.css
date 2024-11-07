@@ -3379,29 +3379,53 @@ header {
     grid-column-gap: 26px;
   }
   .equipe__carte1__photo {
-    width: 70%;
+    width: 80%;
     height: 320px;
   }
   .equipe__carte2__photo {
-    width: 70%;
+    width: 80%;
     height: 320px;
   }
   .equipe__carte3__photo {
-    width: 70%;
+    width: 80%;
     height: 320px;
   }
   .equipe__carte4__photo {
-    width: 70%;
+    width: 80%;
     height: 320px;
   }
   .equipe__carte5__photo {
-    width: 70%;
+    width: 80%;
     height: 320px;
   }
   .equipe__carte6__photo {
-    width: 70%;
+    width: 80%;
     height: 320px;
   }
+}
+
+.slide-equipe1 {
+  background-image: url("./sources/medias/page_equipe/equipe2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 30%;
+  height: 100%;
+}
+
+.slide-equipe2 {
+  background-image: url("./sources/medias/page_equipe/equipe1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 40%;
+  height: 100%;
+}
+
+.slide-equipe3 {
+  background-image: url("./sources/medias/page_equipe/equipe3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+  height: 100%;
 }
 
 .aPropos {
@@ -3600,6 +3624,30 @@ header {
   .aPropos__photoMission {
     background-position: 0 -110px;
   }
+}
+
+.slide-propos1 {
+  background-image: url("./sources/medias/page_aPropos/propos1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 55%;
+  height: 100%;
+}
+
+.slide-propos2 {
+  background-image: url("./sources/medias/page_aPropos/propos2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 95%;
+  height: 100%;
+}
+
+.slide-propos3 {
+  background-image: url("./sources/medias/page_aPropos/propos3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 80%;
+  height: 100%;
 }
 
 @font-face {
