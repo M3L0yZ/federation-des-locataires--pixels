@@ -83,6 +83,7 @@
 
             &:hover {
                 opacity: 0.5;
+                cursor: pointer;
             }
         }
 
@@ -120,6 +121,7 @@
 
             &:hover {
                 opacity: 0.5;
+                cursor: pointer;
             }
         }
 
@@ -157,6 +159,7 @@
 
             &:hover {
                 opacity: 0.5;
+                cursor: pointer;
             }
         }
 
@@ -194,6 +197,7 @@
 
             &:hover {
                 opacity: 0.5;
+                cursor: pointer;
             }
         }
 
@@ -231,6 +235,7 @@
 
             &:hover {
                 opacity: 0.5;
+                cursor: pointer;
             }
         }
 
@@ -268,6 +273,7 @@
 
             &:hover {
                 opacity: 0.5;
+                cursor: pointer;
             }
         }
 
@@ -326,27 +332,7 @@
         }
     }
 
-    
-
-    //----------------------- MEDIA QUERIES -----------------------//
-
-
-    @media screen and (min-width: 375px) { 
-        
-    }
-
-    @media screen and (min-width: 525px) {
-       
-    }
-
-    @media screen and (min-width: 800px) {
-      
-    }
-
-    @media screen and (min-width: 950px) {
-        
-    }
-
+//----------------------- MEDIA QUERIES -----------------------//
 
     @media screen and (min-width: 1240px) {
         width: 60%;
@@ -402,6 +388,7 @@
     }
 }
 
+//----------------------- HERO -----------------------//
 .slide-equipe1 {
     background-image: url("./sources/medias/page_equipe/equipe2.jpg");
     background-repeat: no-repeat;
@@ -424,4 +411,49 @@
     background-size: cover;
     background-position: 100%;
     height: 100%;
+}
+
+
+//----------------------- MODALS -----------------------//
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: variables.$light;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 60%;
+}
+
+.btnClose {
+    color: variables.$dark;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.btnClose:hover,
+.btnClose:focus {
+    color: variables.$primary;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.paraModal {
+    box-sizing: border-box;
+    font-size: 16px;
+    width: 100%;
+    padding: 20px;
 }
