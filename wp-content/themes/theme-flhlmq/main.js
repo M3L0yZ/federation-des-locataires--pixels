@@ -70,14 +70,14 @@ function TailleFenetre() {
     }
 }
 
-gsap.set(".imgerrerno", { opacity: 1, rotation: 0});
+gsap.set(".imgerrerno", { opacity: 1, rotation: 0, x: 0, y: 0 });
 
 // Create a timeline for the fade transition with more fun effects
 gsap.timeline({ repeat: -1, yoyo: true })
     .to(".imgerrerno", {
         duration: 2,
         opacity: 0,
-        rotation: -50,     
+        rotation: -90,     
         ease: "bounce.out",
     })
     .to(".imgerrerno", {
