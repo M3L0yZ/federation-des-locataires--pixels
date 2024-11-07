@@ -115,14 +115,14 @@
         display: block;
         margin: auto;
         height: 60px;
-        width: 40%;
-        font-size: 16px;
+        width: 30%;
+        font-size: 12px;
         border-radius: 5px;
         border: none;
         background-color: variables.$primary;
         color: variables.$light;
         font-weight: bold;
-        padding: 6px;
+        padding: 4px;
         margin-top: 8px;
 
         &:hover {
@@ -177,7 +177,7 @@
     &__btn {
         height: 60px;
         width: 40%;
-        font-size: 22px;
+        padding: 0;
     }
 
     &__photoHistoire {
