@@ -88,6 +88,13 @@
         display: none;
     }
 
+    .droitAuteur {
+        text-align: center;
+        background-color: variables.$light;
+        margin-top: 0;
+        padding-bottom: 15px;
+    }
+
     //----------------------- MEDIA QUERY -----------------------//
     //ENCORE EN COURS D'AJUSTEMENTS
 
@@ -203,6 +210,11 @@
             background-position: center;
             background-repeat: no-repeat;
             box-sizing: border-box;
+        }
+        .droitAuteur {
+            text-align: center;
+            background-color: variables.$secondary;
+            color: variables.$light;
         }
     }  
 }

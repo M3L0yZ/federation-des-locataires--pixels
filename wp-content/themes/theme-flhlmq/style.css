@@ -229,6 +229,12 @@
   align-self: center;
   display: none;
 }
+.foot .droitAuteur {
+  text-align: center;
+  background-color: #FFFBE2;
+  margin-top: 0;
+  padding-bottom: 15px;
+}
 @media screen and (min-width: 100px) {
   .foot__banner {
     border-radius: 0;
@@ -311,6 +317,11 @@
     background-position: center;
     background-repeat: no-repeat;
     box-sizing: border-box;
+  }
+  .foot .droitAuteur {
+    text-align: center;
+    background-color: #2C856D;
+    color: #FFFBE2;
   }
 }
 
