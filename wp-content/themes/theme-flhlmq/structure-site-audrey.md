@@ -126,6 +126,8 @@
 
 ## AUTRES CHAMPS PERSONNALISÉS
 ### team-member: group
+### team-member-name: text
+### team-member-summary: text area
 ### team-cta: text
 
 <!----------- À propos de nous ------------->
