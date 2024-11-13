@@ -1,3 +1,4 @@
+<!----------- Accueil ------------->
 # Accueil
 
 ## TYPE DE CONTENU (POST TYPE)
@@ -7,24 +8,16 @@
 ### home.php
 
 ## COMPOSANTE DE LA PAGE
-### home-hero.php
-#### CHAMPS PERSONNALISÉS: 
+### hero.php
+#### CHAMPS PERSONNALISÉS
+##### hero-title: text
+##### hero-cta: text
+##### hero-image: gallery
 
-### home-news.php
-#### CHAMPS PERSONNALISÉS: 
+## AUTRES CHAMPS PERSONNALISÉS
+### Aucun
 
-### home-services.php
-#### CHAMPS PERSONNALISÉS: 
-
-### home-support.php
-#### CHAMPS PERSONNALISÉS: 
-
-### home-testimonial.php
-#### CHAMPS PERSONNALISÉS: 
-
-## AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
-### background
-
+<!----------- Liste de nouvelles ------------->
 
 # Liste des nouvelles
 
@@ -35,18 +28,12 @@
 ### news.php
 
 ## COMPOSANTE DE LA PAGE
-### news-une.php
-#### CHAMPS PERSONNALISÉS: 
+### Aucune
 
-### news-continu.php
-#### CHAMPS PERSONNALISÉS: 
+## AUTRES CHAMPS PERSONNALISÉS
+### news-image: image
 
-### news-consultes.php
-#### CHAMPS PERSONNALISÉS: 
-
-## AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
-### background
-
+<!----------- Article d'une nouvelle ------------->
 
 # Article d'une nouvelle
 
@@ -57,18 +44,22 @@
 ### article.php
 
 ## COMPOSANTE DE LA PAGES
-### article-hero.php
-#### CHAMPS PERSONNALISÉS: 
-
-### article-news.php
-#### CHAMPS PERSONNALISÉS: 
+### hero.php
+#### CHAMPS PERSONNALISÉS
+##### hero-title: text
+##### hero-cta: text
+##### hero-image: gallery
 
 ### article-similaires.php
 #### CHAMPS PERSONNALISÉS: 
+##### similar-title: text
+##### similar-card: group
 
-## AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
-### background
+## AUTRES CHAMPS PERSONNALISÉS
+### news-summary: text area
+### news-cta: text
 
+<!----------- Liste des services ------------->
 
 # Liste des services
 
@@ -79,15 +70,22 @@
 ### servicehub.php
 
 ## COMPOSANTE DE LA PAGES
-### servicehub-hero.php
-#### CHAMPS PERSONNALISÉS: 
+### hero.php
+#### CHAMPS PERSONNALISÉS
+##### hero-title: text
+##### hero-cta: text
+##### hero-image: gallery
 
 ### servicehub-services.php
 #### CHAMPS PERSONNALISÉS:  
+##### services-title: text
+##### services-summary: text area
+##### services-cta: text
 
-## AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
-### background
+## AUTRES CHAMPS PERSONNALISÉS
+### Aucun
 
+<!----------- Page d'un seul service ------------->
 
 # Page d'un seul service
 
@@ -98,15 +96,18 @@
 ### service.php
 
 ## COMPOSANTE DE LA PAGES
-### service-hero.php
-#### CHAMPS PERSONNALISÉS: 
+### hero.php
+#### CHAMPS PERSONNALISÉS
+##### hero-title: text
+##### hero-cta: text
+##### hero-image: gallery
 
-### service-container.php
-#### CHAMPS PERSONNALISÉS: 
+## AUTRES CHAMPS PERSONNALISÉS
+### service-summary: text area
+### service-cta-report: text
+### service-reports: group
 
-## AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
-### background
-
+<!----------- Équipe ------------->
 
 # Équipe
 
@@ -117,15 +118,17 @@
 ### team.php
 
 ## COMPOSANTE DE LA PAGES
-### team-hero.php
-#### CHAMPS PERSONNALISÉS: 
+### hero.php
+#### CHAMPS PERSONNALISÉS
+##### hero-title: text
+##### hero-cta: text
+##### hero-image: gallery
 
-### team-container.php
-#### CHAMPS PERSONNALISÉS: 
+## AUTRES CHAMPS PERSONNALISÉS
+### team-member: group
+### team-cta: text
 
-## AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
-### background
-
+<!----------- À propos de nous ------------->
 
 # À propos de nous
 
@@ -136,15 +139,24 @@
 ### about.php
 
 ## COMPOSANTE DE LA PAGES
-### about-hero.php
-#### CHAMPS PERSONNALISÉS: 
+### hero.php
+#### CHAMPS PERSONNALISÉS
+##### hero-title: text
+##### hero-cta: text
+##### hero-image: gallery
 
-### abou-container.php
-#### CHAMPS PERSONNALISÉS: 
+## AUTRES CHAMPS PERSONNALISÉS
+### history-title: text
+### history-image: image
+### history-text: text area
+### mission-title: text
+### mission-image: image
+### mission-function: group
+### mission-text: text area
+### about-cta-team: text
+### about-cta-contact: text
 
-## AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
-### background
-
+<!----------- Nous joindre ------------->
 
 # Nous joindre
 ## TYPE DE CONTENU (POST TYPE)
@@ -154,18 +166,26 @@
 ### contact.php
 
 ## COMPOSANTE DE LA PAGES
-### contact-telephone.php
-#### CHAMPS PERSONNALISÉS: 
+### Aucune
 
-### contact-adress.php
-#### CHAMPS PERSONNALISÉS: 
+## AUTRES CHAMPS PERSONNALISÉS
+### phone-title: text
+### phone-number-1: number
+### phone-number-2: number
+### adress-title: text
+### adress-text: text area
+### adress-map: google maps
+### form-name-title: text
+### form-name: form
+### form-email-title: text
+### form-email: form
+### form-subject-title: text
+### form-subject: select
+### form-message-title: text
+### form-massage: text area
+### form-cta: text
 
-### contact-message.php
-#### CHAMPS PERSONNALISÉS: 
-
-## AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
-### background
-
+<!----------- Erreur 404 ------------->
 
 # Erreur 404
 
@@ -176,11 +196,7 @@
 ### 404.php
 
 ## COMPOSANTE DE LA PAGES
-### 404-hero.php
-#### CHAMPS PERSONNALISÉS: 
+### Aucune
 
-### 404-container.php
-#### CHAMPS PERSONNALISÉS: 
-
-## AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
-### background
+## AUTRES CHAMPS PERSONNALISÉS
+### Aucun
