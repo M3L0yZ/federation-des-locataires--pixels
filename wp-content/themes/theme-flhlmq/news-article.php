@@ -13,6 +13,21 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
 	<article>
 		<?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?>
+			<section class="news-article__nouvelle">
+            <h1 class="news-article__nouvelle__titre"><?php the_title();?></h1>
+            <hr class="hr-titre" >
+            <div class="container-informations">
+                <div class="news-article__nouvelle__resume__container">
+                    <p class="news-article__nouvelle__resume"><?php the_field('News summary'); ?></p>
+                </div>
+                <p class="news-article__nouvelle__texte">
+					<?php the_content();?>
+                </p>
+            </div>
+            <button class="bouton-petition"><?php the_field('news-cta'); ?></button>
+            <div class="div-prochaine-nouvelle"><h3 class="prochaine-nouvelle"><?php the_field('next-news-cta'); ?></h3></div>
+            </div>
+        </section>
 			<h2>
 				<?php the_title(); // Titre de la page ?>
 			</h2>
