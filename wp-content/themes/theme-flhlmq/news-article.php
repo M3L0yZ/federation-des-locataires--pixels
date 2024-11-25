@@ -1,7 +1,7 @@
 <?php 
 /**
- * 	Template Name: Nouveaux articles
- * 	Identique à page, mais avec une barre latérale
+ * 	Template Name: new-article
+ * 	Template Post Type: post, new-article
  */
 
 get_header(); // Affiche header.php
@@ -11,14 +11,14 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 	while ( have_posts() ) : the_post(); 
 ?>
 
-	<article>
+	<article class="news-article">
 		<?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?>
 			<section class="news-article__nouvelle">
             <h1 class="news-article__nouvelle__titre"><?php the_title();?></h1>
             <hr class="hr-titre" >
             <div class="container-informations">
                 <div class="news-article__nouvelle__resume__container">
-                    <p class="news-article__nouvelle__resume"><?php the_field('News summary'); ?></p>
+                    <p class="news-article__nouvelle__resume"><?php the_field('news-summary'); ?></p>
                 </div>
                 <p class="news-article__nouvelle__texte">
 					<?php the_content();?>
@@ -28,12 +28,45 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             <div class="div-prochaine-nouvelle"><h3 class="prochaine-nouvelle"><?php the_field('next-news-cta'); ?></h3></div>
             </div>
         </section>
-			<h2>
-				<?php the_title(); // Titre de la page ?>
-			</h2>
+		<section class="news-article__similaire">
+            <h1 class="news-article__similaire__titre"><?php the_field('similar-title'); ?></h1>
+            <hr class="hr-titre">
+            <div class="cartes-swiper">
+                <div class="swiper-container2 mySwiper ">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide-1">
+                            <div class="carte--01 carte">
+							<?php the_field('similar-card-1'); ?>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-2">
+                            <div class="carte--02 carte">
+							<?php the_field('similar-card-2'); ?>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-3">
+                            <div class="carte--03 carte">
+							<?php the_field('similar-card-3'); ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cartes">
+                <div class="carte--01 carte">
+				<?php the_field('similar-card-1-img'); ?>
+                </div>
+                <div class="carte--02 carte">
+				<?php the_field('similar-card-2'); ?>
+                </div>
+                <div class="carte--03 carte">
+				<?php the_field('similar-card-3'); ?>
+                </div>
+            </div>
+        </section>
+
 		<?php endif; ?>
-		
-		<?php the_content(); // Contenu principal de la page ?>
+
 	</article>
 <?php endwhile; // Fermeture de la boucle
 

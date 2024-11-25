@@ -34,10 +34,33 @@
 	?>
 >
 
-	<header>
-		<h1>
-			<a href="<?php echo esc_url( home_url( '/' ) ); // Lien vers la page d'accueil ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); // Title it with the blog name ?>" rel="home"><?php bloginfo( 'name' ); // Affiche le nom du site ?></a>
-		</h1>
+	<header  class="header">
+	<div class="header__grid">
+            <!-- projet par etudiant -->
+            <div class="header__block">
+                <div class="head__etudiant">
+                    <h1 class="projet-etudiant">Projet Étudiant réalisé dans un cadre scolaire au collège Montmorency
+                    </h1>
+                    <h1 class="voir-site-origine">Voir le site d'origine:<a
+                            href="https://flhlmq.com/fr">www.flhlmq.com/fr</a></h1>
+                    <div class="bouton-x-header-wrap">
+                        <button class="bouton-x-header" onclick="myFunction()"> <img src="sources/icons/boutonX.png"
+                                alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <!-- dons -->
+            <div class="header__block">
+                <div class="header__don">
+                    <div class="logo-federation-wrap">
+                        <a href="./index.html"><img class="logo-federation" src="./sources/logo/logo-federation.png"></a>
+                    </div>
+                    <div class="bouton-don-wrap">
+                        <button class="bouton-don" onclick="myFunction()">Dons</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 		<nav>
 			<?php 
