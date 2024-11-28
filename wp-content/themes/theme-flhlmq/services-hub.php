@@ -16,8 +16,12 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 			<section class="service">
             <h1 class="service__titreservice">Nos services</h1>
             <hr class="hr-titre">
-            <div class="service__congrebackgroundcontainer">
-                <div class="service__congrecontainer">
+			<?php 
+                        $newsContinu6 = get_field( 'news-continu-6');
+                        if ( $newsContinu6 ):
+                        ?>
+            			<div class="service__congrebackgroundcontainer">
+                			<div class="service__congrecontainer">
 								<?php
 								$card1 = get_field('card-1');
 									if( $card1 ): ?>
