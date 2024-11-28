@@ -35,9 +35,13 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 <div class="swiper-container2 mySwiper ">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide slide-1">
-                            <div class="carte--01 carte">
-							<?php the_field('similar-card-1'); ?>
-                            </div>
+                        <?php if ( $similarCard1 ): ?>
+                        <div class="carte--01 carte">
+                        <img src="<?php echo esc_url( $similarCard1['similar-card-1-img']['url'] ); ?>" alt="<?php echo esc_attr( $similarCard1['similar-card-1-title'] ); ?>" />
+                        <h3><?php echo esc_html( $similarCard1['similar-card-1-title'] ); ?></h3>
+                        <p><?php echo esc_html( $similarCard1['similar-card-1-content'] ); ?></p>
+                        </div>
+                        <?php endif; ?>
                         </div>
                         <div class="swiper-slide slide-2">
                             <div class="carte--02 carte">
