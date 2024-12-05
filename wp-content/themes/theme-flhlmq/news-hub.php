@@ -16,27 +16,46 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 			<section class="news-hub_une">
             <h1 class="news-hub_une__titre"><?php the_title();?></h1>
             <hr class="hr-titre">
-			<?php 
-            $newsOne = get_field( 'news-one');
-            if ( $newsOne ):
-            ?>
             <div class="container-informations">
-				<div class="container-texte">
-            
-            <h3  class="news-hub_une__texte"><?php echo esc_html( $newsOne['news-one-title'] ); ?></h3>
-            <p><?php echo esc_html( $newsOne['similar-card-1-content'] ); ?></p>
-                    <p class="news-hub_une__texte"><?php echo esc_html( $newsOne['news-one-summary'] ); ?></p>
-                    <p class="news-hub_une__texte"><?php echo esc_html( $newsOne['news-one-date'] ); ?></p>
-                    <a href="./news_article.html">
-                        <button class="bouton-lire-article"><?php the_field('news-cta-read'); ?></button>
-                    </a>
-                    <a href="./news_article.html">
-                        <button class="bouton-savoir-plus"><?php the_field('news-cta-know-more'); ?></button>
-                    </a>
-                </div>
-				<img class="news-hub_une__photo1" src="<?php echo esc_url( $newsOne['news-one-img']['url'] ); ?>" alt="<?php echo esc_attr( $newsOne['news-one-img'] ); ?>" />
+				
+                    <?php
+                        $arguments = array( // 👈 Tableau d'arguments
+                            'post_type' => 'new-article',
+                            's' => 'Pétition pour des HLM de qualité'
+                        );
+                        $projects = new WP_Query($arguments); // 👈 Utilisation
+                        while ($projects->have_posts()) : $projects->the_post(); 
+                         ?>
+                        <div class="container-texte">
+                            <h3 class="news-hub_une__texte"><?php the_title(); ?></h3>
+                            <p class="news-hub_une__texte"><?php the_field('card-summary'); ?></p>
+                            <p class="news-hub_une__texte"><?php the_field('card-date'); ?></p>
+                    <?php
+                        endwhile; 
+                        wp_reset_postdata(); 
+                    ?>
+                            <a href="./news_article.html">
+                                <button class="bouton-lire-article"><?php the_field('news-cta-read'); ?></button>
+                            </a>
+                            <a href="./news_article.html">
+                                <button class="bouton-savoir-plus"><?php the_field('news-cta-know-more'); ?></button>
+                            </a>
+                        </div>
+                    <?php
+                        $arguments = array( // 👈 Tableau d'arguments
+                            'post_type' => 'new-article',
+                            's' => 'Pétition pour des HLM de qualité'
+                        );
+                        $projects = new WP_Query($arguments); // 👈 Utilisation
+                        while ($projects->have_posts()) : $projects->the_post(); 
+                    ?>
+                        <img class="news-hub_une__photo1" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/>
+                    <?php
+                        endwhile; 
+                        wp_reset_postdata(); 
+                    ?>
+                    
             </div>
-            <?php endif; ?>
         </section>
 
         <hr class="division-sections">
