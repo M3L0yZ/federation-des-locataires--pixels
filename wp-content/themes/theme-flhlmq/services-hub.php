@@ -1,7 +1,7 @@
 <?php 
 /**
  * 	Template Name: Services hub
- * 	Identique à page, mais avec une barre latérale
+ * 	Template Post Type: post, service-hub-real
  */
 
 get_header(); // Affiche header.php
@@ -14,33 +14,39 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 <article>
     <?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?>
 		<section class="service">
-            <h1 class="service__titreservice">Nos services</h1>
+            <h1 class="service__titreservice"> <?php the_title(); ?> </h1>
             <hr class="hr-titre">
             
             <div class="service__congrebackgroundcontainer">
                 <div class="service__congrecontainer">
+					
                         <div class="service__insidecontainer__congres">
-                            <div  class="service__shadowcolor">
+						<?php the_field('cards'); ?> 
+                            <div  class="service__shadowcolor">  
+							
                                 <div class="service__titrecongre">
-                                    <h2 class="service__congretitre"> Congrès </h2>
+									
+                                    <h2 class="service__congretitre">
+
+										<?php the_field('card-title'); ?> 
+										
+									</h2>
                                 </div>
                     
                                 <div class="service__textcongres">
                                     <p class="service__congretexte"> 
-                                        La FLHLMQ regroupe sur une base volontaire  <br>
-                                        quelque 300 associations de locataires et CCR qui sont 
-                                        libres et indépendants. Beaucoup d'efforts sont consentis 
-                                        pour s'assurer une vie associative forte et démocratique. 
-                                        En plus des réunions du CA de la fédération qui réunit des 
-                                        représentants de toutes les régions du Québec
+
+									 <?php the_field('card-summary'); ?>
+
                                     </p>
                                 </div>
 
                                 <div class="service__ensavoirplus">
-                                    <a href="./service.html"><button class="bouttonsavoirplus">en savoir plus</button></a>
+                                    <a href="./service.html"><button class="bouttonsavoirplus"><?php the_field('card-cta'); ?></button></a>
                                 </div>
 
                             </div>
+
                         </div>
                 </div>
             </div>
@@ -53,25 +59,23 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 <div class="service__congrecontainer">
                     
                     <div class="service__insidecontainer__association">
+					<?php the_field('cards'); ?> 
                         <div  class="service__shadowcolor">
-                            <div class="service__titrecongre">
-                                <h2 class="service__congretitre"> Association </h2>
+                            
+							<div class="service__titrecongre">
+                                <h2 class="service__congretitre"> <?php the_field('card-title2'); ?>  </h2>
                             </div>
                 
                             <div class="service__textcongres">
                                 <p class="service__congretexte">
                            
-                                    Une association de locataires, c'est le regroupement 
-                                    des locataires d'un ou de plusieurs HLM. Cette association 
-                                    est mise sur pied par les locataires et pour les locataires.
-                                     L'association est gérée comme un OBNL et doit avoir son propre 
-                                     conseil d'administration qu'on appelle parfois comité.
+								<?php the_field('card-summary2'); ?>
                               
                                 </p>
                             </div>
 
                             <div class="service__ensavoirplus">
-                                <button class="bouttonsavoirplus"> en savoir plus</button>
+                                <button class="bouttonsavoirplus"> <?php the_field('card-cta2'); ?></button>
                             </div>
 
                         </div>
@@ -86,24 +90,20 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 <div class="service__congrecontainer">
                     
                     <div class="service__insidecontainer__ccr">
+					<?php the_field('cards'); ?> 
                         <div  class="service__shadowcolor">
                             <div class="service__titrecongre">
-                                <h2 class="service__congretitre"> CCR </h2>
+                                <h2 class="service__congretitre"> <?php the_field('card-title3'); ?></h2>
                             </div>
                             
                             <div class="service__textcongres">
                                 <p class="service__congretexte">
-                                    Un Comité consultatif de résidant-e-s est 
-                                    une instance qui permet aux locataires de HLM de 
-                                    participer à la gestion de leur immeuble et de faire 
-                                    des recommandations à la direction de l'OMH sur toutes 
-                                    les questions qui les touchent. n CCR est composé uniquement 
-                                    de locataires désignés par les associations.
+								<?php the_field('card-summary3'); ?>
                                 </p>
                             </div>
 
                             <div class="service__ensavoirplus">
-                                <button class="bouttonsavoirplus"> en savoir plus</button>
+                                <button class="bouttonsavoirplus"> <?php the_field('card-cta3'); ?></button>
                             </div>
 
                         </div>
@@ -118,21 +118,20 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 <div class="service__congrecontainer">
                     
                     <div class="service__insidecontainer__locataire">
+					<?php the_field('cards'); ?> 
                         <div  class="service__shadowcolor">
                             <div class="service__titrecongre">
-                                <h2 class="service__congretitre"> Locataire au CA </h2>
+                                <h2 class="service__congretitre"> <?php the_field('card-title4'); ?> </h2>
                             </div>
                 
                             <div class="service__textcongres">
                                 <p class="service__congretexte">
-                                    Tous les administrateurs égaux en droit. 
-                                    Cela signifie que peu importe que vous soyez locataires, 
-                                    élus municipaux ou représentants socio-économiques.
+                                    <?php the_field('card-summary4'); ?>
                                 </p>
                             </div>
 
                             <div class="service__ensavoirplus">
-                                <button class="bouttonsavoirplus"> en savoir plus</button>
+                                <button class="bouttonsavoirplus"> <?php the_field('card-cta4'); ?></button>
                             </div>
                         </div>
                     </div>
