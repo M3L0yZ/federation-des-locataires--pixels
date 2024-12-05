@@ -22,15 +22,21 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
 
                 <?php
-				$card1 = get_field('card-1');
-				if( $card1 ): ?>
-                <div class="service__insidecontainer__congres">
+				if ( $card1 () ): 
+					// Define WP_Query for the 'service-hub-real' custom post type
+					$card1 = new WP_Query('post_type=service-hub-real');
+				
+					if ( $card1->have_posts() ) : 
+						while ( $card1->have_posts() ) : $card1->the_post(); 
+				?>
 
+
+                <div class="service__insidecontainer__congres">
                     <div class="service__shadowcolor">
 
 
                         <div class="service__titrecongre">
-                            <h2 class="service__congretitre"> <?php echo $card1['card-1-title']; ?> </h2>
+                            <h2 class="service__congretitre"><?php the_field('card-title'); ?></h2>
                         </div>
 
                         <div class="service__textcongres">
@@ -46,6 +52,8 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
                     </div>
                 </div>
+				<?php else: ?>
+					<p>No card information not  available.</p> 
                 <?php endif; ?>
 
             </div>
