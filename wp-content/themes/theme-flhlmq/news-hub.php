@@ -65,110 +65,148 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             <div class="swiper-wrapper">
                 <div class="swiper-slide slide-1">
                     <div class="cartes">
-
-
-
-                    
-						<?php 
-                        $newsContinu1 = get_field( 'news-continu-1');
-                        if ( $newsContinu1 ):
-                        ?>
                         <div class="carte--01 carte">
-                        	<img src="<?php echo esc_url( $newsContinu1['news-continu-img']['url'] ); ?>" alt="<?php echo esc_attr( $newsContinu1['news-continu-img'] ); ?>" />
-							<div class="carte__textes">
-                                <h3><?php echo esc_html( $newsContinu1['news-continu-title'] ); ?></h3>
-                                <p class="carte__textes__sous-titre"><?php echo esc_html( $newsContinu1['news-continu-summary'] ); ?></p>
-                                <p class="carte__textes__date"><?php echo esc_html( $newsContinu1['news-continu-date'] ); ?></p>
-                            </div>
+                            <?php
+                                $arguments = array( // 👈 Tableau d'arguments
+                                    'post_type' => 'new-article',
+                                    's' => 'Première pelletée de terre pour Unitaînés à Rimouski'
+                                );
+                                $projects = new WP_Query($arguments); // 👈 Utilisation
+                                while ($projects->have_posts()) : $projects->the_post(); 
+                                ?>
+                                <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/>
+                                <div class="carte__textes">
+                                    <h3><?php the_title(); ?></h3>
+                                    <p class="carte__textes__sous-titre"><?php the_field('card-summary'); ?></p>
+                                    <p class="carte__textes__date"><?php the_field('card-date'); ?></p>
+                                </div>
+                                <?php
+                                endwhile; 
+                                wp_reset_postdata(); 
+                            ?>
 							<button class="bouton-carte-01 bouton-lire-article"><?php the_field('news-cta-read'); ?></button>
                         </div>
-                        <?php endif; ?>
 
                         <hr class="hr-cartes">
 
-                        <?php 
-                        $newsContinu2 = get_field( 'news-continu-2');
-                        if ( $newsContinu2 ):
-                        ?>
                         <div class="carte--02 carte">
-						<img src="<?php echo esc_url( $newsContinu2['news-continu-img']['url'] ); ?>" alt="<?php echo esc_attr( $newsContinu2['news-continu-img'] ); ?>" />
-							<div class="carte__textes">
-                                <h3><?php echo esc_html( $newsContinu2['news-continu-title'] ); ?></h3>
-                                <p class="carte__textes__sous-titre"><?php echo esc_html( $newsContinu2['news-continu-summary'] ); ?></p>
-                                <p class="carte__textes__date"><?php echo esc_html( $newsContinu2['news-continu-date'] ); ?></p>
-                            </div>
-							<button class="bouton-carte-02 bouton-lire-article"><?php the_field('news-cta-read'); ?></button>
+                            <?php
+                                $arguments = array( // 👈 Tableau d'arguments
+                                    'post_type' => 'new-article',
+                                    's' => 'Une nouvelle voie rapide pour les développeurs'
+                                );
+                                $projects = new WP_Query($arguments); // 👈 Utilisation
+                                while ($projects->have_posts()) : $projects->the_post(); 
+                                ?>
+                                <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/>
+                                <div class="carte__textes">
+                                    <h3><?php the_title(); ?></h3>
+                                    <p class="carte__textes__sous-titre"><?php the_field('card-summary'); ?></p>
+                                    <p class="carte__textes__date"><?php the_field('card-date'); ?></p>
+                                </div>
+                                <?php
+                                endwhile; 
+                                wp_reset_postdata(); 
+                            ?>
+							<button class="bouton-carte-01 bouton-lire-article"><?php the_field('news-cta-read'); ?></button>
                         </div>
-                        <?php endif; ?>
 
                         <hr class="hr-cartes">
 
-                        <?php 
-                        $newsContinu3 = get_field( 'news-continu-3');
-                        if ( $newsContinu3 ):
-                        ?>
                         <div class="carte--03 carte">
-                        	<img src="<?php echo esc_url( $newsContinu3['news-continu-img']['url'] ); ?>" alt="<?php echo esc_attr( $newsContinu3['news-continu-img'] ); ?>" />
-							<div class="carte__textes">
-                                <h3><?php echo esc_html( $newsContinu3['news-continu-title'] ); ?></h3>
-                                <p class="carte__textes__sous-titre"><?php echo esc_html( $newsContinu3['news-continu-summary'] ); ?></p>
-                                <p class="carte__textes__date"><?php echo esc_html( $newsContinu3['news-continu-date'] ); ?></p>
-                            </div>
-							<button class="bouton-carte-03 bouton-lire-article"><?php the_field('news-cta-read'); ?></button>
+                            <?php
+                                $arguments = array( // 👈 Tableau d'arguments
+                                    'post_type' => 'new-article',
+                                    's' => 'Demande record de HLM à Saguenay'
+                                );
+                                $projects = new WP_Query($arguments); // 👈 Utilisation
+                                while ($projects->have_posts()) : $projects->the_post(); 
+                                ?>
+                                <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/>
+                                <div class="carte__textes">
+                                    <h3><?php the_title(); ?></h3>
+                                    <p class="carte__textes__sous-titre"><?php the_field('card-summary'); ?></p>
+                                    <p class="carte__textes__date"><?php the_field('card-date'); ?></p>
+                                </div>
+                                <?php
+                                endwhile; 
+                                wp_reset_postdata(); 
+                            ?>
+							<button class="bouton-carte-01 bouton-lire-article"><?php the_field('news-cta-read'); ?></button>
                         </div>
-                        <?php endif; ?>
 
                         <hr class="hr-cartes">
                         
-						<?php 
-                        $newsContinu4 = get_field( 'news-continu-4');
-						if ( $newsContinu4 ) :
-						?>
 						<div class="carte--04 carte">
-							<img src="<?php echo esc_url( $newsContinu4['news-continu-img']['url'] ); ?>" alt="<?php echo esc_attr( $newsContinu4['news-continu-img'] ); ?>" />
-							<div class="carte__textes">
-								<h3><?php echo esc_html( $newsContinu4['news-continu-title'] ); ?></h3>
-								<p class="carte__textes__sous-titre"><?php echo esc_html( $newsContinu4['news-continu-summary'] ); ?></p>
-								<p class="carte__textes__date"><?php echo esc_html( $newsContinu4['news-continu-date'] ); ?></p>
-							</div>
-							<button class="bouton-carte-04 bouton-lire-article"><?php the_field('news-cta-read'); ?></button>
-						</div>
-						<?php endif; ?>
+                            <?php
+                                $arguments = array( // 👈 Tableau d'arguments
+                                    'post_type' => 'new-article',
+                                    's' => 'Pétition pour des HLM de qualité'
+                                );
+                                $projects = new WP_Query($arguments); // 👈 Utilisation
+                                while ($projects->have_posts()) : $projects->the_post(); 
+                                ?>
+                                <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/>
+                                <div class="carte__textes">
+                                    <h3><?php the_title(); ?></h3>
+                                    <p class="carte__textes__sous-titre"><?php the_field('card-summary'); ?></p>
+                                    <p class="carte__textes__date"><?php the_field('card-date'); ?></p>
+                                </div>
+                                <?php
+                                endwhile; 
+                                wp_reset_postdata(); 
+                            ?>
+							<button class="bouton-carte-01 bouton-lire-article"><?php the_field('news-cta-read'); ?></button>
+                        </div>
 						
 
                         <hr class="hr-cartes">
 
-                        <?php 
-                        $newsContinu5 = get_field( 'news-continu-5');
-                        if ( $newsContinu5 ):
-                        ?>
                         <div class="carte--05 carte">
-                        	<img src="<?php echo esc_url( $newsContinu5['news-continu-img']['url'] ); ?>" alt="<?php echo esc_attr( $newsContinu5['news-continu-img'] ); ?>" />
-							<div class="carte__textes">
-                                <h3><?php echo esc_html( $newsContinu5['news-continu-title'] ); ?></h3>
-                                <p class="carte__textes__sous-titre"><?php echo esc_html( $newsContinu5['news-continu-summary'] ); ?></p>
-                                <p class="carte__textes__date"><?php echo esc_html( $newsContinu5['news-continu-date'] ); ?></p>
-                            </div>
-							<button class="bouton-carte-05 bouton-lire-article"><?php the_field('news-cta-read'); ?></button>
+                            <?php
+                                $arguments = array( // 👈 Tableau d'arguments
+                                    'post_type' => 'new-article',
+                                    's' => 'Pétition pour des HLM de qualité'
+                                );
+                                $projects = new WP_Query($arguments); // 👈 Utilisation
+                                while ($projects->have_posts()) : $projects->the_post(); 
+                                ?>
+                                <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/>
+                                <div class="carte__textes">
+                                    <h3><?php the_title(); ?></h3>
+                                    <p class="carte__textes__sous-titre"><?php the_field('card-summary'); ?></p>
+                                    <p class="carte__textes__date"><?php the_field('card-date'); ?></p>
+                                </div>
+                                <?php
+                                endwhile; 
+                                wp_reset_postdata(); 
+                            ?>
+							<button class="bouton-carte-01 bouton-lire-article"><?php the_field('news-cta-read'); ?></button>
                         </div>
-                        <?php endif; ?>
 
                         <hr class="hr-cartes">
 
-                        <?php 
-                        $newsContinu6 = get_field( 'news-continu-6');
-                        if ( $newsContinu6 ):
-                        ?>
                         <div class="carte--06 carte">
-                        	<img src="<?php echo esc_url( $newsContinu6['news-continu-img']['url'] ); ?>" alt="<?php echo esc_attr( $newsContinu6['news-continu-img'] ); ?>" />
-							<div class="carte__textes">
-                                <h3><?php echo esc_html( $newsContinu6['news-continu-title'] ); ?></h3>
-                                <p class="carte__textes__sous-titre"><?php echo esc_html( $newsContinu6['news-continu-summary'] ); ?></p>
-                                <p class="carte__textes__date"><?php echo esc_html( $newsContinu6['news-continu-date'] ); ?></p>
-                            </div>
-							<button class="bouton-carte-06 bouton-lire-article"><?php the_field('news-cta-read'); ?></button>
+                            <?php
+                                $arguments = array( // 👈 Tableau d'arguments
+                                    'post_type' => 'new-article',
+                                    's' => 'Pétition pour des HLM de qualité'
+                                );
+                                $projects = new WP_Query($arguments); // 👈 Utilisation
+                                while ($projects->have_posts()) : $projects->the_post(); 
+                                ?>
+                                <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/>
+                                <div class="carte__textes">
+                                    <h3><?php the_title(); ?></h3>
+                                    <p class="carte__textes__sous-titre"><?php the_field('card-summary'); ?></p>
+                                    <p class="carte__textes__date"><?php the_field('card-date'); ?></p>
+                                </div>
+                                <?php
+                                endwhile; 
+                                wp_reset_postdata(); 
+                            ?>
+							<button class="bouton-carte-01 bouton-lire-article"><?php the_field('news-cta-read'); ?></button>
                         </div>
-                        <?php endif; ?>
                     </div>
                 </div>
                 <div class="swiper-slide slide-2">
@@ -258,45 +296,98 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             <h1 class="news-hub__consultes__titre"><?php the_field('news-consult-title'); ?></h1>
             <hr class="hr-titre">
             <div class="cartes">
-                <div class="carte--01 carte">
-                    <img src="./sources/medias/actualite_27_aout_innondations.jpg">
-                    <div class="carte__textes">
-                        <h2>01</h2>
-                        <h3>Inondations dans Lanaudière</h3>
-                        <p class="carte__textes__sous-titre">La SHQ s’occupe de ses locataires.</p>
-                        <p class="carte__textes__date">27 août, 2024</p>
+                <?php
+                    $arguments = array( // 👈 Tableau d'arguments
+                        'post_type' => 'new-article',
+                        's' => 'Pétition pour des HLM de qualité'
+                    );
+                    $projects = new WP_Query($arguments); // 👈 Utilisation
+                    while ($projects->have_posts()) : $projects->the_post(); 
+                ?>
+                    <div class="carte--01 carte" style="background-image:url(<?php the_post_thumbnail_url(); ?>);">
+                        <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/>
+                        <div class="carte__textes">
+                            <h2>01</h2>
+                            <h3><?php the_title(); ?></h3>
+                            <p class="carte__textes__sous-titre"><?php the_field('card-summary'); ?></p>
+                            <p class="carte__textes__date"><?php the_field('card-date'); ?></p>
+                        </div>
                     </div>
-                </div>
+                <?php
+                    endwhile; 
+                    wp_reset_postdata(); 
+                ?>
+                
                 <hr class="hr-cartes">
-                <div class="carte--02 carte">
-                    <img src="./sources/medias/actualite_27_aout_hlm.jpg">
-                    <div class="carte__textes">
-                        <h2>02</h2>
-                        <h3>Des HLM préfabriqués ?</h3>
-                        <p class="carte__textes__sous-titre">Une occasion en or pour les offices.</p>
-                        <p class="carte__textes__date">27 août, 2024</p>
+                
+                <?php
+                    $arguments = array( // 👈 Tableau d'arguments
+                        'post_type' => 'new-article',
+                        's' => 'Demande record de HLM à Saguenay'
+                    );
+                    $projects = new WP_Query($arguments); // 👈 Utilisation
+                    while ($projects->have_posts()) : $projects->the_post(); 
+                ?>
+                    <div class="carte--02 carte" style="background-image:url(<?php the_post_thumbnail_url(); ?>);">
+                        <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/>
+                        <div class="carte__textes">
+                            <h2>02</h2>
+                            <h3><?php the_title(); ?></h3>
+                            <p class="carte__textes__sous-titre"><?php the_field('card-summary'); ?></p>
+                            <p class="carte__textes__date"><?php the_field('card-date'); ?></p>
+                        </div>
                     </div>
-                </div>
+                <?php
+                    endwhile; 
+                    wp_reset_postdata(); 
+                ?>
+                
                 <hr class="hr-cartes">
-                <div class="carte--03 carte">
-                    <img src="./sources/medias/actuaite_19_aout_benoit.jpg">
-                    <div class="carte__textes">
-                        <h2>03</h2>
-                        <h3>Rencontre avec Benoit Dorais</h3>
-                        <p class="carte__textes__sous-titre">Montréal attend beaucoup de son office !</p>
-                        <p class="carte__textes__date">19 août, 2024</p>
+                
+                <?php
+                    $arguments = array( // 👈 Tableau d'arguments
+                        'post_type' => 'new-article',
+                        's' => 'Une nouvelle voie rapide pour les développeurs'
+                    );
+                    $projects = new WP_Query($arguments); // 👈 Utilisation
+                    while ($projects->have_posts()) : $projects->the_post(); 
+                ?>
+                    <div class="carte--03 carte" style="background-image:url(<?php the_post_thumbnail_url(); ?>);">
+                        <div class="carte__textes">
+                            <h2>03</h2>
+                            <h3><?php the_title(); ?></h3>
+                            <p class="carte__textes__sous-titre"><?php the_field('card-summary'); ?></p>
+                            <p class="carte__textes__date"><?php the_field('card-date'); ?></p>
+                        </div>
                     </div>
-                </div>
+                <?php
+                    endwhile; 
+                    wp_reset_postdata(); 
+                ?>
+                
                 <hr class="hr-cartes">
-                <div class="carte--04 carte">
-                    <img src="./sources/medias/actualite_20_aout_manifestation.png">
-                    <div class="carte__textes">
-                        <h2>04</h2>
-                        <h3>Manifestons à Québec les 14 et 15 septembre</h3>
-                        <p class="carte__textes__sous-titre">La FLHLMQ sera présente pour réclamer des HLM.</p>
-                        <p class="carte__textes__date">20 août, 2024</p>
+                
+                <?php
+                    $arguments = array( // 👈 Tableau d'arguments
+                        'post_type' => 'new-article',
+                        's' => 'Première pelletée de terre pour Unitaînés à Rimouski'
+                    );
+                    $projects = new WP_Query($arguments); // 👈 Utilisation
+                    while ($projects->have_posts()) : $projects->the_post(); 
+                ?>
+                    <div class="carte--04 carte" style="background-image:url(<?php the_post_thumbnail_url(); ?>);">
+                        <div class="carte__textes">
+                            <h2>04</h2>
+                            <h3><?php the_title(); ?></h3>
+                            <p class="carte__textes__sous-titre"><?php the_field('card-summary'); ?></p>
+                            <p class="carte__textes__date"><?php the_field('card-date'); ?></p>
+                        </div>
                     </div>
-                </div>
+                <?php
+                    endwhile; 
+                    wp_reset_postdata(); 
+                ?>
+                
             </div>
         </section>
 		<?php endif; ?>
