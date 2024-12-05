@@ -16,8 +16,9 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 			<section class="service">
             <h1 class="service__titreservice">Nos services</h1>
             <hr class="hr-titre">
-            <div class="service__congrebackgroundcontainer">
-                <div class="service__congrecontainer">
+		
+            			<div class="service__congrebackgroundcontainer">
+                			<div class="service__congrecontainer">
 
 				
 								<?php
