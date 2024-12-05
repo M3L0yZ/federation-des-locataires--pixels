@@ -65,6 +65,10 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             <div class="swiper-wrapper">
                 <div class="swiper-slide slide-1">
                     <div class="cartes">
+
+
+
+                    
 						<?php 
                         $newsContinu1 = get_field( 'news-continu-1');
                         if ( $newsContinu1 ):
@@ -220,7 +224,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                                 <p class="carte__textes__date">20 août, 2024</p>
                             </div>
                             <button class="bouton-carte-05  bouton-lire-article"><?php the_field('news-cta-read'); ?></button>
-                        </div>
+                        </div>gffffffhg
                         <hr class="hr-cartes">
                         <div class="carte--06 carte">
                             <img src="./sources/medias/actuaite_19_aout_benoit.jpg">
