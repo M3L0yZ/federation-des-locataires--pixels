@@ -18,7 +18,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
             
                 <div class="congre__backgroundcolor">
-                    <div class="congre__contenue">
+                    <div class="congre__contenue" >
 
                     
                 

@@ -18,6 +18,8 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             <hr class="hr-titre">
             <div class="service__congrebackgroundcontainer">
                 <div class="service__congrecontainer">
+
+				
 								<?php
 								$card1 = get_field('card-1');
 									if( $card1 ): ?>
