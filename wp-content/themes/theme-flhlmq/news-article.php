@@ -35,42 +35,81 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             <div class="cartes-swiper">
                 <div class="swiper-container2 mySwiper ">
                     <div class="swiper-wrapper">
-
                         <div class="swiper-slide slide-1">
-                        <?php 
-                        $similarCard1 = get_field( 'similar-card-1');
-                        if ( $similarCard1 ):
-                        ?>
-                        <div class="carte--01 carte">
-                        <img src="<?php echo esc_url( $similarCard1['similar-card-1-img']['url'] ); ?>" alt="<?php echo esc_attr( $similarCard1['similar-card-1-title'] ); ?>" />
-                        <h3><?php echo esc_html( $similarCard1['similar-card-1-title'] ); ?></h3>
-                        <p><?php echo esc_html( $similarCard1['similar-card-1-content'] ); ?></p>
-                        </div>
-                        <?php endif; ?>
+                            <div class="carte--01 carte">
+                            <?php
+                                $arguments = array( // 👈 Tableau d'arguments
+                                    'post_type' => 'new-article',
+                                    's' => 'Première pelletée de terre pour Unitaînés à Rimouski'
+                                );
+                                $projects = new WP_Query($arguments); // 👈 Utilisation
+                                while ($projects->have_posts()) : $projects->the_post(); 
+                                ?>
+                                <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/>
+                                <h3><?php the_title(); ?></h3>
+                                <p><?php the_field('card-summary'); ?></p>
+                                <?php
+                                endwhile; 
+                                wp_reset_postdata(); 
+                            ?>
+                            </div>
                         </div>
                         <div class="swiper-slide slide-2">
-                        <?php 
-                        $similarCard2 = get_field( 'similar-card-2');
-                        if ( $similarCard2 ):
-                        ?>
-                        <div class="carte--02 carte">
-                        <img src="<?php echo esc_url( $similarCard2['similar-card-2-img']['url'] ); ?>" alt="<?php echo esc_attr( $similarCard2['similar-card-2-title'] ); ?>" />
-                        <h3><?php echo esc_html( $similarCard2['similar-card-2-title'] ); ?></h3>
-                        <p><?php echo esc_html( $similarCard2['similar-card-2-content'] ); ?></p>
-                        </div>
-                        <?php endif; ?>
+                            <div class="carte--02 carte">
+                            <?php
+                                $arguments = array( // 👈 Tableau d'arguments
+                                    'post_type' => 'new-article',
+                                    's' => 'Une nouvelle voie rapide pour les développeurs'
+                                );
+                                $projects = new WP_Query($arguments); // 👈 Utilisation
+                                while ($projects->have_posts()) : $projects->the_post(); 
+                                ?>
+                                <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/>
+                                <h3><?php the_title(); ?></h3>
+                                <p><?php the_field('card-summary'); ?></p>
+                                <?php
+                                endwhile; 
+                                wp_reset_postdata(); 
+                            ?>
+                            </div>
                         </div>
                         <div class="swiper-slide slide-3">
-                        <?php 
-                        $similarCard3 = get_field( 'similar-card-3');
-                        if ( $similarCard3 ):
-                        ?>
-                        <div class="carte--03 carte">
-                        <img src="<?php echo esc_url( $similarCard3['similar-card-3-img']['url'] ); ?>" alt="<?php echo esc_attr( $similarCard3['similar-card-3-title'] ); ?>" />
-                        <h3><?php echo esc_html( $similarCard3['similar-card-3-title'] ); ?></h3>
-                        <p><?php echo esc_html( $similarCard3['similar-card-3-content'] ); ?></p>
+                            <div class="carte--03 carte">
+                            <?php
+                                $arguments = array( // 👈 Tableau d'arguments
+                                    'post_type' => 'new-article',
+                                    's' => 'Demande record de HLM à Saguenay'
+                                );
+                                $projects = new WP_Query($arguments); // 👈 Utilisation
+                                while ($projects->have_posts()) : $projects->the_post(); 
+                                ?>
+                                <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/>
+                                <h3><?php the_title(); ?></h3>
+                                <p><?php the_field('card-summary'); ?></p>
+                                <?php
+                                endwhile; 
+                                wp_reset_postdata(); 
+                            ?>
+                            </div>
                         </div>
-                        <?php endif; ?>
+                        <div class="swiper-slide slide-4">
+                            <div class="carte--04 carte">
+                            <?php
+                                $arguments = array( // 👈 Tableau d'arguments
+                                    'post_type' => 'new-article',
+                                    's' => 'Pétition pour des HLM de qualité'
+                                );
+                                $projects = new WP_Query($arguments); // 👈 Utilisation
+                                while ($projects->have_posts()) : $projects->the_post(); 
+                                ?>
+                                <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/>
+                                <h3><?php the_title(); ?></h3>
+                                <p><?php the_field('card-summary'); ?></p>
+                                <?php
+                                endwhile; 
+                                wp_reset_postdata(); 
+                            ?>
+                            </div>
                         </div>
                     </div>
                 </div>
