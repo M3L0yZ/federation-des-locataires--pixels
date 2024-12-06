@@ -12,10 +12,7 @@ add_theme_support( 'post-thumbnails' );
 /* --------------------------------
 Déclare le menu principal */
 register_nav_menus( 
-	
 	array(
-		
-		
 		/* 
 			1. 'main-menu' = Nom dans le code
 			2. 'Menu principal' = Nom dans l'admin
