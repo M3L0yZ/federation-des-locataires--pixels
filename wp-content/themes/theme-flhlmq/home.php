@@ -232,8 +232,8 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                     </div>
                 </div>
             </div>
-            <button class="accueil_temoignages__bouton"><?php the_field('testimony-show-more'); ?></button>
-            <h3 class="accueil_temoignages__altbouton"><?php the_field('testimony-show'); ?></h3>
+            <button class="accueil_temoignages__bouton"><?php the_field('testimony-show'); ?></button>
+            <h3 class="accueil_temoignages__altbouton"><?php the_field('testimony-show-more'); ?></h3>
         </section>
 
         <!------------- NOUS SOUTENIR------------->
