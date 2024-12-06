@@ -1,31 +1,38 @@
 <?php
-	/*-----------------------------------------------------------------------------------*/
-	/* Affiche le pied de page (Footer) sur toutes vos pages
-	/*-----------------------------------------------------------------------------------*/
+/**
+ * 	Template Name: footer
+ * 	Template Post Type: post, footer
+ */
+
 
 // Fermeture de la zone de contenu principale ?>
 </main>
-
+<?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?>
 <footer class="foot">
+
         <div class="foot__grid">
+		<?php the_field('footer'); ?>
             <!-- Services -->
             <div class="foot__block">
-                <ul class="foot__list">
+			
+                <ul class="foot__list" > 
                     <h2>Services</h2>
-                    <li class="foot__item"><a class="foot__link" href="#">Devenir membre</a></li>
-                    <li class="foot__item"><a class="foot__link" href="#">Droits des locataires</a></li>
-                    <li class="foot__item"><a class="foot__link" href="#">Guides et règlements</a></li>
-                    <li class="foot__item"><a class="foot__link" href="#">Témoignages</a></li>
+					<?php the_field('service'); ?>
+                    <li class="foot__item"><a class="foot__link" href="#"> <?php the_field('membre'); ?> </a></li>
+                    <li class="foot__item"><a class="foot__link" href="#"> <?php the_field('locataires'); ?>  </a></li>
+                    <li class="foot__item"><a class="foot__link" href="#"> <?php the_field('règlements'); ?> </a></li>
+                    <li class="foot__item"><a class="foot__link" href="#"> <?php the_field('temoignages'); ?> </a></li>
                 </ul>
             </div>
             <!-- À propos -->
             <div class="foot__block">
                 <ul class="foot__list">
                     <h2>À propos</h2>
-                    <li class="foot__item"><a class="foot__link" href="#">La fédération</a></li>
-                    <li class="foot__item"><a class="foot__link" href="#">Notre histoire</a></li>
-                    <li class="foot__item"><a class="foot__link" href="#">Notre équipe</a></li>
-                    <li class="foot__item"><a class="foot__link" href="#">Nous joindre</a></li>
+					<?php the_field('propos'); ?>
+                    <li class="foot__item"><a class="foot__link" href="#"> <?php the_field('federation'); ?> </a></li>
+                    <li class="foot__item"><a class="foot__link" href="#"> <?php the_field('histoire'); ?> </a></li>
+                    <li class="foot__item"><a class="foot__link" href="#"> <?php the_field('equipe'); ?> </a></li>
+                    <li class="foot__item"><a class="foot__link" href="#"> <?php the_field('joindre'); ?> </a></li>
                 </ul>
             </div>
             <!-- Publications -->
@@ -91,6 +98,7 @@
         </div>
         <p class="droitAuteur">©2024 FLHLMQ par Pixels</p> 
     </footer>
+	<?php endif; ?>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <?php wp_footer(); 
