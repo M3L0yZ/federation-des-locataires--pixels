@@ -13,7 +13,27 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
 	<article class="news-article">
 		<?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?>
-			<section class="news-article__nouvelle">
+        <section class="news-article__hero">
+            <div class="swiper-container mySwiper ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-1">
+                    </div>
+                    <div class="swiper-slide slide-2">
+                    </div>
+                    <div class="swiper-slide slide-3">
+                    </div>
+                </div>
+
+                <!-- Pagination (if needed) -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="slides__texte">
+                <h1><?php the_field('hero-title'); ?></h1>
+                <p><?php the_field('hero-summary'); ?></p>
+            </div>
+        </section>
+
+		<section class="news-article__nouvelle">
             <h1 class="news-article__nouvelle__titre"><?php the_title();?></h1>
             <hr class="hr-titre" >
             <div class="container-informations">
