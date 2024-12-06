@@ -34,8 +34,9 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div><div class="slides__container">
-                    <h1>Accessibilité et équité <br> Se loger dans la dignité</h1>
-                    <button>Devenir membre</button></div>
+                    <h1><?php the_field('hero-title-1'); ?></h1>
+					<h1><?php the_field('hero-title-2'); ?></h1>
+                    <button><?php the_field('hero-cta'); ?></button></div>
         </section>
 
         <!-------------- SERVICES -------------------->
