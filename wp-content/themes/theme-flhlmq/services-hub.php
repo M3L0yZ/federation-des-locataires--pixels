@@ -42,7 +42,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                                 </div>
 
                                 <div class="service__ensavoirplus">
-                                    <a href="./service.html"><button class="bouttonsavoirplus"><?php the_field('card-cta'); ?></button></a>
+                                    <a href="<?php echo home_url('/index.php/service/congres/'); ?>"><button class="bouttonsavoirplus"><?php the_field('card-cta'); ?></button></a>
                                 </div>
 
                             </div>

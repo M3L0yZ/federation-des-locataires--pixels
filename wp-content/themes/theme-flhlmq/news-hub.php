@@ -34,10 +34,10 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                         endwhile; 
                         wp_reset_postdata(); 
                     ?>
-                            <a href="./news_article.html">
+                            <a href="<?php echo home_url('/index.php/new-article//petition-pour-des-hlm-de-qualite/'); ?>">
                                 <button class="bouton-lire-article"><?php the_field('news-cta-read'); ?></button>
                             </a>
-                            <a href="./news_article.html">
+                            <a href="<?php echo home_url('/index.php/new-article//petition-pour-des-hlm-de-qualite/'); ?>">
                                 <button class="bouton-savoir-plus"><?php the_field('news-cta-know-more'); ?></button>
                             </a>
                         </div>
@@ -103,7 +103,9 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                                 endwhile; 
                                 wp_reset_postdata(); 
                             ?>
+                            <a href="<?php echo home_url('/index.php/new-article/premiere-pelletee-de-terre-pour-unitaines-a-rimouski/'); ?>">
 							<button class="bouton-carte-01 bouton-lire-article"><?php the_field('news-cta-read'); ?></button>
+                            </a>
                         </div>
 
                         <hr class="hr-cartes">
@@ -127,7 +129,9 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                                 endwhile; 
                                 wp_reset_postdata(); 
                             ?>
+                            <a href="<?php echo home_url('/index.php/new-article/une-nouvelle-voie-rapide-pour-les-developpeurs/'); ?>">
 							<button class="bouton-carte-01 bouton-lire-article"><?php the_field('news-cta-read'); ?></button>
+                            </a>
                         </div>
 
                         <hr class="hr-cartes">
@@ -151,7 +155,9 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                                 endwhile; 
                                 wp_reset_postdata(); 
                             ?>
+                            <a href="<?php echo home_url('/index.php/new-article/demande-record-de-hlm-a-saguenay/'); ?>">
 							<button class="bouton-carte-01 bouton-lire-article"><?php the_field('news-cta-read'); ?></button>
+                            </a>
                         </div>
 
                         <hr class="hr-cartes">
