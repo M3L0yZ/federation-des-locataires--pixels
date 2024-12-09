@@ -1,38 +1,37 @@
 <?php
 /**
- * 	Template Name: footer
- * 	Template Post Type: post, footer
+ * 	Template Name: partenaires
+ * 	Template Post Type: post, partenaire
  */
 
 
 // Fermeture de la zone de contenu principale ?>
 </main>
 <?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?>
-<footer class="foot">
-
+    <footer class="foot">
+    <?php $service = get_field('footer'); ?>
         <div class="foot__grid">
-		<?php the_field('footer'); ?>
             <!-- Services -->
+            <?php $service = get_field('service'); ?>
             <div class="foot__block">
-			
-                <ul class="foot__list" > 
-                    <h2>Services</h2>
-					<?php the_field('service'); ?>
-                    <li class="foot__item"><a class="foot__link" href="#"> <?php the_field('membre'); ?> </a></li>
-                    <li class="foot__item"><a class="foot__link" href="#"> <?php the_field('locataires'); ?>  </a></li>
-                    <li class="foot__item"><a class="foot__link" href="#"> <?php the_field('règlements'); ?> </a></li>
-                    <li class="foot__item"><a class="foot__link" href="#"> <?php the_field('temoignages'); ?> </a></li>
+                <ul class="foot__list">
+                   
+                    <a href="<?php echo home_url('/index.php/service-hub-real/nos-service/'); ?>"><h2>Services</h2></a>
+                    <li class="foot__item"><a class="foot__link" href="#"> membre </a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Droits des locataires</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Guides et règlements</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Témoignages</a></li>
                 </ul>
             </div>
+            
             <!-- À propos -->
             <div class="foot__block">
                 <ul class="foot__list">
                     <h2>À propos</h2>
-					<?php the_field('propos'); ?>
-                    <li class="foot__item"><a class="foot__link" href="#"> <?php the_field('federation'); ?> </a></li>
-                    <li class="foot__item"><a class="foot__link" href="#"> <?php the_field('histoire'); ?> </a></li>
-                    <li class="foot__item"><a class="foot__link" href="#"> <?php the_field('equipe'); ?> </a></li>
-                    <li class="foot__item"><a class="foot__link" href="#"> <?php the_field('joindre'); ?> </a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">La fédération</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Notre histoire</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Notre équipe</a></li>
+                    <li class="foot__item"><a class="foot__link" href="#">Nous joindre</a></li>
                 </ul>
             </div>
             <!-- Publications -->
@@ -48,7 +47,8 @@
             <!-- Nouvelles -->
             <div class="foot__block">
                 <ul class="foot__list">
-                    <h2>Nouvelles</h2>
+                    <a href="<?php echo home_url('/index.php/a-la-une/'); ?>">
+                    <h2>Nouvelles</h2></a>
                     <li class="foot__item"><a class="foot__link" href="./news_hub.html">Actualité</a></li>
                     <li class="foot__item"><a class="foot__link" href="#">Dossiers</a></li>
                     <li class="foot__item"><a class="foot__link" href="#">Évènements et calendrier</a></li>
@@ -69,8 +69,21 @@
             <!-- Autres -->
             <div class="foot__block">
                 <div class="foot__social">
-                    <img class="foot__icon" src="./sources/icons/facebook_logo_secondary.png"></li>
-                    <img class="foot__icon" src="./sources/icons/youtube.png"></li>
+                <?php
+                    // Récupérer les partenaires avec WP_Query
+                    $reseaux = new WP_Query('post_type=reseau');
+                    while ($reseaux->have_posts()) : $reseaux->the_post();
+                        // Récupérer l'URL de l'image
+                        $image = get_the_post_thumbnail_url(); // URL de l'image à la une
+                        $urlreseau = get_field('$urlreseau'); // URL personnalisée
+                        ?>
+                        <div>
+                            <a class="foot__icon" href="<?php echo esc_url($urlreseau); ?>" target="_blank">
+                                <img class="foot__icon"src="<?php echo esc_url($image); ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>">
+                            </a>
+                        </div>
+                    <?php endwhile; wp_reset_postdata(); ?>
+                    
                 </div>
             </div>
             <div class="foot__block">
@@ -80,16 +93,30 @@
                     Montréal, (Québec)<br>
                     H3J 1J8<br></a>
                 </div>
-            </div>
+                    </div>
+            
+            
+
             <div class="foot__block">
                 <div class="foot__partenaire">
-                    <img class="foot__logo" src="../theme-flhlmq/sources/medias/logo_quebec.svg"><br>
-                    <img class="foot__logo" src="../theme-flhlmq/sources/medias/logo_rohq.png"><br>
-                    <img class="foot__logo" src="../theme-flhlmq/sources/medias/logo_frapru.jpeg"><br>
-                    <img class="foot__logo" src="../theme-flhlmq/sources/medias/logo_cnl.png">
+                <?php
+                    // Récupérer les partenaires avec WP_Query
+                    $partners = new WP_Query('post_type=partenaire');
+                    while ($partners->have_posts()) : $partners->the_post();
+                        // Récupérer l'URL de l'image
+                        $image = get_the_post_thumbnail_url(); // URL de l'image à la une
+                        $urlpartenaire = get_field('urlpartenaire'); // URL personnalisée
+                        ?>
+                        <div>
+                            <a class="foot__logo" href="<?php echo esc_url($urlpartenaire); ?>" target="_blank">
+                                <img class="foot__logo" src="<?php echo esc_url($image); ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>">
+                            </a>
+                        </div>
+                    <?php endwhile; wp_reset_postdata(); ?>
+                    
                 </div>
             </div>
-            <a class="foot__block" href="index.html">
+            <a class="foot__block" href="<?php echo home_url('/index.php/accueil/'); ?>">
             <div class="foot__block">
                 <div class="foot__banner"> 
                     <button class="foot__button" type="button">DONS</button>

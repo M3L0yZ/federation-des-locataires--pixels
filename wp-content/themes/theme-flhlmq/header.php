@@ -1,7 +1,9 @@
 <?php
-	/*-----------------------------------------------------------------------------------*/
-	/* Affiche l'entête (Header) sur toutes vos pages
-	/*-----------------------------------------------------------------------------------*/
+	/**
+ * 	Template Name: logos
+ * 	Template Post Type: post, logo
+ */
+
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -33,27 +35,32 @@
 		 etc. */
 	?>
 >
-
+<?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?>
 	<header  class="header">
 	<div class="header__grid">
             <!-- projet par etudiant -->
+			<?php the_field('header-icons'); ?>
             <div class="header__block">
+				
                 <div class="head__etudiant">
-                    <h1 class="projet-etudiant">Projet Étudiant réalisé dans un cadre scolaire au collège Montmorency
-                    </h1>
-                    <h1 class="voir-site-origine">Voir le site d'origine:<a
-                            href="https://flhlmq.com/fr">www.flhlmq.com/fr</a></h1>
+					 
+
+                    <h1 class="projet-etudiant"> <?php the_field('projet-fait'); ?> </h1>
+                    <h1 class="voir-site-origine"><?php the_field('voir-site-origine'); ?><a href="<?php echo esc_url('site-origine'); ?>">www.flhlmq.com/fr</a></h1>
+
                     <div class="bouton-x-header-wrap">
-                        <button class="bouton-x-header" onclick="myFunction()"> <img src="sources/icons/boutonX.png"
-                                alt=""></button>
+                        <button class="bouton-x-header" onclick="myFunction()"> <img src="<?php echo esc_url('boutonx'); ?>"
+                        alt=""></button>
                     </div>
+					
+					
                 </div>
             </div>
             <!-- dons -->
             <div class="header__block">
                 <div class="header__don">
                     <div class="logo-federation-wrap">
-                        <a href="./index.html"><img class="logo-federation" src="./sources/logo/logo-federation.png"></a>
+                        <a href="./index.html"><img class="logo-federation" src="<?php echo esc_url('logo-federation'); ?>"></a>
                     </div>
                     <div class="bouton-don-wrap">
                         <button class="bouton-don" onclick="myFunction()">Dons</button>
@@ -61,7 +68,7 @@
                 </div>
             </div>
         </div>
-
+<?php endif; ?>
 		<nav>
 			<?php 
 				// Affiche un menu si dans le tableau de bord un menu a été défini dans cet emplacement
