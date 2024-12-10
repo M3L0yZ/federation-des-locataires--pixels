@@ -93,14 +93,12 @@
 						echo '<li class="nav__item"><a href="' . esc_url($menu_items[2]->url) . '">' . esc_html($menu_items[2]->title) . '</a></li>';
 					}
 					if ($menu_items[3]) {
-						echo '<li class="nav__item"><img class="icone-facebook" src="./sources/icons/facebook.png"></li>';
+						echo '<li class="nav__item"><img class="icone-facebook" src="' . get_template_directory_uri() . '/sources/icons/facebook.png" alt="Facebook"></li>';
 					}
 					if ($menu_items[4]) {
-						echo '<li class="nav__item"><img class="icone-youtube" src="./sources/icons/youtube.png"></li>';
+						echo '<li class="nav__item"><img class="icone-youtube" src="' . get_template_directory_uri() . '/sources/icons/youtube.png" alt="YouTube"></li>';
 					}
 				?>
-				<li class="nav__item"><img class="icone-facebook" src="./sources/icons/facebook.png"></li>
-				<li class="nav__item"><img class="icone-youtube" src="./sources/icons/youtube.png"></li>
 				<li class="nav__item">
 					<input type="search" id="search" name="search" placeholder="Rechercher">
 				</li>
