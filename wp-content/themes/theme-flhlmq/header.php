@@ -45,8 +45,8 @@
                 <div class="head__etudiant">
 					 
 
-                    <h1 class="projet-etudiant"> <?php the_field('project'); ?> </h1>
-                    <h1 class="voir-site-origine"><?php the_field('original-site'); ?><a href="<?php echo esc_url('site-origine'); ?>">www.flhlmq.com/fr</a></h1>
+                    <h1 class="projet-etudiant"><?php the_field('project'); ?></h1>
+                    <h1 class="voir-site-origine"><?php the_field('original-site'); ?><a href="<?php echo esc_url('original-site'); ?>">www.flhlmq.com/fr</a></h1>
 
                     <div class="bouton-x-header-wrap">
                         <button class="bouton-x-header" onclick="myFunction()"> <img src="<?php echo esc_url('boutonx'); ?>"
