@@ -37,6 +37,7 @@
 >
 <?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?><?php endif; ?>
 	<header class="header">
+		
 	<div class="header__grid">
             <!-- projet par etudiant -->
             <div class="header__block">
@@ -49,9 +50,11 @@
                             href="https://flhlmq.com/fr">www.flhlmq.com/fr</a></h1>
 
 					<div class="bouton-x-header-wrap">
+						
+						<!-- projet par etudiant -->
 						<?php
                         echo '<button class="bouton-x-header" onclick="myFunction()"><div class="boutonximg"><img src="' . get_template_directory_uri() . '/sources/icons/boutonX.png"></div></button>'
-						?>
+						?> 
                     </div>
 					
 					
@@ -59,13 +62,16 @@
             </div>
             <!-- dons -->
             <div class="header__block">
-                <div class="header__don">
+                <div class="header__don"><a href="<?php echo home_url('/index.php/accueil/'); ?>">
                     <div class="logo-federation-wrap">
+						
+							
 						<?php
                         echo '
-                        <a href="./index.html"><img class="logo-federation" src="' . get_template_directory_uri() . '/sources/logo/logo-federation.png"></a>'
+                        <a href="./index.php/accueil/"><img class="logo-federation" src="' . get_template_directory_uri() . '/sources/logo/logo-federation.png"></a>'
 						?>
-                    </div>
+						
+                    </div></a>
                     <div class="bouton-don-wrap">
                         <button class="bouton-don" onclick="myFunction()">Dons</button>
                     </div>

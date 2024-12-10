@@ -9,14 +9,23 @@
 </main>
 <?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?>	<?php endif; ?>
     <footer class="foot">
-    <?php $service = get_field('footer'); ?>
+        <?php
+			//Récupération de l'emplacement du menu de navigation
+			$menu_id = get_nav_menu_locations()['main-menu'];
+
+			//Récupération de tous les éléments du menu de navigation
+			$menu_items = wp_get_nav_menu_items($menu_id);
+        ?>
         <div class="foot__grid">
             <!-- Services -->
             <?php $service = get_field('service'); ?>
             <div class="foot__block">
                 <ul class="foot__list">
-                   
-                    <a href="<?php echo home_url('/index.php/service-hub-real/nos-service/'); ?>"><h2>Services</h2></a>
+                    <?php
+                    if ($menu_items[1]) {
+						echo '<h2><a href="' . esc_url($menu_items[1]->url) . '">' . esc_html($menu_items[1]->title) . '</a></h2>';
+					}
+                    ?>
                     <li class="foot__item"><a class="foot__link" href="#"> membre </a></li>
                     <li class="foot__item"><a class="foot__link" href="#">Droits des locataires</a></li>
                     <li class="foot__item"><a class="foot__link" href="#">Guides et règlements</a></li>
@@ -47,8 +56,11 @@
             <!-- Nouvelles -->
             <div class="foot__block">
                 <ul class="foot__list">
-                    <a href="<?php echo home_url('/index.php/a-la-une/'); ?>">
-                    <h2>Nouvelles</h2></a>
+                <?php
+                    if ($menu_items[2]) {
+						echo '<h2><a href="' . esc_url($menu_items[2]->url) . '">' . esc_html($menu_items[2]->title) . '</a></h2>';
+					}
+                    ?>
                     <li class="foot__item"><a class="foot__link" href="./news_hub.html">Actualité</a></li>
                     <li class="foot__item"><a class="foot__link" href="#">Dossiers</a></li>
                     <li class="foot__item"><a class="foot__link" href="#">Évènements et calendrier</a></li>
@@ -75,7 +87,7 @@
                     while ($reseaux->have_posts()) : $reseaux->the_post();
                         // Récupérer l'URL de l'image
                         $image = get_the_post_thumbnail_url(); // URL de l'image à la une
-                        $urlreseau = get_field('$urlreseau'); // URL personnalisée
+                        $urlreseau = get_field('urlreseau'); // URL personnalisée
                         ?>
                         <div>
                             <a class="foot__icon" href="<?php echo esc_url($urlreseau); ?>" target="_blank">
