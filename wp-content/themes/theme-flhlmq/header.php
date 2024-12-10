@@ -1,7 +1,7 @@
 <?php
 	/**
- * 	Template Name: logos
- * 	Template Post Type: post, logo
+ * 	Template Name: logos, header
+ * 	Template Post Type: post, logo, header
  */
 
 ?>
