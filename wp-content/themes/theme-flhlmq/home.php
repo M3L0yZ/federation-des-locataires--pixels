@@ -12,7 +12,10 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 ?>
 
 	<article>
+
+    <!--------------- HERO ------------->
 	<section class="accueil__hero">
+            <!-- Swiper slides -->
             <div class="swiper-container mySwiper ">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slide-1">
@@ -28,15 +31,18 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                     </div>
                 </div>
                 
-                <!-- Pagination (if needed) -->
+                <!-- Pagination swiper -->
                 <div class="swiper-pagination"></div>
-                <!-- Navigation buttons -->
+                <!-- Navigation boutons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
-            </div><div class="slides__container">
-                    <h1><?php the_field('hero-title-1'); ?></h1>
-					<h1><?php the_field('hero-title-2'); ?></h1>
-                    <button><?php the_field('hero-cta'); ?></button></div>
+            </div>
+            <!-- Informations de l'héro -->
+            <div class="slides__container">
+                <h1><?php the_field('hero-title-1'); ?></h1>
+				<h1><?php the_field('hero-title-2'); ?></h1>
+                <button><?php the_field('hero-cta'); ?></button>
+            </div>
         </section>
 
         <!-------------- SERVICES -------------------->
@@ -44,10 +50,11 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         <section class="accueil_services">
             <div class="accueil_services__grid">
                 <div class="accueil_services__block">
+                    <!-- Ajout des champs personnalisés de services -->
                     <h1  class="accueil_services__titre" ><?php the_field('service-title'); ?></h1>
                     <hr class="hr-titre">
                     <div class="container-informations">
-						<?php 
+						<?php  //Ajout de l'image englobant les services
 						$image = get_field('service-img');
 						if( !empty( $image ) ): ?>
 							<img class="accueil_services__photo1" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
@@ -65,6 +72,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         <!-------------- ACTUALITÉS -------------------->
 
         <section class="accueil__actualites">
+            <!-- Ajout des champs personnalisés de actualité -->
             <h1 class="titre"><?php the_field('news-title'); ?></h1>
             <hr class="hr-titre">
             <div class="cartes-swiper">
@@ -72,14 +80,17 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                     <div class="swiper-wrapper">
                         <div class="swiper-slide slide-1">
                             <div class="carte--01 carte">
-								<?php
-									$arguments = array( // 👈 Tableau d'arguments
+								<?php 
+                                    //Recherche d'une page spécifique dans le post new-article avec le nom de la page
+									$arguments = array(
 										'post_type' => 'new-article',
 										's' => 'Première pelletée de terre pour Unitaînés à Rimouski'
 									);
-									$projects = new WP_Query($arguments); // 👈 Utilisation
+                                    //Utilisation de wp query pour rechercher un post extérieur
+									$projects = new WP_Query($arguments);
 									while ($projects->have_posts()) : $projects->the_post(); 
 									?>
+                                    <!-- Ajout des champs personnalisés du groupe news-articles -->
 									<img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/>
 									<h3><?php the_title(); ?></h3>
 									<p><?php the_field('card-summary'); ?></p>
@@ -93,13 +104,16 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                         <div class="swiper-slide slide-2">
                             <div class="carte--02 carte">
 								<?php
-									$arguments = array( // 👈 Tableau d'arguments
+                                    //Recherche d'une page spécifique dans le post new-article avec le nom de la page
+									$arguments = array(
 										'post_type' => 'new-article',
 										's' => 'Une nouvelle voie rapide pour les développeurs'
 									);
-									$projects = new WP_Query($arguments); // 👈 Utilisation
+                                    //Utilisation de wp query pour rechercher un post extérieur
+									$projects = new WP_Query($arguments);
 									while ($projects->have_posts()) : $projects->the_post(); 
 									?>
+                                    <!-- Ajout des champs personnalisés du groupe news-articles -->
 									<img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/>
 									<h3><?php the_title(); ?></h3>
 									<p><?php the_field('card-summary'); ?></p>
@@ -113,13 +127,16 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                         <div class="swiper-slide slide-3">
                             <div class="carte--03 carte">
 								<?php
-									$arguments = array( // 👈 Tableau d'arguments
+                                    //Recherche d'une page spécifique dans le post new-article avec le nom de la page
+									$arguments = array( 
 										'post_type' => 'new-article',
 										's' => 'Demande record de HLM à Saguenay'
 									);
-									$projects = new WP_Query($arguments); // 👈 Utilisation
+                                    //Utilisation de wp query pour rechercher un post extérieur
+									$projects = new WP_Query($arguments); 
 									while ($projects->have_posts()) : $projects->the_post(); 
 									?>
+                                    <!-- Ajout des champs personnalisés du groupe news-articles -->
 									<img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/>
 									<h3><?php the_title(); ?></h3>
 									<p><?php the_field('card-summary'); ?></p>
@@ -136,13 +153,16 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             <div class="cartes">
                 <div class="carte--01 carte">
 					<?php
-						$arguments = array( // 👈 Tableau d'arguments
+                        //Recherche d'une page spécifique dans le post new-article avec le nom de la page
+						$arguments = array( 
 							'post_type' => 'new-article',
 							's' => 'Première pelletée de terre pour Unitaînés à Rimouski'
 						);
-						$projects = new WP_Query($arguments); // 👈 Utilisation
+                        //Utilisation de wp query pour rechercher un post extérieur
+						$projects = new WP_Query($arguments);
 						while ($projects->have_posts()) : $projects->the_post(); 
 					?>
+                    <!-- Ajout des champs personnalisés du groupe news-articles -->
 					<img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/>
 					<h3><?php the_title(); ?></h3>
 					<p><?php the_field('card-summary'); ?></p>
@@ -155,13 +175,16 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 <hr class="hr-cartes">
                 <div class="carte--02 carte">
 					<?php
-						$arguments = array( // 👈 Tableau d'arguments
+                        //Recherche d'une page spécifique dans le post new-article avec le nom de la page
+						$arguments = array(
 							'post_type' => 'new-article',
 							's' => 'Une nouvelle voie rapide pour les développeurs'
 						);
-						$projects = new WP_Query($arguments); // 👈 Utilisation
+                        //Utilisation de wp query pour rechercher un post extérieur
+						$projects = new WP_Query($arguments); 
 						while ($projects->have_posts()) : $projects->the_post(); 
 					?>
+                    <!-- Ajout des champs personnalisés du groupe news-articles -->
 					<img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/>
 					<h3><?php the_title(); ?></h3>
 					<p><?php the_field('card-summary'); ?></p>
@@ -174,13 +197,16 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 <hr class="hr-cartes">
                 <div class="carte--03 carte">
 					<?php
-						$arguments = array( // 👈 Tableau d'arguments
+                        //Recherche d'une page spécifique dans le post new-article avec le nom de la page
+						$arguments = array( 
 							'post_type' => 'new-article',
 							's' => 'Demande record de HLM à Saguenay'
 						);
-						$projects = new WP_Query($arguments); // 👈 Utilisation
+                        //Utilisation de wp query pour rechercher un post extérieur
+						$projects = new WP_Query($arguments);
 						while ($projects->have_posts()) : $projects->the_post(); 
 					?>
+                    <!-- Ajout des champs personnalisés du groupe news-articles -->
 					<img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/>
 					<h3><?php the_title(); ?></h3>
 					<p><?php the_field('card-summary'); ?></p>
@@ -191,6 +217,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                     <button class="bouton-carte-03 bouton-lire-article"><?php the_field('news-read'); ?></button>
                 </div>
             </div>
+            <!-- Ajout des champs personnalisés da actualités -->
             <a href="./news_hub.html"><h3 class="plus-actualites"><?php the_field('news-cta'); ?></h3></a>
             <a href="./news_hub.html"><button class="bouton-voir-plus"><?php the_field('news-cta'); ?></button></a>
         </section>
