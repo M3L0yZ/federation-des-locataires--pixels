@@ -7,7 +7,7 @@
 
 // Fermeture de la zone de contenu principale ?>
 </main>
-<?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?>
+<?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?>	<?php endif; ?>
     <footer class="foot">
     <?php $service = get_field('footer'); ?>
         <div class="foot__grid">
@@ -125,7 +125,7 @@
         </div>
         <p class="droitAuteur">©2024 FLHLMQ par Pixels</p> 
     </footer>
-	<?php endif; ?>
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <?php wp_footer(); 

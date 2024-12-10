@@ -1,7 +1,7 @@
 <?php
 	/**
- * 	Template Name: logos, header
- * 	Template Post Type: post, logo, header
+ * 	Template Name: header
+ * 	Template Post Type: post, header
  */
 
 ?>
@@ -35,7 +35,7 @@
 		 etc. */
 	?>
 >
-<?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?>
+<?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?><?php endif; ?>
 	<header  class="header">
 	<div class="header__grid">
             <!-- projet par etudiant -->
@@ -68,7 +68,7 @@
                 </div>
             </div>
         </div>
-<?php endif; ?>
+
 		<nav class="nav">
 			<img class="logo-search" src="./sources/icons/symbole-de-linterface-de-recherche_light.png">
 			<img class="logo-langue" src="./sources/icons/world.png">
