@@ -1,7 +1,7 @@
 <?php
 	/**
  * 	Template Name: header
- * 	Template Post Type: post, header
+ * 	Template Post Type: post
  */
 
 ?>
@@ -36,21 +36,22 @@
 	?>
 >
 <?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?><?php endif; ?>
-	<header  class="header">
+	<header class="header">
 	<div class="header__grid">
             <!-- projet par etudiant -->
-			<?php the_field('header-icons'); ?>
             <div class="header__block">
 				
                 <div class="head__etudiant">
 					 
 
-                    <h1 class="projet-etudiant"><?php the_field('project'); ?></h1>
-                    <h1 class="voir-site-origine"><?php the_field('original-site'); ?><a href="<?php echo esc_url('original-site'); ?>">www.flhlmq.com/fr</a></h1>
+                    <h1 class="projet-etudiant">Projet Étudiant réalisé dans un cadre scolaire au collège Montmorency</h1>
+                    <h1 class="voir-site-origine">Voir le site d'origine:<a
+                            href="https://flhlmq.com/fr">www.flhlmq.com/fr</a></h1>
 
-                    <div class="bouton-x-header-wrap">
-                        <button class="bouton-x-header" onclick="myFunction()"> <img src="<?php echo esc_url('boutonx'); ?>"
-                        alt=""></button>
+					<div class="bouton-x-header-wrap">
+						<?php
+                        echo '<button class="bouton-x-header" onclick="myFunction()"><div class="boutonximg"><img src="' . get_template_directory_uri() . '/sources/icons/boutonX.png"></div></button>'
+						?>
                     </div>
 					
 					
@@ -60,29 +61,37 @@
             <div class="header__block">
                 <div class="header__don">
                     <div class="logo-federation-wrap">
-                        <a href="./index.html"><img class="logo-federation" src="<?php echo esc_url('logo-federation'); ?>"></a>
+						<?php
+                        echo '
+                        <a href="./index.html"><img class="logo-federation" src="' . get_template_directory_uri() . '/sources/logo/logo-federation.png"></a>'
+						?>
                     </div>
                     <div class="bouton-don-wrap">
-                        <button class="bouton-don" onclick="myFunction()"><?php the_field('donation'); ?></button>
+                        <button class="bouton-don" onclick="myFunction()">Dons</button>
                     </div>
                 </div>
             </div>
         </div>
 
 		<nav class="nav">
-			<img class="logo-search" src="./sources/icons/symbole-de-linterface-de-recherche_light.png">
-			<img class="logo-langue" src="./sources/icons/world.png">
+			<?php
+			//Récupération de l'emplacement du menu de navigation
+			$menu_id = get_nav_menu_locations()['main-menu'];
+
+			//Récupération de tous les éléments du menu de navigation
+			$menu_items = wp_get_nav_menu_items($menu_id);
+				if ($menu_items[5]) {
+					echo '<img class="logo-search" src="' . get_template_directory_uri() . '/sources/icons/symbole-de-linterface-de-recherche_light.png" alt="Search">';
+				}
+				if ($menu_items[6]) {
+					echo '<img class="logo-langue" src="' . get_template_directory_uri() . '/sources/icons/world.png" alt="Search">';
+				}
+			?>
 			<a href="javascript:void(0);" class="menu-hamburger" onclick="boutonHamburger()">
 				<i class="fa fa-bars"></i>
 			</a>
 			<ul class="nav__list">
 				<?php
-					//Récupération de l'emplacement du menu de navigation
-					$menu_id = get_nav_menu_locations()['main-menu'];
-
-					//Récupération de tous les éléments du menu de navigation
-					$menu_items = wp_get_nav_menu_items($menu_id);
-
 					if ($menu_items[0]) {
 						echo '<li class="nav__item"><a href="' . esc_url($menu_items[0]->url) . '">' . esc_html($menu_items[0]->title) . '</a></li>';
 					}

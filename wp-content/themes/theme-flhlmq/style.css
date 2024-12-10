@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: FLHLMQ
 Author: Audrey Dandurand, Camilia Bouatmani, Melody Chiasson
@@ -5,8 +6,6 @@ Author URI: https://github.com/M3L0yZ/federation-des-locataires--pixels
 Description: Thème de la FLHLMQ par l'équipe Pixels.
 Version: 1.0
 */
-
-@charset "UTF-8";
 .nav {
   background-color: #C15A2E;
   padding: 15px;
@@ -412,13 +411,20 @@ header {
 }
 
 .bouton-x-header {
-  height: auto;
-  width: auto;
-  background-color: #262127;
+  height: 50px;
+  width: 50px;
   border: rgba(0, 0, 0, 0);
   margin-left: auto;
   margin-right: 15%;
   cursor: pointer;
+}
+
+.boutonximg {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  background-image: url(sources/icons/boutonX.png);
 }
 
 .header__don {
