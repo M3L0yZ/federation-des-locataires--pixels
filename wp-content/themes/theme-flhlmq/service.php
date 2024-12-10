@@ -21,17 +21,21 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                     <div class="congre__contenue" >
 
                     
-                
+                        <!--  Chercher le titre -->
                         <h1 class="congre__titreservice"><?php the_title(); ?></h1>
 
                         <div class="congre__containerpremiertext">
                             <div class="congre__backgroundcolortext">
-                                <p class="congre__premiertext"><?php the_field('service-summary'); ?></p>
+                                <p class="congre__premiertext">
+                                    <!--  Chercher le texte résumer -->
+                                <?php the_field('service-summary'); ?></p>
                             </div>
                         </div>
 
                         <div class="congre__containerdeuxiemetext">
-                            <p class="congre__deuxiemetext" > <?php the_content(); ?>
+                            <p class="congre__deuxiemetext" > 
+                                <!--  Chercher le texte content de la page -->
+                            <?php the_content(); ?>
                                 
                             </p>
                         </div>
@@ -45,10 +49,12 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                                     <div class="congre__cartetext">
                                     
                                     <h3 >
-                                    <?php the_field('service-report-card-1'); ?>  <?php the_field('service-report-card-1-title'); ?> </h3>
+                                        <!--  Chercher le group field 1 -->
+                                    <?php the_field('service-report-card-1'); ?>  
+                                    <?php the_field('service-report-card-1-title'); ?> <!--  Chercher le titre 1 --> </h3>
                                     </div>
                                     <div class="congre__ensavoirplus">
-                                        <button class="congre__bouttonsavoirpluscongre" > <?php the_field('service-cta-all-savoir'); ?> </button>
+                                        <button class="congre__bouttonsavoirpluscongre" > <?php the_field('service-cta-all-savoir'); ?> <!--  Chercher le boutons savoir plus --></button>
                                     </div>   
 
 									    
@@ -59,13 +65,13 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                                 <div class="congre__carte" > 
                                 
                                     <div class="congre__cartetext">
-                                    
+                                        <!--  Chercher le group field 2 -->
                                         <h3> <?php the_field('service-report-card-2-title'); ?> 
-                                        <?php the_field('service-report-card-2'); ?> </h3>
+                                        <?php the_field('service-report-card-2'); ?> </h3> <!--  Chercher le titre 2 -->
                                         
                                     </div>
                                     <div class="congre__ensavoirplus">
-                                        <button class="congre__bouttonsavoirpluscongre"> <?php the_field('service-cta-all-savoir'); ?></button>
+                                        <button class="congre__bouttonsavoirpluscongre"> <?php the_field('service-cta-all-savoir'); ?></button><!--  Chercher le boutons savoir plus -->
                                     </div>
                                     
                                 </div>
@@ -74,12 +80,12 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                             <div class="congre__containercarte">
                                 <div class="congre__carte"> 
                                     <div class="congre__cartetext">
-                                    
+                                    <!--  Chercher le group field 3 -->
                                     <h3> <?php the_field('service-report-card-3-title'); ?>
-                                    <?php the_field('service-report-card-3'); ?> </h3>
+                                    <?php the_field('service-report-card-3'); ?> </h3><!--  Chercher le titre 3 --> 
                                     </div>
                                     <div class="congre__ensavoirplus">
-                                        <button class="congre__bouttonsavoirpluscongre"> <?php the_field('service-cta-all-savoir'); ?> </button>
+                                        <button class="congre__bouttonsavoirpluscongre"> <?php the_field('service-cta-all-savoir'); ?> </button><!--  Chercher le boutons savoir plus -->
                                     </div>
                                 </div>
                             </div>    
@@ -87,7 +93,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                         </div>
 
                             <div class="congre__congreensavoirplus">
-                                <button class="congre__bouttonsavoirplus" > <?php the_field('service-cta-all-report'); ?></button>
+                                <button class="congre__bouttonsavoirplus" > <?php the_field('service-cta-all-report'); ?></button> <!--  Chercher du boutons savoir tout --> 
                             </div>
                     </div>        
                 </div>
