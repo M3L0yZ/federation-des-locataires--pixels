@@ -39,7 +39,7 @@
 	<header class="header">
 		
 	<div class="header__grid">
-            <!-- projet par etudiant -->
+            <!------------- BANNIÈRE ÉTUDIANTE------------------->
             <div class="header__block">
 				
                 <div class="head__etudiant">
@@ -50,8 +50,8 @@
                             href="https://flhlmq.com/fr">www.flhlmq.com/fr</a></h1>
 
 					<div class="bouton-x-header-wrap">
-						
-						<!-- projet par etudiant -->
+
+						<!-- Lien vers l'image sur Wordpress -->
 						<?php
                         echo '<button class="bouton-x-header" onclick="myFunction()"><div class="boutonximg"><img src="' . get_template_directory_uri() . '/sources/icons/boutonX.png"></div></button>'
 						?> 
@@ -62,10 +62,11 @@
             </div>
             <!-- dons -->
             <div class="header__block">
+				<!-- Lien vers l'accueil -->
                 <div class="header__don"><a href="<?php echo home_url('/index.php/accueil/'); ?>">
                     <div class="logo-federation-wrap">
 						
-							
+						<!-- Lien vers l'image sur Wordpress -->	
 						<?php
                         echo '
                         <a href="./index.php/accueil/"><img class="logo-federation" src="' . get_template_directory_uri() . '/sources/logo/logo-federation.png"></a>'
@@ -79,44 +80,58 @@
             </div>
         </div>
 
+<!------------- NAVIGATION -------------->
+
 		<nav class="nav">
 			<?php
-			//Récupération de l'emplacement du menu de navigation
+			//Récupération de la localisation du menu
 			$menu_id = get_nav_menu_locations()['main-menu'];
 
-			//Récupération de tous les éléments du menu de navigation
+			//Récupération des éléments du menu
 			$menu_items = wp_get_nav_menu_items($menu_id);
+
+				//Récupération de l'élément #5 Search
 				if ($menu_items[5]) {
 					echo '<img class="logo-search" src="' . get_template_directory_uri() . '/sources/icons/symbole-de-linterface-de-recherche_light.png" alt="Search">';
 				}
+				//Récupération de l'élément #6 World
 				if ($menu_items[6]) {
-					echo '<img class="logo-langue" src="' . get_template_directory_uri() . '/sources/icons/world.png" alt="Search">';
+					echo '<img class="logo-langue" src="' . get_template_directory_uri() . '/sources/icons/world.png" alt="World">';
 				}
 			?>
+
+			<!-- Bouton hamburger -->
 			<a href="javascript:void(0);" class="menu-hamburger" onclick="boutonHamburger()">
 				<i class="fa fa-bars"></i>
 			</a>
 			<ul class="nav__list">
 				<?php
+					//Récupération de l'élément #0 Accueil
 					if ($menu_items[0]) {
 						echo '<li class="nav__item"><a href="' . esc_url($menu_items[0]->url) . '">' . esc_html($menu_items[0]->title) . '</a></li>';
 					}
+					//Récupération de l'élément #1 Services
 					if ($menu_items[1]) {
 						echo '<li class="nav__item"><a href="' . esc_url($menu_items[1]->url) . '">' . esc_html($menu_items[1]->title) . '</a></li>';
 					}
+					//Récupération de l'élément #2 Nouvelles
 					if ($menu_items[2]) {
 						echo '<li class="nav__item"><a href="' . esc_url($menu_items[2]->url) . '">' . esc_html($menu_items[2]->title) . '</a></li>';
 					}
+					//Récupération de l'élément #4 Facebook
 					if ($menu_items[3]) {
 						echo '<li class="nav__item"><img class="icone-facebook" src="' . get_template_directory_uri() . '/sources/icons/facebook.png" alt="Facebook"></li>';
 					}
+					//Récupération de l'élément #5 Youtube
 					if ($menu_items[4]) {
 						echo '<li class="nav__item"><img class="icone-youtube" src="' . get_template_directory_uri() . '/sources/icons/youtube.png" alt="YouTube"></li>';
 					}
 				?>
+				<!-- Input de recherche -->
 				<li class="nav__item">
 					<input type="search" id="search" name="search" placeholder="Rechercher">
 				</li>
+				<!-- Bouton multilangue -->
 				<li class="nav__item"><a href="#">FR/EN</a></li>
 			</ul>
 		</nav>
