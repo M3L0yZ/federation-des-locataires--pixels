@@ -45,8 +45,8 @@
                 <div class="head__etudiant">
 					 
 
-                    <h1 class="projet-etudiant"> <?php the_field('projet-fait'); ?> </h1>
-                    <h1 class="voir-site-origine"><?php the_field('voir-site-origine'); ?><a href="<?php echo esc_url('site-origine'); ?>">www.flhlmq.com/fr</a></h1>
+                    <h1 class="projet-etudiant"> <?php the_field('project'); ?> </h1>
+                    <h1 class="voir-site-origine"><?php the_field('original-site'); ?><a href="<?php echo esc_url('site-origine'); ?>">www.flhlmq.com/fr</a></h1>
 
                     <div class="bouton-x-header-wrap">
                         <button class="bouton-x-header" onclick="myFunction()"> <img src="<?php echo esc_url('boutonx'); ?>"
@@ -63,7 +63,7 @@
                         <a href="./index.html"><img class="logo-federation" src="<?php echo esc_url('logo-federation'); ?>"></a>
                     </div>
                     <div class="bouton-don-wrap">
-                        <button class="bouton-don" onclick="myFunction()">Dons</button>
+                        <button class="bouton-don" onclick="myFunction()"><?php the_field('donation'); ?></button>
                     </div>
                 </div>
             </div>
