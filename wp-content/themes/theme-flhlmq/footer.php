@@ -22,8 +22,8 @@
             <div class="foot__block">
                 <ul class="foot__list">
                     <?php
-                    if ($menu_items[1]) {
-						echo '<h2><a href="' . esc_url($menu_items[1]->url) . '">' . esc_html($menu_items[1]->title) . '</a></h2>';
+                    if ($menu_items[1]) { // installation du menu footer
+						echo '<h2><a href="' . esc_url($menu_items[1]->url) . '">' . esc_html($menu_items[1]->title) . '</a></h2>';//connection avec le item du menu
 					}
                     ?>
                     <li class="foot__item"><a class="foot__link" href="#"> membre </a></li>
@@ -57,8 +57,8 @@
             <div class="foot__block">
                 <ul class="foot__list">
                 <?php
-                    if ($menu_items[2]) {
-						echo '<h2><a href="' . esc_url($menu_items[2]->url) . '">' . esc_html($menu_items[2]->title) . '</a></h2>';
+                    if ($menu_items[2]) {// installation du menu footer
+						echo '<h2><a href="' . esc_url($menu_items[2]->url) . '">' . esc_html($menu_items[2]->title) . '</a></h2>'; //connection avec le item du menu
 					}
                     ?>
                     <li class="foot__item"><a class="foot__link" href="./news_hub.html">Actualité</a></li>
@@ -90,8 +90,8 @@
                         $urlreseau = get_field('urlreseau'); // URL personnalisée
                         ?>
                         <div>
-                            <a class="foot__icon" href="<?php echo esc_url($urlreseau); ?>" target="_blank">
-                                <img class="foot__icon"src="<?php echo esc_url($image); ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>">
+                            <a class="foot__icon" href="<?php echo esc_url($urlreseau); ?>" target="_blank">  <!-- URL personnalisée -->
+                                <img class="foot__icon"src="<?php echo esc_url($image); ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>"> <!-- URL l'image à la une-->
                             </a>
                         </div>
                     <?php endwhile; wp_reset_postdata(); ?>
@@ -107,7 +107,7 @@
                 </div>
                     </div>
             
-            
+            <!-- Foot partenaire   -->
 
             <div class="foot__block">
                 <div class="foot__partenaire">
@@ -120,14 +120,15 @@
                         $urlpartenaire = get_field('urlpartenaire'); // URL personnalisée
                         ?>
                         <div>
-                            <a class="foot__logo" href="<?php echo esc_url($urlpartenaire); ?>" target="_blank">
-                                <img class="foot__logo" src="<?php echo esc_url($image); ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>">
+                            <a class="foot__logo" href="<?php echo esc_url($urlpartenaire); ?>" target="_blank"> <!-- URL personnalisée -->
+                                <img class="foot__logo" src="<?php echo esc_url($image); ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>"> <!-- URL l'image à la une-->
                             </a>
                         </div>
                     <?php endwhile; wp_reset_postdata(); ?>
                     
                 </div>
             </div>
+            <!-- URL vers l'accueil  -->
             <a class="foot__block" href="<?php echo home_url('/index.php/accueil/'); ?>">
             <div class="foot__block">
                 <div class="foot__banner"> 
