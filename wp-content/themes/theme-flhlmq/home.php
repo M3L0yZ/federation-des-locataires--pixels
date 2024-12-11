@@ -61,8 +61,11 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 						<?php endif; ?>
                         <h3 class="accueil_services__texte"><?php the_field('service-summary'); ?></h3>
                     </div>
-                    <button class="bouton-voir-plus"><?php the_field('service-know-more'); ?></button>
-                    <h3 class="savoir-plus"><?php the_field('service-show-more'); ?></h3>
+                    <a href="<?php echo home_url('/index.php/service-hub-real/nos-service/'); ?>"> <button class="bouton-voir-plus"><?php the_field('service-know-more'); ?></button> </a>
+                    
+                    <a href="<?php echo home_url('/index.php/service-hub-real/nos-service/'); ?>">
+                        <h3 class="savoir-plus"><?php the_field('service-show-more'); ?></h3>
+                    </a>
                 </div>
             </div>
         </section>
@@ -98,7 +101,9 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 									endwhile; 
 									wp_reset_postdata(); 
 								?>
+                                <a href="<?php echo home_url('/index.php/new-article/premiere-pelletee-de-terre-pour-unitaines-a-rimouski/'); ?>">
                                 <button class="bouton-carte-01 bouton-lire-article"><?php the_field('news-read'); ?></button>
+                                </a>
                             </div>
                         </div>
                         <div class="swiper-slide slide-2">
@@ -121,7 +126,9 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 									endwhile; 
 									wp_reset_postdata(); 
 								?>
+                                <a href="<?php echo home_url('/index.php/new-article/une-nouvelle-voie-rapide-pour-les-developpeurs/'); ?>">
                                 <button class="bouton-carte-02  bouton-lire-article"><?php the_field('news-read'); ?></button>
+                                </a>
                             </div>
                         </div>
                         <div class="swiper-slide slide-3">
@@ -144,7 +151,9 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 									endwhile; 
 									wp_reset_postdata(); 
 								?>
+                                <a href="<?php echo home_url('/index.php/new-article/demande-record-de-hlm-a-saguenay/'); ?>">
                                 <button class="bouton-carte-03  bouton-lire-article"><?php the_field('news-read'); ?></button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -170,7 +179,9 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 						endwhile; 
 						wp_reset_postdata(); 
 					?>
+                    <a href="<?php echo home_url('/index.php/new-article/premiere-pelletee-de-terre-pour-unitaines-a-rimouski/'); ?>"> 
                     <button class="bouton-carte-01 bouton-lire-article"><?php the_field('news-read'); ?></button>
+                    </a>
                 </div>
                 <hr class="hr-cartes">
                 <div class="carte--02 carte">
@@ -192,7 +203,9 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 						endwhile; 
 						wp_reset_postdata(); 
 					?>
+                    <a href="<?php echo home_url('/index.php/new-article/une-nouvelle-voie-rapide-pour-les-developpeurs/'); ?>"> 
                     <button class="bouton-carte-02 bouton-lire-article"><?php the_field('news-read'); ?></button>
+                    </a>
                 </div>
                 <hr class="hr-cartes">
                 <div class="carte--03 carte">
@@ -214,12 +227,16 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 						endwhile; 
 						wp_reset_postdata(); 
 					?>
+                    <a href="<?php echo home_url('/index.php/new-article/demande-record-de-hlm-a-saguenay/'); ?>"> 
                     <button class="bouton-carte-03 bouton-lire-article"><?php the_field('news-read'); ?></button>
+                    </a>
                 </div>
             </div>
             <!-- Ajout des champs personnalisés da actualités -->
-            <a href="./news_hub.html"><h3 class="plus-actualites"><?php the_field('news-cta'); ?></h3></a>
-            <a href="./news_hub.html"><button class="bouton-voir-plus"><?php the_field('news-cta'); ?></button></a>
+            <a href="<?php echo home_url('/index.php/a-la-une/'); ?>"><h3 class="plus-actualites"><?php the_field('news-cta'); ?></h3></a>
+            
+                <a href="<?php echo home_url('/index.php/a-la-une/'); ?>"><button class="bouton-voir-plus"><?php the_field('news-cta'); ?></button></a>
+            
         </section>
 
 

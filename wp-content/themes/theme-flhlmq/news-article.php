@@ -62,7 +62,11 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 <div class="swiper-container2 mySwiper ">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide slide-1">
+
+                        
+                           
                             <div class="carte--01 carte">
+                            <a href="<?php echo home_url('/index.php/new-article/premiere-pelletee-de-terre-pour-unitaines-a-rimouski/'); ?>">
                             <?php
                             //Recherche d'une page spécifique dans le post new-article avec le nom de la page
                                 $arguments = array( 
@@ -81,10 +85,14 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                                 endwhile; 
                                 wp_reset_postdata(); 
                             ?>
+                           </a>
                             </div>
+                           
                         </div>
                         <div class="swiper-slide slide-2">
+                            
                             <div class="carte--02 carte">
+                            <a href="<?php echo home_url('/index.php/new-article/une-nouvelle-voie-rapide-pour-les-developpeurs/'); ?>">
                             <?php
                             //Recherche d'une page spécifique dans le post new-article avec le nom de la page
                                 $arguments = array( 
@@ -103,10 +111,14 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                                 endwhile; 
                                 wp_reset_postdata(); 
                             ?>
+                          </a>
                             </div>
+                            
                         </div>
                         <div class="swiper-slide slide-3">
+                            
                             <div class="carte--03 carte">
+                            <a href="<?php echo home_url('/index.php/new-article/demande-record-de-hlm-a-saguenay/'); ?>">
                             <?php
                             //Recherche d'une page spécifique dans le post new-article avec le nom de la page
                                 $arguments = array( 
@@ -125,10 +137,14 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                                 endwhile; 
                                 wp_reset_postdata(); 
                             ?>
+                            
                             </div>
+                            </a>
                         </div>
                         <div class="swiper-slide slide-4">
+                            
                             <div class="carte--04 carte">
+                            <a href="<?php echo home_url('/index.php/new-article//petition-pour-des-hlm-de-qualite/'); ?>">
                             <?php
                             //Recherche d'une page spécifique dans le post new-article avec le nom de la page
                                 $arguments = array( 
@@ -147,13 +163,16 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                                 endwhile; 
                                 wp_reset_postdata(); 
                             ?>
+                            </a>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
             <div class="cartes">
                         <div class="carte--01 carte">
+                        <a href="<?php echo home_url('/index.php/new-article/premiere-pelletee-de-terre-pour-unitaines-a-rimouski/'); ?>">
                             <?php
                              //Recherche d'une page spécifique dans le post new-article avec le nom de la page
                                 $arguments = array( 
@@ -172,9 +191,11 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                                 endwhile; 
                                 wp_reset_postdata(); 
                             ?>
+                             </a>
                         </div>
 
                         <div class="carte--02 carte">
+                        <a href="<?php echo home_url('/index.php/new-article//petition-pour-des-hlm-de-qualite/'); ?>">
                             <?php
                             //Recherche d'une page spécifique dans le post new-article avec le nom de la page
                                 $arguments = array( 
@@ -193,10 +214,12 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                                 endwhile; 
                                 wp_reset_postdata(); 
                             ?>
+                            </a>
                         </div>
 
 
                         <div class="carte--03 carte">
+                        <a href="<?php echo home_url('/index.php/new-article/demande-record-de-hlm-a-saguenay/'); ?>">
                             <?php
                             //Recherche d'une page spécifique dans le post new-article avec le nom de la page
                                 $arguments = array( 
@@ -215,6 +238,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                                 endwhile; 
                                 wp_reset_postdata(); 
                             ?>
+                            </a>
                         </div>
             </div>
         </section>

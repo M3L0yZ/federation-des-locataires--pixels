@@ -95,6 +95,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 <div class="swiper-slide slide-1">
                     <div class="cartes">
                         <div class="carte--01 carte">
+                        <a href="<?php echo home_url('/index.php/new-article/premiere-pelletee-de-terre-pour-unitaines-a-rimouski/'); ?>">
                             <?php
                                 //Recherche d'une page spécifique dans le post new-article avec le nom de la page
                                 $arguments = array( 
@@ -117,7 +118,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                                 wp_reset_postdata(); 
                             ?>
                             <!-- Ajout d'un lien vers un article spécifique -->
-                            <a href="<?php echo home_url('/index.php/new-article/premiere-pelletee-de-terre-pour-unitaines-a-rimouski/'); ?>">
+                            
 							<button class="bouton-carte-01 bouton-lire-article"><?php the_field('news-cta-read'); ?></button>
                             </a>
                         </div>
@@ -125,6 +126,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                         <hr class="hr-cartes">
 
                         <div class="carte--02 carte">
+                        <a href="<?php echo home_url('/index.php/new-article/une-nouvelle-voie-rapide-pour-les-developpeurs/'); ?>">
                             <?php
                                 //Recherche d'une page spécifique dans le post new-article avec le nom de la page
                                 $arguments = array(
@@ -147,7 +149,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                                 wp_reset_postdata(); 
                             ?>
                             <!-- Ajout d'un lien vers un article spécifique -->
-                            <a href="<?php echo home_url('/index.php/new-article/une-nouvelle-voie-rapide-pour-les-developpeurs/'); ?>">
+                            
 							<button class="bouton-carte-01 bouton-lire-article"><?php the_field('news-cta-read'); ?></button>
                             </a>
                         </div>
@@ -155,6 +157,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                         <hr class="hr-cartes">
 
                         <div class="carte--03 carte">
+                        <a href="<?php echo home_url('/index.php/new-article/demande-record-de-hlm-a-saguenay/'); ?>">
                             <?php
                                 //Recherche d'une page spécifique dans le post new-article avec le nom de la page
                                 $arguments = array(
@@ -177,7 +180,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                                 wp_reset_postdata(); 
                             ?>
                             <!-- Ajout d'un lien vers un article spécifique -->
-                            <a href="<?php echo home_url('/index.php/new-article/demande-record-de-hlm-a-saguenay/'); ?>">
+                            
 							<button class="bouton-carte-01 bouton-lire-article"><?php the_field('news-cta-read'); ?></button>
                             </a>
                         </div>
@@ -185,6 +188,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                         <hr class="hr-cartes">
                         
 						<div class="carte--04 carte">
+                        <a href="<?php echo home_url('/index.php/new-article/premiere-pelletee-de-terre-pour-unitaines-a-rimouski/'); ?>"> 
                             <?php
                                 //Recherche d'une page spécifique dans le post new-article avec le nom de la page
                                 $arguments = array(
@@ -206,14 +210,18 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                                 endwhile; 
                                 wp_reset_postdata(); 
                             ?>
+                            
 							<button class="bouton-carte-01 bouton-lire-article"><?php the_field('news-cta-read'); ?></button>
+                            </a>
                         </div>
 						
 
                         <hr class="hr-cartes">
 
                         <div class="carte--05 carte">
+                        <a href="<?php echo home_url('/index.php/new-article/une-nouvelle-voie-rapide-pour-les-developpeurs/'); ?>">
                             <?php
+                            
                                 //Recherche d'une page spécifique dans le post new-article avec le nom de la page
                                 $arguments = array(
                                     'post_type' => 'new-article',
@@ -234,12 +242,15 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                                 endwhile; 
                                 wp_reset_postdata(); 
                             ?>
+                            
 							<button class="bouton-carte-01 bouton-lire-article"><?php the_field('news-cta-read'); ?></button>
+                            </a>
                         </div>
 
                         <hr class="hr-cartes">
 
                         <div class="carte--06 carte">
+                        <a href="<?php echo home_url('/index.php/new-article/demande-record-de-hlm-a-saguenay/'); ?>">
                             <?php
                                 //Recherche d'une page spécifique dans le post new-article avec le nom de la page
                                 $arguments = array( 
@@ -261,10 +272,13 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                                 endwhile; 
                                 wp_reset_postdata(); 
                             ?>
+                            
 							<button class="bouton-carte-01 bouton-lire-article"><?php the_field('news-cta-read'); ?></button>
+                            </a>
                         </div>
                     </div>
                 </div>
+                <!-- partie 2 du slider avec des posts innexistants (donc fait en html)-->
                 <div class="swiper-slide slide-2">
                     <div class="cartes">
                         <div class="carte--01 carte">
@@ -359,6 +373,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             <h1 class="news-hub__consultes__titre"><?php the_field('news-consult-title'); ?></h1>
             <hr class="hr-titre">
             <div class="cartes">
+            <a href="<?php echo home_url('/index.php/new-article//petition-pour-des-hlm-de-qualite/'); ?>">
                 <?php
                     //Recherche d'une page spécifique dans le post new-article avec le nom de la page
                     $arguments = array(
@@ -383,9 +398,9 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                     endwhile; 
                     wp_reset_postdata(); 
                 ?>
-                
+                </a>
                 <hr class="hr-cartes">
-                
+                <a href="<?php echo home_url('/index.php/new-article/demande-record-de-hlm-a-saguenay/'); ?>">
                 <?php
                     //Recherche d'une page spécifique dans le post new-article avec le nom de la page
                     $arguments = array(
@@ -410,9 +425,9 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                     endwhile; 
                     wp_reset_postdata(); 
                 ?>
-                
+                </a>
                 <hr class="hr-cartes">
-                
+                <a href="<?php echo home_url('/index.php/new-article/une-nouvelle-voie-rapide-pour-les-developpeurs/'); ?>">
                 <?php
                     //Recherche d'une page spécifique dans le post new-article avec le nom de la page
                     $arguments = array( 
@@ -436,9 +451,9 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                     endwhile; 
                     wp_reset_postdata(); 
                 ?>
-                
+                </a>
                 <hr class="hr-cartes">
-                
+                <a href="<?php echo home_url('/index.php/new-article/premiere-pelletee-de-terre-pour-unitaines-a-rimouski/'); ?>">
                 <?php
                     //Recherche d'une page spécifique dans le post new-article avec le nom de la page
                     $arguments = array( 
@@ -462,7 +477,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                     endwhile; 
                     wp_reset_postdata(); 
                 ?>
-                
+                </a>
             </div>
         </section>
 		<?php endif; ?>
