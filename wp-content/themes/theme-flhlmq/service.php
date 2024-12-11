@@ -13,6 +13,36 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
 	<article>
 		<?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?>
+            <section class="congre__hero">
+            <!--- <div class="accueil__hero__container">
+                <h1>Accessibilité et équité</h1>
+                <h1>Se loger dans la dignité</h1>
+                <button>Devenir membre</button>
+            </div> --->
+            <div class="swiper-container mySwiper ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-1">
+                        
+                    </div>
+                    <div class="swiper-slide slide-2">
+                        <div class="fade-black"></div>
+                        
+                    </div>
+                    <div class="swiper-slide slide-3">
+                        <div class="fade-black"></div>
+                        
+                    </div>
+                </div>
+                
+                <!-- Pagination (if needed) -->
+                <div class="swiper-pagination"></div>
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div><div class="slides__container">
+                    <h1>Le Congrès</h1>
+                    <h1>L'importance de notre Fédération</h1>
+        </section>
 			<section class="congre">
             <div class="congre__container">
 

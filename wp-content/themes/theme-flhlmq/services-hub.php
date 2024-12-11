@@ -14,6 +14,37 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 <article>
     <!--  SERVICE HUB  -->
     <?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?>
+        <section class="congrenumero2__hero">
+            <!--- <div class="accueil__hero__container">
+                <h1>Accessibilité et équité</h1>
+                <h1>Se loger dans la dignité</h1>
+                <button>Devenir membre</button>
+            </div> --->
+            <div class="swiper-container mySwiper ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-1">
+                        
+                    </div>
+                    <div class="swiper-slide slide-2">
+                        <div class="fade-black"></div>
+                        
+                    </div>
+                    <div class="swiper-slide slide-3">
+                        <div class="fade-black"></div>
+                        
+                    </div>
+                </div>
+                
+                <!-- Pagination (if needed) -->
+                <div class="swiper-pagination"></div>
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div><div class="slides__container">
+                    <h1 class="mission titre">Notre mission</h1>
+                    <h1 class="mission texte">La FLHLMQ d’apporter un soutien au <br> travail réalisé localement par <br> les associations de locataires</h1>
+        </section>
+        
 		<section class="service">
             <h1 class="service__titreservice"> <?php the_title(); ?> </h1>
             <hr class="hr-titre">
