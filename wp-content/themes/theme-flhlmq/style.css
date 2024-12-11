@@ -4207,4 +4207,8 @@ body {
   --swiper-pagination-bullet-width: 16px;
   --swiper-pagination-bullet-height: 16px;
   --swiper-pagination-bullet-inactive-color: #ffff;
+}
+
+a {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
