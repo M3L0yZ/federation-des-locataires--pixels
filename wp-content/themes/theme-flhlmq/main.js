@@ -38,7 +38,7 @@ var swiper2 = new Swiper(".mySwiperHub", {
 
 let currentSlide = 0;
 
-function goToSlide(slideIndex) {
+function changerSlide(slideIndex) {
     const slides = document.querySelector('.swiper-wrapper');
     const buttons = document.querySelectorAll('.pagination-button');
     
