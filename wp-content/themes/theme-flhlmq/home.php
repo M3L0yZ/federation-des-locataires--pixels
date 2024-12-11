@@ -50,7 +50,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         <section class="accueil_services">
             <div class="accueil_services__grid">
                 <div class="accueil_services__block">
-                    <!-- Ajout des champs personnalisés de services -->
+                    <!-- Ajout des champs personnalisés de accueil -->
                     <h1  class="accueil_services__titre" ><?php the_field('service-title'); ?></h1>
                     <hr class="hr-titre">
                     <div class="container-informations">
@@ -72,7 +72,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         <!-------------- ACTUALITÉS -------------------->
 
         <section class="accueil__actualites">
-            <!-- Ajout des champs personnalisés de actualité -->
+            <!-- Ajout des champs personnalisés de accueil -->
             <h1 class="titre"><?php the_field('news-title'); ?></h1>
             <hr class="hr-titre">
             <div class="cartes-swiper">
@@ -232,6 +232,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         <!-------------- TÉMOIGNAGES -------------------->
 
         <section class="accueil_temoignages">
+            <!-- Ajout des champs personnalisés de accueil lié aux témoignages -->
             <h1 class="accueil_temoignages__titre"><?php the_field('testimony-title'); ?></h1>
             <hr class="hr-titre">
             <div class="accueil_temoignages__grid">
@@ -269,7 +270,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         <section class="accueil__nous-soutenir">
             <div class="soutenir__grid">
                 <div class="soutenir__block">
-
+                    <!-- Ajout des champs personnalisés de accueil lié à la donation -->
                     <div class="text-nous-soutenir">
                         <h1><?php the_field('donation-title'); ?></h1>
                     </div>
